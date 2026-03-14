@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Allow AI crawlers for GEO
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://kayancontracting.ca/sitemap.xml

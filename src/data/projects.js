@@ -1,0 +1,96 @@
+// ===== KAYAN CONTRACTING — PROJECT GALLERY DATA =====
+// Before/after project entries with placeholder color gradients
+// Colors represent visual tone: damaged/worn (before) vs clean/fresh (after)
+
+export const projects = [
+  {
+    id: 1,
+    title: "Storm Damage Repair — Spruce Grove",
+    location: "Heritage Hills, Spruce Grove",
+    type: "Roof Replacement",
+    material: "IKO Dynasty — Driftwood",
+    duration: "2 days",
+    year: 2025,
+    description:
+      "Severe hail damage required full tear-off and replacement. Insurance claim fully covered. New IKO Dynasty architectural shingles with upgraded ridge vent and ice shield in all valleys.",
+    beforeGradient: "linear-gradient(135deg, #6B5B4F 0%, #8B7355 40%, #9C8B7A 100%)",
+    afterGradient: "linear-gradient(135deg, #5A6374 0%, #7B8794 40%, #A3B1BF 100%)",
+    beforeLabel: "Hail-damaged shingles",
+    afterLabel: "IKO Dynasty — Driftwood",
+  },
+  {
+    id: 2,
+    title: "Aging Roof Upgrade — Stony Plain",
+    location: "Meridian Heights, Stony Plain",
+    type: "Roof Replacement",
+    material: "IKO Cambridge — Dual Black",
+    duration: "2 days",
+    year: 2025,
+    description:
+      "22-year-old three-tab shingles replaced with modern IKO Cambridge architectural shingles. Added proper attic ventilation and new aluminum drip edge throughout.",
+    beforeGradient: "linear-gradient(135deg, #7A7062 0%, #918577 40%, #A89E92 100%)",
+    afterGradient: "linear-gradient(135deg, #2D3039 0%, #3E4149 40%, #555962 100%)",
+    beforeLabel: "Worn three-tab shingles",
+    afterLabel: "IKO Cambridge — Dual Black",
+  },
+  {
+    id: 3,
+    title: "Metal Roof — Acreage Property",
+    location: "Woodhaven, Parkland County",
+    type: "Metal Roof Installation",
+    material: "Standing Seam — Charcoal",
+    duration: "4 days",
+    year: 2024,
+    description:
+      "Full conversion from aging asphalt to standing seam metal on a 2,800 sq ft acreage home. Engineered for heavy snow loads and 120 km/h wind rating.",
+    beforeGradient: "linear-gradient(135deg, #857A6E 0%, #A09585 40%, #B5AA9C 100%)",
+    afterGradient: "linear-gradient(135deg, #374151 0%, #4B5563 40%, #6B7280 100%)",
+    beforeLabel: "Deteriorating asphalt shingles",
+    afterLabel: "Standing Seam — Charcoal",
+  },
+  {
+    id: 4,
+    title: "Insurance Claim — Wind Damage",
+    location: "Deer Park, Spruce Grove",
+    type: "Partial Re-roof",
+    material: "IKO Dynasty — Glacier",
+    duration: "1 day",
+    year: 2025,
+    description:
+      "High winds peeled shingles from the north-facing slope. Insurance-approved partial replacement with colour-matched IKO Dynasty shingles. Included new flashing at chimney penetration.",
+    beforeGradient: "linear-gradient(135deg, #8B7D6F 0%, #A69888 40%, #BDB0A2 100%)",
+    afterGradient: "linear-gradient(135deg, #8FA3B5 0%, #A7BAC9 40%, #C4D3DE 100%)",
+    beforeLabel: "Wind-lifted shingles",
+    afterLabel: "IKO Dynasty — Glacier",
+  },
+  {
+    id: 5,
+    title: "Complete Exterior — Stony Plain",
+    location: "South Business Park, Stony Plain",
+    type: "Roof + Gutters + Soffits",
+    material: "IKO Cambridge — Weatherwood",
+    duration: "3 days",
+    year: 2024,
+    description:
+      "Full exterior package: roof replacement, seamless aluminum gutters, and new vented soffits. Commercial property with flat-to-sloped transition requiring custom flashing work.",
+    beforeGradient: "linear-gradient(135deg, #6E6459 0%, #897E72 40%, #A39888 100%)",
+    afterGradient: "linear-gradient(135deg, #6B7B6A 0%, #8B9B8A 40%, #AAB8A9 100%)",
+    beforeLabel: "Aged roof and gutters",
+    afterLabel: "IKO Cambridge — Weatherwood",
+  },
+  {
+    id: 6,
+    title: "New Build Roof — Custom Home",
+    location: "Prescott, Spruce Grove",
+    type: "New Construction",
+    material: "IKO Dynasty — Sedona",
+    duration: "3 days",
+    year: 2024,
+    description:
+      "New construction roofing for a custom 3,200 sq ft home. Complex hip-and-valley design with 8 penetrations. Full ice and water shield, synthetic underlayment, and balanced ridge ventilation.",
+    beforeGradient: "linear-gradient(135deg, #C4B5A0 0%, #D4C5B2 40%, #E0D5C5 100%)",
+    afterGradient: "linear-gradient(135deg, #8B6B4A 0%, #A17D5C 40%, #B89070 100%)",
+    beforeLabel: "Bare decking and underlayment",
+    afterLabel: "IKO Dynasty — Sedona",
+  },
+]
