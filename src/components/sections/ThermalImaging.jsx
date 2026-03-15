@@ -80,7 +80,7 @@ export default function ThermalImaging() {
             className="text-white/60 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed"
           >
             Certified in infrared thermography with{' '}
-            <span className="text-accent font-semibold">22 years of roofing expertise</span>,
+            <span className="text-accent font-semibold">22 years of construction expertise</span>,
             we combine cutting-edge thermal imaging with decades of hands-on experience on thousands of
             construction sites. We find the problems others can&rsquo;t see — and fix them right.
           </motion.p>

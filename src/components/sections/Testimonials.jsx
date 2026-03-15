@@ -101,7 +101,7 @@ export default function Testimonials() {
 
         {/* Trust bar */}
         <div className="mt-12 space-y-6">
-          {/* Warning about low-cost roofers */}
+          {/* Warning about low-cost contractors */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -110,7 +110,7 @@ export default function Testimonials() {
             className="glass-card p-5 rounded-xl text-center"
           >
             <p className="text-white/60 text-sm">
-              <span className="text-accent font-semibold">Be aware of inexperienced low-cost roofing businesses.</span>{' '}
+              <span className="text-accent font-semibold">Be aware of inexperienced low-cost contractors.</span>{' '}
               It&rsquo;s so important to have an experienced, trusted contractor doing your wind repairs.
               Book with expertise and integrity.
             </p>

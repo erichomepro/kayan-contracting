@@ -50,7 +50,7 @@ export default function Hero() {
             >
               <span className="h-px w-8 sm:w-12 bg-accent" />
               <span className="text-accent font-bold tracking-[0.3em] text-[10px] uppercase italic">
-                Est. 2007 | Parkland County
+                Est. {company.foundedYear} | Parkland County
               </span>
             </motion.div>
 
@@ -66,7 +66,7 @@ export default function Hero() {
                 <span className="inline italic text-accent font-serif lowercase">
                   Signature
                 </span>
-                <span className="block text-white font-bold">Roofing Standard.</span>
+                <span className="block text-white font-bold">Construction Standard.</span>
               </motion.h1>
             </div>
 
@@ -77,8 +77,9 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="max-w-md text-text-muted text-sm sm:text-base font-serif italic leading-relaxed mb-6 sm:mb-8"
             >
-              &ldquo;I am on every job site personally. We don&rsquo;t just roof houses; we protect
-              local families for the long haul.&rdquo;
+              &ldquo;Every job is thoroughly inspected and installed under our IKO Preferred
+              Contractor program. We use the highest quality products that hold up to
+              Canada&rsquo;s harshest weather.&rdquo;
               <span className="block mt-3 not-italic font-sans font-bold text-[10px] text-accent uppercase tracking-[0.2em]">
                 &mdash; Bryan Dewey, Owner
               </span>
@@ -92,7 +93,7 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-3 sm:gap-4"
             >
               <Button href="#quote" size="lg">
-                Start Your Estimate
+                Request a Quote
               </Button>
               <Button href="#services" variant="secondary" size="lg">
                 Our Services
@@ -112,16 +113,16 @@ export default function Hero() {
               <div className="absolute inset-0 glass-card rounded-2xl overflow-hidden border border-white/5">
                 <img
                   src="/images/gallery/home-complete-front.png"
-                  alt="Premium roof installation by Kayan Contracting in Stony Plain, Alberta"
+                  alt="Premium construction work by Kayan Contracting in Stony Plain, Alberta"
                   className="w-full h-full object-cover opacity-60"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent" />
                 <div className="absolute inset-0 p-8 flex flex-col justify-end">
                   <div className="text-accent font-bold text-[10px] uppercase tracking-[0.4em] mb-2">
-                    A+ BBB Rating
+                    IKO Preferred Contractor
                   </div>
                   <div className="text-2xl font-light uppercase tracking-tight text-white leading-tight">
-                    {company.yearsInBusiness} Years.<br />Zero Complaints.
+                    {company.yearsInBusiness} Years.<br />1,500+ Homeowners.
                   </div>
                 </div>
               </div>

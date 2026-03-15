@@ -1,0 +1,415 @@
+================================================================================
+KAYAN CONTRACTING - PROJECT PHOTO GALLERY CATALOG
+Generated: 2026-03-14 17:11
+Total images: 123
+================================================================================
+
+FORMAT BREAKDOWN:
+  HEIC (iPhone camera shots): 51
+  PNG (screenshots/edited):   71
+  JPG:                        1
+
+--------------------------------------------------------------------------------
+
+## DATE: March 11, 2026 (3 photos)
+
+  project-01.jpg       | landscape  | 1200x900 | 122KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260311_083235.heic
+
+  project-02.jpg       | landscape  | 1200x900 | 174KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260311_084629.heic
+
+  project-03.jpg       | landscape  | 1200x900 | 122KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260311_084646.heic
+
+--------------------------------------------------------------------------------
+
+## DATE: March 12, 2026 (5 photos)
+
+  project-04.jpg       | portrait   | 1200x2597 | 140KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260312_090837.png
+
+  project-05.jpg       | portrait   | 1200x2597 | 225KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260312_090840.png
+
+  project-06.jpg       | portrait   | 1200x2597 | 225KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260312_090843.png
+
+  project-07.jpg       | portrait   | 1200x2597 | 164KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260312_090847.png
+
+  project-08.jpg       | portrait   | 1200x2597 | 164KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260312_090848.png
+
+--------------------------------------------------------------------------------
+
+## DATE: March 13, 2026 (115 photos)
+
+  project-09.jpg       | landscape  | 1200x900 | 59KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230006.heic
+
+  project-10.jpg       | landscape  | 1200x900 | 60KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230008.heic
+
+  project-11.jpg       | landscape  | 1200x900 | 60KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230013.heic
+
+  project-12.jpg       | landscape  | 1200x900 | 86KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230017.heic
+
+  project-13.jpg       | landscape  | 1200x900 | 86KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230047.heic
+
+  project-14.jpg       | landscape  | 1200x900 | 66KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230159.heic
+
+  project-15.jpg       | landscape  | 1200x900 | 86KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230213.heic
+
+  project-16.jpg       | landscape  | 1200x900 | 61KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230220.heic
+
+  project-17.jpg       | landscape  | 1200x900 | 87KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230225.heic
+
+  project-18.jpg       | landscape  | 1200x900 | 56KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230227.heic
+
+  project-19.jpg       | landscape  | 1200x900 | 43KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230229.heic
+
+  project-20.jpg       | landscape  | 1200x900 | 59KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230232.heic
+
+  project-21.jpg       | landscape  | 1200x900 | 60KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230234.heic
+
+  project-22.jpg       | landscape  | 1200x900 | 72KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230236.heic
+
+  project-23.jpg       | landscape  | 1200x900 | 54KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230238.heic
+
+  project-24.jpg       | landscape  | 1200x900 | 63KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230245.heic
+
+  project-25.jpg       | landscape  | 1200x900 | 75KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230246.heic
+
+  project-26.jpg       | landscape  | 1200x900 | 73KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230247.heic
+
+  project-27.jpg       | landscape  | 1200x900 | 127KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230249.heic
+
+  project-28.jpg       | landscape  | 1200x900 | 94KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230250.heic
+
+  project-29.jpg       | landscape  | 1200x900 | 71KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230252.heic
+
+  project-30.jpg       | landscape  | 1200x900 | 50KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230253.heic
+
+  project-31.jpg       | landscape  | 1200x900 | 63KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230254.heic
+
+  project-32.jpg       | landscape  | 1200x900 | 77KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230256.heic
+
+  project-33.jpg       | landscape  | 1200x900 | 82KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230257.heic
+
+  project-34.jpg       | landscape  | 1200x900 | 48KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230259.heic
+
+  project-35.jpg       | landscape  | 1200x900 | 59KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230300.heic
+
+  project-36.jpg       | landscape  | 1200x900 | 126KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230301.heic
+
+  project-37.jpg       | landscape  | 1200x900 | 44KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230303.heic
+
+  project-38.jpg       | landscape  | 1200x900 | 80KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230304.heic
+
+  project-39.jpg       | landscape  | 1200x900 | 71KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230305.heic
+
+  project-40.jpg       | landscape  | 1200x900 | 65KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230306.heic
+
+  project-41.jpg       | landscape  | 1200x900 | 97KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230308.heic
+
+  project-42.jpg       | landscape  | 1200x900 | 99KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230309.heic
+
+  project-43.jpg       | landscape  | 1200x900 | 97KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230310.heic
+
+  project-44.jpg       | landscape  | 1200x900 | 38KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230312.heic
+
+  project-45.jpg       | landscape  | 1200x900 | 36KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230313.heic
+
+  project-46.jpg       | landscape  | 1200x900 | 45KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230332.heic
+
+  project-47.jpg       | landscape  | 1200x900 | 43KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230333.heic
+
+  project-48.jpg       | landscape  | 1200x900 | 91KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230335.heic
+
+  project-49.jpg       | landscape  | 1200x900 | 53KB | Job site photo (landscape, iPhone camera)
+                       | Original: IMG_20260313_230337.heic
+
+  project-50.jpg       | portrait   | 1200x1600 | 144KB | Job site photo (portrait, iPhone camera)
+                       | Original: IMG_20260313_230338.heic
+
+  project-51.jpg       | portrait   | 1200x1600 | 96KB | Job site photo (portrait, iPhone camera)
+                       | Original: IMG_20260313_230340.heic
+
+  project-52.jpg       | portrait   | 1200x1600 | 173KB | Job site photo (portrait, iPhone camera)
+                       | Original: IMG_20260313_230342.heic
+
+  project-53.jpg       | portrait   | 1200x1600 | 174KB | Job site photo (portrait, iPhone camera)
+                       | Original: IMG_20260313_230343.heic
+
+  project-54.jpg       | portrait   | 1200x1600 | 161KB | Job site photo (portrait, iPhone camera)
+                       | Original: IMG_20260313_230345.heic
+
+  project-55.jpg       | portrait   | 1200x1600 | 126KB | Job site photo (portrait, iPhone camera)
+                       | Original: IMG_20260313_230346.heic
+
+  project-56.jpg       | portrait   | 1200x1600 | 170KB | Job site photo (portrait, iPhone camera)
+                       | Original: IMG_20260313_230348.heic
+
+  project-57.jpg       | portrait   | 1200x2597 | 291KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230351.png
+
+  project-58.jpg       | portrait   | 1200x2597 | 280KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230353.png
+
+  project-59.jpg       | portrait   | 1200x2597 | 807KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230403.png
+
+  project-60.jpg       | portrait   | 1200x2597 | 419KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230405.png
+
+  project-61.jpg       | portrait   | 1200x2597 | 674KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230407.png
+
+  project-62.jpg       | portrait   | 1200x2597 | 141KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230410.png
+
+  project-63.jpg       | portrait   | 1200x2597 | 159KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230412.png
+
+  project-64.jpg       | portrait   | 1200x2597 | 116KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230415.png
+
+  project-65.jpg       | portrait   | 1200x2597 | 246KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230420.png
+
+  project-66.jpg       | portrait   | 1200x2597 | 412KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230435.png
+
+  project-67.jpg       | portrait   | 1200x2597 | 388KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230437.png
+
+  project-68.jpg       | portrait   | 1200x2597 | 336KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230438.png
+
+  project-69.jpg       | portrait   | 1200x2597 | 165KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230440.png
+
+  project-70.jpg       | portrait   | 1200x2597 | 222KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230441.png
+
+  project-71.jpg       | portrait   | 1200x2597 | 229KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230443.png
+
+  project-72.jpg       | portrait   | 1200x2597 | 224KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230451.png
+
+  project-73.jpg       | portrait   | 1200x2597 | 315KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230453.png
+
+  project-74.jpg       | portrait   | 1200x2597 | 206KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230455.png
+
+  project-75.jpg       | portrait   | 1200x2597 | 181KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230457.png
+
+  project-76.jpg       | portrait   | 1200x2597 | 285KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230458.png
+
+  project-77.jpg       | portrait   | 1200x2597 | 211KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230500.png
+
+  project-78.jpg       | portrait   | 1200x2597 | 70KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230510.png
+
+  project-79.jpg       | portrait   | 1200x2597 | 166KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230512.png
+
+  project-80.jpg       | portrait   | 1200x2597 | 412KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230514.png
+
+  project-81.jpg       | portrait   | 1200x2597 | 252KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230517.png
+
+  project-82.jpg       | portrait   | 1200x2597 | 162KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230519.png
+
+  project-83.jpg       | portrait   | 1200x2597 | 667KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230522.png
+
+  project-84.jpg       | portrait   | 1200x2597 | 218KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230524.png
+
+  project-85.jpg       | portrait   | 1200x2597 | 754KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230525.png
+
+  project-86.jpg       | portrait   | 1200x2597 | 104KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230527.png
+
+  project-87.jpg       | portrait   | 1200x2597 | 133KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230528.png
+
+  project-88.jpg       | portrait   | 1200x2597 | 117KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230530.png
+
+  project-89.jpg       | portrait   | 1200x2597 | 103KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230532.png
+
+  project-90.jpg       | portrait   | 1200x2597 | 102KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230534.png
+
+  project-91.jpg       | portrait   | 1200x2597 | 192KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230535.png
+
+  project-92.jpg       | portrait   | 1200x2597 | 178KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230537.png
+
+  project-93.jpg       | portrait   | 1200x2597 | 178KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230538.png
+
+  project-94.jpg       | portrait   | 1200x2597 | 256KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230541.png
+
+  project-95.jpg       | portrait   | 1200x2597 | 536KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230544.png
+
+  project-96.jpg       | portrait   | 1200x2597 | 303KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230546.png
+
+  project-97.jpg       | portrait   | 1200x2597 | 303KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230548.png
+
+  project-98.jpg       | portrait   | 1200x2597 | 318KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230550.png
+
+  project-99.jpg       | portrait   | 1200x2597 | 171KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230552.png
+
+  project-100.jpg      | portrait   | 1200x2597 | 452KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230554.png
+
+  project-101.jpg      | portrait   | 1200x2597 | 200KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230600.png
+
+  project-102.jpg      | portrait   | 1200x2597 | 200KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230602.png
+
+  project-103.jpg      | portrait   | 1200x2597 | 150KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230604.png
+
+  project-104.jpg      | portrait   | 1200x2597 | 363KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230606.png
+
+  project-105.jpg      | portrait   | 1200x2597 | 152KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230608.png
+
+  project-106.jpg      | portrait   | 1200x2597 | 142KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230610.png
+
+  project-107.jpg      | portrait   | 1200x2597 | 134KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230612.png
+
+  project-108.jpg      | portrait   | 1200x2597 | 138KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230614.png
+
+  project-109.jpg      | portrait   | 1200x2597 | 198KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230616.png
+
+  project-110.jpg      | portrait   | 1200x2597 | 277KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230619.png
+
+  project-111.jpg      | portrait   | 1200x2597 | 289KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230620.png
+
+  project-112.jpg      | portrait   | 1200x2597 | 208KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230723.png
+
+  project-113.jpg      | portrait   | 1200x2597 | 230KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230725.png
+
+  project-114.jpg      | portrait   | 1200x2597 | 279KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230727.png
+
+  project-115.jpg      | portrait   | 1200x2597 | 116KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230729.png
+
+  project-116.jpg      | portrait   | 1200x2597 | 181KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230731.png
+
+  project-117.jpg      | portrait   | 1200x2597 | 140KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230733.png
+
+  project-118.jpg      | portrait   | 1200x2597 | 143KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230735.png
+
+  project-119.jpg      | landscape  | 879x758 | 86KB | Photo (879x758)
+                       | Original: IMG_20260313_230737.jpg
+
+  project-120.jpg      | portrait   | 1200x2597 | 164KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230740.png
+
+  project-121.jpg      | portrait   | 1200x2597 | 225KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230742.png
+
+  project-122.jpg      | portrait   | 1200x2597 | 140KB | iPhone screenshot (project documentation)
+                       | Original: IMG_20260313_230744.png
+
+  project-123.jpg      | landscape  | 1195x896 | 86KB | Edited/cropped image (1195x896)
+                       | Original: IMG_20260313_230747.png
+
+--------------------------------------------------------------------------------
+
+================================================================================
+CONTENT SUMMARY
+================================================================================
+
+  Direct job site photos (HEIC landscape): 44
+  Direct job site photos (HEIC portrait):  7
+  iPhone screenshots:                      70
+  Other edited/misc images:                2
+
+PROCESSING DETAILS:
+  - All images converted to optimized JPG (quality 80)
+  - Full size: max 1200px wide, aspect ratio maintained
+  - Thumbnails: max 600px wide, aspect ratio maintained
+  - EXIF orientation corrected
+  - business card.jpg excluded
+
+WEB PATHS:
+  Full:  /images/gallery/real/project-XX.jpg
+  Thumb: /images/gallery/real/thumbs/project-XX.jpg
+
+================================================================================

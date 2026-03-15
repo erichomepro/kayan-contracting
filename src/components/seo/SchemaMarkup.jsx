@@ -3,12 +3,12 @@ import { company, services, serviceAreas, faqs } from '@/data/company'
 export default function SchemaMarkup() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "RoofingContractor",
+    "@type": "GeneralContractor",
     "name": company.name,
     "url": "https://kayancontracting.ca",
     "telephone": company.phoneRaw,
     "email": company.email,
-    "description": "Expert roofing and exterior services in Parkland County, Alberta. 22 years of experience. BBB A+ rated. Roof replacement, metal roofing, repairs, seamless gutters.",
+    "description": "Expert construction services in Parkland County, Alberta. 22 years of experience. BBB A+ rated. IKO Preferred Contractor. Roofing, metal products, steel siding, seamless eavestroughing, soffits & fascia.",
     "foundingDate": String(company.foundedYear),
     "address": {
       "@type": "PostalAddress",
@@ -27,7 +27,6 @@ export default function SchemaMarkup() {
       "@type": "City",
       "name": area.name,
     })),
-    "priceRange": "$$-$$$",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -44,7 +43,7 @@ export default function SchemaMarkup() {
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Roofing & Exterior Services",
+      "name": "Construction Services",
       "itemListElement": services.map(service => ({
         "@type": "Offer",
         "itemOffered": {

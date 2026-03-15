@@ -52,7 +52,7 @@ export default function FinalCTA() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-white/55 text-lg md:text-xl mb-8"
         >
-          Get your free, no-obligation roof assessment today.
+          Get your free, no-obligation project assessment today.
         </motion.p>
 
         {/* Phone number */}

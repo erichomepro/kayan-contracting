@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Home, Shield, Wrench, Droplets, Layers, ArrowRight } from 'lucide-react'
+import { Home, Shield, Wrench, Droplets, Layers, Building2, ArrowRight } from 'lucide-react'
 import { services } from '@/data/company'
 import SectionHeading from '@/components/ui/SectionHeading'
 
@@ -9,6 +9,7 @@ const iconMap = {
   wrench: Wrench,
   droplets: Droplets,
   layers: Layers,
+  building: Building2,
 }
 
 export default function ServicesOverview() {
@@ -17,7 +18,7 @@ export default function ServicesOverview() {
       <div className="max-w-6xl mx-auto px-6">
         <SectionHeading
           label="WHAT WE DO"
-          heading="Our Roofing Services"
+          heading="Our Construction Services"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -47,12 +48,8 @@ export default function ServicesOverview() {
 
                   <h3 className="text-lg font-display font-bold text-white mb-2 normal-case">{service.title}</h3>
 
-                  <p className="text-white/60 text-sm leading-relaxed mb-3">
+                  <p className="text-white/60 text-sm leading-relaxed mb-4">
                     {service.shortDesc}
-                  </p>
-
-                  <p className="text-[10px] text-accent font-bold uppercase tracking-widest mb-4 font-display">
-                    {service.priceRange}
                   </p>
 
                   <span className="inline-flex items-center gap-1.5 text-accent text-xs font-bold uppercase tracking-widest group-hover:gap-3 transition-all duration-300">

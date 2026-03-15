@@ -7,74 +7,47 @@ import {
   Home,
   Wrench,
   CloudLightning,
-  HelpCircle,
+  Shield,
   Building2,
-  Store,
+  Droplets,
+  Layers,
   Check,
   ChevronLeft,
   ArrowRight,
   Phone,
   Mail,
   User,
+  MapPin,
   Clock,
   ShieldCheck,
   CheckCircle2,
+  MessageSquare,
 } from 'lucide-react'
 import SectionHeading from '@/components/ui/SectionHeading'
 
 // ===== CONSTANTS =====
 
-const TOTAL_STEPS = 7
-
-const SERVICE_TYPES = [
-  { id: 'replacement', label: 'Roof Replacement', icon: Home },
-  { id: 'repair', label: 'Roof Repair', icon: Wrench },
-  { id: 'storm', label: 'Storm Damage', icon: CloudLightning },
-  { id: 'unsure', label: 'Not Sure', icon: HelpCircle },
+const SERVICE_OPTIONS = [
+  { id: 'roof-replacement', label: 'Roof Replacement', icon: Home },
+  { id: 'metal-products', label: 'Metal Roofing & Products', icon: Shield },
+  { id: 'steel-siding', label: 'Steel Siding', icon: Building2 },
+  { id: 'roof-repair', label: 'Roof Repair', icon: Wrench },
+  { id: 'storm-damage', label: 'Storm / Hail Damage', icon: CloudLightning },
+  { id: 'eavestroughing', label: 'Seamless Eavestroughing', icon: Droplets },
+  { id: 'soffits-fascia', label: 'Soffits & Fascia', icon: Layers },
+  { id: 'other', label: 'Other / Not Sure', icon: MessageSquare },
 ]
 
 const PROPERTY_TYPES = [
-  { id: 'single-family', label: 'Single-Family Home', icon: Home },
-  { id: 'townhouse', label: 'Townhouse / Duplex', icon: Building2 },
-  { id: 'commercial', label: 'Commercial', icon: Store },
+  { id: 'residential', label: 'Residential', icon: Home },
+  { id: 'commercial', label: 'Commercial', icon: Building2 },
 ]
 
-const ROOF_SIZES = [
-  { id: 'under-1000', label: 'Under 1,000 sq ft', midpoint: 800 },
-  { id: '1000-1500', label: '1,000 - 1,500 sq ft', midpoint: 1250 },
-  { id: '1500-2000', label: '1,500 - 2,000 sq ft', midpoint: 1750 },
-  { id: '2000-2500', label: '2,000 - 2,500 sq ft', midpoint: 2250 },
-  { id: '2500-plus', label: '2,500+ sq ft', midpoint: 3000 },
-]
-
-const STORIES = [
-  { id: '1', label: '1 Story', multiplier: 1.0 },
-  { id: '2', label: '2 Stories', multiplier: 1.15 },
-  { id: '3+', label: '3+ Stories', multiplier: 1.3 },
-]
-
-const MATERIALS = [
-  {
-    id: 'asphalt',
-    label: 'Asphalt Shingles ($)',
-    description: 'Most popular, 25-30 year lifespan',
-    rateMin: 4.5,
-    rateMax: 6.5,
-  },
-  {
-    id: 'metal',
-    label: 'Metal Roofing ($$$)',
-    description: 'Premium, 40-70 year lifespan',
-    rateMin: 8,
-    rateMax: 12,
-  },
-  {
-    id: 'unsure',
-    label: 'Not Sure Yet',
-    description: "We'll help you decide",
-    rateMin: 4.5,
-    rateMax: 6.5,
-  },
+const TIMELINE_OPTIONS = [
+  { id: 'asap', label: 'As Soon As Possible' },
+  { id: '1-month', label: 'Within 1 Month' },
+  { id: '1-3-months', label: '1-3 Months' },
+  { id: 'just-exploring', label: 'Just Exploring Options' },
 ]
 
 const CALL_TIMES = [
@@ -90,52 +63,15 @@ const leadSchema = z.object({
   phone: z
     .string()
     .min(1, 'Phone number is required')
-    .regex(
-      /^[\d\s()+-]{7,20}$/,
-      'Please enter a valid phone number'
-    ),
+    .regex(/^[\d\s()+-]{7,20}$/, 'Please enter a valid phone number'),
   email: z
     .string()
     .transform((val) => (val === '' ? undefined : val))
     .pipe(z.string().email('Please enter a valid email').optional()),
+  address: z.string().optional(),
   callTime: z.enum(['morning', 'afternoon', 'evening']).optional(),
+  message: z.string().optional(),
 })
-
-// ===== ESTIMATE CALCULATOR =====
-
-function calculateEstimate({ serviceType, roofSize, stories, material }) {
-  if (serviceType === 'repair') {
-    return { low: 300, high: 3000, isRepair: true, isStorm: false }
-  }
-
-  if (serviceType === 'storm') {
-    return { low: 300, high: 3000, isRepair: false, isStorm: true }
-  }
-
-  const sizeData = ROOF_SIZES.find((s) => s.id === roofSize)
-  const storyData = STORIES.find((s) => s.id === stories)
-  const materialData = MATERIALS.find((m) => m.id === material)
-
-  if (!sizeData || !storyData || !materialData) {
-    return { low: 0, high: 0, isRepair: false, isStorm: false }
-  }
-
-  const sqft = sizeData.midpoint
-  const multiplier = storyData.multiplier
-  const low = Math.round(sqft * materialData.rateMin * multiplier)
-  const high = Math.round(sqft * materialData.rateMax * multiplier)
-
-  return { low, high, isRepair: false, isStorm: false }
-}
-
-function formatCurrency(amount) {
-  return new Intl.NumberFormat('en-CA', {
-    style: 'currency',
-    currency: 'CAD',
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  }).format(amount)
-}
 
 // ===== ANIMATION VARIANTS =====
 
@@ -194,15 +130,20 @@ function BackButton({ onClick }) {
   )
 }
 
-function StepTitle({ children }) {
+function StepTitle({ children, subtitle }) {
   return (
-    <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-6 text-center normal-case">
-      {children}
-    </h3>
+    <div className="text-center mb-6">
+      <h3 className="text-xl md:text-2xl font-display font-bold text-white normal-case">
+        {children}
+      </h3>
+      {subtitle && (
+        <p className="text-sm text-white/40 mt-2">{subtitle}</p>
+      )}
+    </div>
   )
 }
 
-function OptionButton({ icon: Icon, label, description, selected, onClick }) {
+function OptionButton({ icon: Icon, label, selected, onClick }) {
   return (
     <motion.button
       type="button"
@@ -230,9 +171,6 @@ function OptionButton({ icon: Icon, label, description, selected, onClick }) {
       )}
       <span className="flex-1">
         <span className="block font-display font-semibold text-base normal-case">{label}</span>
-        {description && (
-          <span className="block text-sm text-white/40 mt-0.5">{description}</span>
-        )}
       </span>
       {selected && (
         <motion.span
@@ -252,152 +190,73 @@ function OptionButton({ icon: Icon, label, description, selected, onClick }) {
 function StepServiceType({ value, onSelect }) {
   return (
     <div>
-      <StepTitle>What do you need?</StepTitle>
-      <div className="grid gap-3">
-        {SERVICE_TYPES.map((option) => (
+      <StepTitle subtitle="Select all that apply">
+        What services are you interested in?
+      </StepTitle>
+      <div className="grid gap-3 sm:grid-cols-2">
+        {SERVICE_OPTIONS.map((option) => (
           <OptionButton
             key={option.id}
             icon={option.icon}
             label={option.label}
-            selected={value === option.id}
+            selected={value.includes(option.id)}
             onClick={() => onSelect(option.id)}
           />
         ))}
       </div>
-    </div>
-  )
-}
-
-function StepPropertyType({ value, onSelect }) {
-  return (
-    <div>
-      <StepTitle>What type of property?</StepTitle>
-      <div className="grid gap-3">
-        {PROPERTY_TYPES.map((option) => (
-          <OptionButton
-            key={option.id}
-            icon={option.icon}
-            label={option.label}
-            selected={value === option.id}
-            onClick={() => onSelect(option.id)}
-          />
-        ))}
-      </div>
-    </div>
-  )
-}
-
-function StepRoofSize({ value, onSelect }) {
-  return (
-    <div>
-      <StepTitle>Approximate roof size?</StepTitle>
-      <div className="grid gap-3">
-        {ROOF_SIZES.map((option) => (
-          <OptionButton
-            key={option.id}
-            label={option.label}
-            selected={value === option.id}
-            onClick={() => onSelect(option.id)}
-          />
-        ))}
-      </div>
-    </div>
-  )
-}
-
-function StepStories({ value, onSelect }) {
-  return (
-    <div>
-      <StepTitle>Number of stories?</StepTitle>
-      <div className="grid gap-3">
-        {STORIES.map((option) => (
-          <OptionButton
-            key={option.id}
-            label={option.label}
-            selected={value === option.id}
-            onClick={() => onSelect(option.id)}
-          />
-        ))}
-      </div>
-    </div>
-  )
-}
-
-function StepMaterial({ value, onSelect }) {
-  return (
-    <div>
-      <StepTitle>Material preference?</StepTitle>
-      <div className="grid gap-3">
-        {MATERIALS.map((option) => (
-          <OptionButton
-            key={option.id}
-            label={option.label}
-            description={option.description}
-            selected={value === option.id}
-            onClick={() => onSelect(option.id)}
-          />
-        ))}
-      </div>
-    </div>
-  )
-}
-
-function StepResults({ estimate, onContinue }) {
-  return (
-    <div className="text-center">
-      <StepTitle>Your Estimated Range</StepTitle>
-
-      {estimate.isStorm && (
+      {value.length > 0 && (
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="mb-6 p-4 rounded-xl glass-card border-accent/30"
+          className="mt-6 text-center"
         >
-          <p className="text-accent font-display font-semibold normal-case">
-            Insurance may cover most or all costs
-          </p>
-          <p className="text-sm text-white/40 mt-1">
-            We work directly with your insurance provider to maximize your claim.
+          <p className="text-sm text-white/40">
+            {value.length} service{value.length > 1 ? 's' : ''} selected
           </p>
         </motion.div>
       )}
-
-      <motion.div
-        initial={{ scale: 0.9, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 0.15, type: 'spring', stiffness: 200, damping: 20 }}
-        className="mb-8 py-8 px-6 rounded-xl bg-white/[0.04]"
-      >
-        <p className="text-[10px] text-white/40 uppercase tracking-widest font-bold mb-2 font-display">
-          Estimated Range
-        </p>
-        <p className="text-3xl md:text-4xl font-display font-bold text-accent">
-          {formatCurrency(estimate.low)} &ndash; {formatCurrency(estimate.high)}
-        </p>
-      </motion.div>
-
-      <p className="text-sm text-white/50 leading-relaxed mb-8 max-w-md mx-auto">
-        This estimate is based on average Parkland County pricing. Your actual cost
-        depends on roof complexity, condition, and material grade. A free on-site
-        inspection provides your exact quote.
-      </p>
-
-      <motion.button
-        type="button"
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-        onClick={onContinue}
-        className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 bg-accent text-white font-display font-bold text-xs uppercase tracking-widest rounded-lg copper-glow hover:bg-accent-hover transition-colors cursor-pointer"
-      >
-        Get Your Exact Quote
-        <ArrowRight className="w-4 h-4" />
-      </motion.button>
     </div>
   )
 }
 
-function StepLeadCapture({ onSubmitSuccess }) {
+function StepPropertyAndTimeline({ propertyType, onPropertySelect, timeline, onTimelineSelect }) {
+  return (
+    <div className="space-y-8">
+      <div>
+        <StepTitle>What type of property?</StepTitle>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {PROPERTY_TYPES.map((option) => (
+            <OptionButton
+              key={option.id}
+              icon={option.icon}
+              label={option.label}
+              selected={propertyType === option.id}
+              onClick={() => onPropertySelect(option.id)}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h4 className="text-lg font-display font-bold text-white mb-4 text-center normal-case">
+          When are you looking to start?
+        </h4>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {TIMELINE_OPTIONS.map((option) => (
+            <OptionButton
+              key={option.id}
+              label={option.label}
+              selected={timeline === option.id}
+              onClick={() => onTimelineSelect(option.id)}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function StepContactInfo({ onSubmitSuccess, services: selectedServices, propertyType, timeline }) {
   const {
     register,
     handleSubmit,
@@ -408,12 +267,64 @@ function StepLeadCapture({ onSubmitSuccess }) {
       name: '',
       phone: '',
       email: '',
+      address: '',
       callTime: undefined,
+      message: '',
     },
   })
 
   const onSubmit = async (data) => {
-    await new Promise((resolve) => setTimeout(resolve, 1200))
+    const payload = {
+      business_name: data.name,
+      contact_name: data.name,
+      email: data.email || null,
+      phone: data.phone,
+      source: 'Website Quote Form',
+      inquiry_type: 'Quote Request',
+      form_data: {
+        services_requested: selectedServices,
+        property_type: propertyType,
+        timeline: timeline,
+        address: data.address || null,
+        preferred_call_time: data.callTime || null,
+        message: data.message || null,
+      },
+      services_interested: selectedServices,
+      pipeline_stage: 'New',
+      lead_score: timeline === 'asap' ? 'Hot' : timeline === '1-month' ? 'Warm' : 'Cold',
+    }
+
+    try {
+      const SUPABASE_URL = 'https://ahzfmgfjuzlotvpibjtl.supabase.co'
+      const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFoemZtZ2ZqdXpsb3R2cGlianRsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE4OTg4NDcsImV4cCI6MjA1NzQ3NDg0N30.kPMbJMoJfIcMKcVs8j6q1GfxAWJqBIjYXP5sBPBu0bM'
+
+      const orgRes = await fetch(`${SUPABASE_URL}/rest/v1/organizations?slug=eq.kay&select=id`, {
+        headers: {
+          'apikey': SUPABASE_ANON_KEY,
+          'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+        },
+      })
+      const orgs = await orgRes.json()
+      const orgId = orgs?.[0]?.id
+
+      if (orgId) {
+        payload.org_id = orgId
+
+        await fetch(`${SUPABASE_URL}/rest/v1/leads`, {
+          method: 'POST',
+          headers: {
+            'apikey': SUPABASE_ANON_KEY,
+            'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+            'Content-Type': 'application/json',
+            'Prefer': 'return=minimal',
+          },
+          body: JSON.stringify(payload),
+        })
+      }
+    } catch (err) {
+      console.error('Lead submission error:', err)
+    }
+
     onSubmitSuccess(data)
   }
 
@@ -425,13 +336,14 @@ function StepLeadCapture({ onSubmitSuccess }) {
 
   return (
     <div>
-      <StepTitle>Where should we send your detailed estimate?</StepTitle>
+      <StepTitle subtitle="We'll get back to you within one business day.">
+        Almost done! How can we reach you?
+      </StepTitle>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5 max-w-md mx-auto">
-        {/* Name */}
         <div>
           <label htmlFor="calc-name" className="block text-xs font-bold uppercase tracking-widest text-white/40 mb-1.5">
-            Name
+            Name <span className="text-red-400">*</span>
           </label>
           <div className="relative">
             <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/20 pointer-events-none" />
@@ -448,7 +360,6 @@ function StepLeadCapture({ onSubmitSuccess }) {
           )}
         </div>
 
-        {/* Phone */}
         <div>
           <label htmlFor="calc-phone" className="block text-xs font-bold uppercase tracking-widest text-white/40 mb-1.5">
             Phone <span className="text-red-400">*</span>
@@ -468,7 +379,6 @@ function StepLeadCapture({ onSubmitSuccess }) {
           )}
         </div>
 
-        {/* Email */}
         <div>
           <label htmlFor="calc-email" className="block text-xs font-bold uppercase tracking-widest text-white/40 mb-1.5">
             Email
@@ -488,7 +398,22 @@ function StepLeadCapture({ onSubmitSuccess }) {
           )}
         </div>
 
-        {/* Best time to call */}
+        <div>
+          <label htmlFor="calc-address" className="block text-xs font-bold uppercase tracking-widest text-white/40 mb-1.5">
+            Property Address
+          </label>
+          <div className="relative">
+            <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/20 pointer-events-none" />
+            <input
+              id="calc-address"
+              type="text"
+              placeholder="123 Main St, Stony Plain"
+              {...register('address')}
+              className={inputClass(false)}
+            />
+          </div>
+        </div>
+
         <fieldset>
           <legend className="block text-xs font-bold uppercase tracking-widest text-white/40 mb-2">
             <Clock className="inline-block w-3.5 h-3.5 mr-1.5 -mt-0.5 text-white/20" />
@@ -512,7 +437,19 @@ function StepLeadCapture({ onSubmitSuccess }) {
           </div>
         </fieldset>
 
-        {/* Submit */}
+        <div>
+          <label htmlFor="calc-message" className="block text-xs font-bold uppercase tracking-widest text-white/40 mb-1.5">
+            Anything else we should know?
+          </label>
+          <textarea
+            id="calc-message"
+            rows={3}
+            placeholder="Tell us about your project..."
+            {...register('message')}
+            className="w-full px-4 py-3 rounded-lg bg-white/[0.04] text-white placeholder:text-white/20 border border-white/[0.06] focus:outline-none focus:border-accent transition-colors resize-none"
+          />
+        </div>
+
         <motion.button
           type="submit"
           disabled={isSubmitting}
@@ -530,7 +467,10 @@ function StepLeadCapture({ onSubmitSuccess }) {
               Sending...
             </>
           ) : (
-            'Send My Estimate'
+            <>
+              Send My Quote Request
+              <ArrowRight className="w-4 h-4" />
+            </>
           )}
         </motion.button>
 
@@ -561,12 +501,19 @@ function SuccessState() {
       </motion.div>
 
       <h3 className="text-2xl font-display font-bold text-white mb-3 normal-case">
-        Estimate Sent!
+        Quote Request Sent!
       </h3>
-      <p className="text-white/50 max-w-sm mx-auto leading-relaxed">
-        We&apos;ll be in touch within one business day with your detailed roof
-        estimate. Keep an eye on your phone for a call from our team.
+      <p className="text-white/50 max-w-sm mx-auto leading-relaxed mb-6">
+        Thanks for reaching out! Bryan will be in touch within one business day
+        to discuss your project and schedule a free on-site inspection.
       </p>
+      <a
+        href="tel:+17809840221"
+        className="inline-flex items-center gap-2 text-accent font-bold text-sm hover:underline"
+      >
+        <Phone className="w-4 h-4" />
+        Need it sooner? Call (780) 984-0221
+      </a>
     </motion.div>
   )
 }
@@ -578,11 +525,9 @@ export default function RoofCalculator() {
   const [direction, setDirection] = useState(1)
   const [submitted, setSubmitted] = useState(false)
 
-  const [serviceType, setServiceType] = useState(null)
+  const [selectedServices, setSelectedServices] = useState([])
   const [propertyType, setPropertyType] = useState(null)
-  const [roofSize, setRoofSize] = useState(null)
-  const [stories, setStories] = useState(null)
-  const [material, setMaterial] = useState(null)
+  const [timeline, setTimeline] = useState(null)
 
   const goForward = useCallback(() => {
     setDirection(1)
@@ -594,24 +539,20 @@ export default function RoofCalculator() {
     setStep((s) => s - 1)
   }, [])
 
-  const handleSelect = useCallback(
-    (setter) => (value) => {
-      setter(value)
-      setTimeout(() => {
-        setDirection(1)
-        setStep((s) => s + 1)
-      }, 250)
-    },
-    []
-  )
-
-  const estimate = calculateEstimate({ serviceType, roofSize, stories, material })
+  const handleServiceToggle = useCallback((serviceId) => {
+    setSelectedServices((prev) =>
+      prev.includes(serviceId)
+        ? prev.filter((id) => id !== serviceId)
+        : [...prev, serviceId]
+    )
+  }, [])
 
   const handleLeadSubmit = useCallback(() => {
     setSubmitted(true)
   }, [])
 
-  const showBack = step >= 2 && step <= 5
+  const canAdvanceStep1 = selectedServices.length > 0
+  const canAdvanceStep2 = propertyType && timeline
 
   const renderStep = () => {
     if (submitted) return <SuccessState />
@@ -620,42 +561,28 @@ export default function RoofCalculator() {
       case 1:
         return (
           <StepServiceType
-            value={serviceType}
-            onSelect={handleSelect(setServiceType)}
+            value={selectedServices}
+            onSelect={handleServiceToggle}
           />
         )
       case 2:
         return (
-          <StepPropertyType
-            value={propertyType}
-            onSelect={handleSelect(setPropertyType)}
+          <StepPropertyAndTimeline
+            propertyType={propertyType}
+            onPropertySelect={setPropertyType}
+            timeline={timeline}
+            onTimelineSelect={setTimeline}
           />
         )
       case 3:
         return (
-          <StepRoofSize
-            value={roofSize}
-            onSelect={handleSelect(setRoofSize)}
+          <StepContactInfo
+            onSubmitSuccess={handleLeadSubmit}
+            services={selectedServices}
+            propertyType={propertyType}
+            timeline={timeline}
           />
         )
-      case 4:
-        return (
-          <StepStories
-            value={stories}
-            onSelect={handleSelect(setStories)}
-          />
-        )
-      case 5:
-        return (
-          <StepMaterial
-            value={material}
-            onSelect={handleSelect(setMaterial)}
-          />
-        )
-      case 6:
-        return <StepResults estimate={estimate} onContinue={goForward} />
-      case 7:
-        return <StepLeadCapture onSubmitSuccess={handleLeadSubmit} />
       default:
         return null
     }
@@ -665,14 +592,14 @@ export default function RoofCalculator() {
     <section id="quote" className="py-(--spacing-section) bg-surface">
       <div className="mx-auto max-w-2xl px-4 sm:px-6">
         <SectionHeading
-          label="GET YOUR ESTIMATE"
-          heading="What Will Your New Roof Cost?"
+          label="GET A FREE QUOTE"
+          heading="Request Your Free Consultation"
         />
 
         <div className="glass-card rounded-xl p-6 sm:p-8 md:p-10 copper-glow">
-          {!submitted && <ProgressBar currentStep={step} totalSteps={TOTAL_STEPS} />}
+          {!submitted && <ProgressBar currentStep={step} totalSteps={3} />}
 
-          {showBack && <BackButton onClick={goBack} />}
+          {step >= 2 && !submitted && <BackButton onClick={goBack} />}
 
           <AnimatePresence mode="wait" custom={direction}>
             <motion.div
@@ -687,6 +614,26 @@ export default function RoofCalculator() {
               {renderStep()}
             </motion.div>
           </AnimatePresence>
+
+          {!submitted && step <= 2 && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="mt-6"
+            >
+              <motion.button
+                type="button"
+                whileHover={{ scale: (step === 1 ? canAdvanceStep1 : canAdvanceStep2) ? 1.02 : 1 }}
+                whileTap={{ scale: (step === 1 ? canAdvanceStep1 : canAdvanceStep2) ? 0.98 : 1 }}
+                onClick={goForward}
+                disabled={step === 1 ? !canAdvanceStep1 : !canAdvanceStep2}
+                className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-accent text-white font-display font-bold text-xs uppercase tracking-widest rounded-lg copper-glow hover:bg-accent-hover transition-colors disabled:opacity-30 cursor-pointer disabled:cursor-not-allowed"
+              >
+                Continue
+                <ArrowRight className="w-4 h-4" />
+              </motion.button>
+            </motion.div>
+          )}
         </div>
       </div>
     </section>

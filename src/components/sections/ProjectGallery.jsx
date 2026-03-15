@@ -1,119 +1,155 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, ArrowRight, ArrowLeft, MapPin, Calendar } from 'lucide-react'
+import { X, ArrowRight, ArrowLeft, MapPin } from 'lucide-react'
 import * as Dialog from '@radix-ui/react-dialog'
 import SectionHeading from '@/components/ui/SectionHeading'
 
-const categories = ['All', 'Residential', 'Commercial', 'Metal Roofing', 'Repairs & Extras']
+const categories = ['All', 'Residential', 'Commercial', 'Metal Products', 'Exteriors & More']
 
 const projects = [
   {
     id: 1,
-    src: '/images/gallery/home-complete-front.png',
-    title: 'Complete Roof & Exterior',
-    category: 'Residential',
-    location: 'Parkland County, AB',
-    year: '2025',
-    desc: 'Full roof replacement with IKO Dynasty architectural shingles, stone accents, and complete soffit & fascia — a true showpiece.',
-  },
-  {
-    id: 2,
-    src: '/images/gallery/metal-roof-acreage.png',
-    title: 'Standing Seam Metal Roof',
-    category: 'Metal Roofing',
-    location: 'Parkland County, AB',
-    year: '2025',
-    desc: 'Standing seam metal roof on acreage property. Built to handle Alberta winters for 50+ years with zero maintenance.',
-  },
-  {
-    id: 3,
-    src: '/images/gallery/pyramid-roof-complex.png',
+    src: '/images/gallery/real/project-98.jpg',
     title: 'Complex Pyramid Roofline',
     category: 'Residential',
     location: 'Lac Ste. Anne, AB',
-    year: '2025',
-    desc: 'Challenging steep pyramid roof requiring precision shingling and custom flashing. This is where experience matters.',
+    desc: 'Steep pyramid roof with precision shingling and a custom weather vane. This is where 22 years of experience matters — every cut, every angle, done right.',
+  },
+  {
+    id: 2,
+    src: '/images/gallery/real/project-65.jpg',
+    title: 'Completed Roof — Lakeside',
+    category: 'Residential',
+    location: 'Parkland County, AB',
+    desc: 'Full roof replacement with architectural shingles, proper venting, and clean ridge lines. Beautiful lakeside neighborhood.',
+  },
+  {
+    id: 3,
+    src: '/images/gallery/real/project-104.jpg',
+    title: 'Standing Seam Metal Roof',
+    category: 'Metal Products',
+    location: 'Parkland County, AB',
+    desc: 'Dark standing seam metal roof on an acreage property. Built to handle Alberta winters for 50+ years with zero maintenance.',
   },
   {
     id: 4,
-    src: '/images/gallery/mcdonalds-color.png',
-    title: "McDonald's — Commercial Build",
+    src: '/images/gallery/real/project-102.jpg',
+    title: 'Church Roof Replacement',
     category: 'Commercial',
     location: 'Stony Plain, AB',
-    year: '2024',
-    desc: 'Full commercial roofing and exterior cladding for a new McDonald\'s location. Architectural render brought to life.',
+    desc: 'Complete roof replacement on a heritage stone church. Precision craftsmanship on a high-profile community building.',
   },
   {
     id: 5,
-    src: '/images/gallery/skylight-shingle.png',
+    src: '/images/gallery/real/project-85.jpg',
     title: 'Skylight Integration',
     category: 'Residential',
     location: 'Spruce Grove, AB',
-    year: '2025',
-    desc: 'Precision skylight flashing on a new shingle roof. Proper integration prevents the #1 source of roof leaks.',
+    desc: 'Skylight installed on new architectural shingles. Proper curb-mount flashing ensures a watertight seal for decades.',
   },
   {
     id: 6,
-    src: '/images/gallery/crew-skylight-install.png',
+    src: '/images/gallery/real/project-66.jpg',
     title: 'Skylight Frame Install',
-    category: 'Repairs & Extras',
+    category: 'Residential',
     location: 'Parkland County, AB',
-    year: '2025',
     desc: 'Our crew framing a skylight opening on fresh roof deck. Every cut is measured twice and sealed with precision.',
   },
   {
     id: 7,
-    src: '/images/gallery/soffit-after.png',
-    title: 'Seamless Soffit & Fascia',
-    category: 'Repairs & Extras',
-    location: 'Stony Plain, AB',
-    year: '2025',
-    desc: 'Fresh white aluminum soffits with venting installed. Clean lines, proper ventilation, and zero maintenance.',
+    src: '/images/gallery/real/project-112.jpg',
+    title: 'Metal Roof — Acreage',
+    category: 'Metal Products',
+    location: 'Parkland County, AB',
+    desc: 'Metal roofing panels installed on an acreage property surrounded by Alberta birch forest. Built for Canadian weather.',
   },
   {
     id: 8,
-    src: '/images/gallery/shingle-closeup.png',
-    title: 'IKO Dynasty Shingles',
-    category: 'Residential',
-    location: 'Spruce Grove, AB',
-    year: '2024',
-    desc: 'Close-up of IKO Dynasty architectural shingles — Canadian-made for Canadian weather. Up to 50-year warranty.',
+    src: '/images/gallery/real/project-58.jpg',
+    title: 'Soffit & Fascia Install',
+    category: 'Exteriors & More',
+    location: 'Stony Plain, AB',
+    desc: 'Fresh aluminum soffits with venting, new fascia and downspout. Clean lines, proper ventilation, zero maintenance.',
   },
   {
     id: 9,
-    src: '/images/gallery/roof-aerial-view.png',
-    title: 'Aerial Roof Inspection',
+    src: '/images/gallery/real/project-94.jpg',
+    title: 'Completed Residential Roof',
     category: 'Residential',
-    location: 'Stony Plain, AB',
-    year: '2025',
-    desc: 'Completed residential roof from above. Every ridge, valley, and flashing detail visible — quality you can verify.',
+    location: 'Spruce Grove, AB',
+    desc: 'Completed roof from above — every ridge, valley, and flashing detail visible. Quality you can see from the ground.',
   },
   {
     id: 10,
-    src: '/images/gallery/commercial-soffit.png',
-    title: "McDonald's — Soffit Detail",
+    src: '/images/gallery/real/project-110.jpg',
+    title: "McDonald's — Commercial Build",
     category: 'Commercial',
     location: 'Stony Plain, AB',
-    year: '2024',
-    desc: 'Commercial soffit and exterior paneling detail on the McDonald\'s project. Precision meets commercial-grade durability.',
+    desc: "Full commercial roofing and exterior cladding for a new McDonald's location. From architectural renders to reality.",
   },
   {
     id: 11,
-    src: '/images/gallery/ice-shield-deck.png',
-    title: 'Ice & Water Shield Install',
+    src: '/images/gallery/real/project-68.jpg',
+    title: 'Roof Deck & Insulation',
     category: 'Residential',
     location: 'Parkland County, AB',
-    year: '2025',
-    desc: 'Ice and water shield membrane on fresh decking before shingles. This hidden layer is your roof\'s first line of defense.',
+    desc: 'Tearing off old decking and insulation on an acreage property. Every job starts with a solid foundation.',
   },
   {
     id: 12,
-    src: '/images/gallery/skylight-metal-roof.png',
-    title: 'Metal Roof Skylight',
-    category: 'Metal Roofing',
+    src: '/images/gallery/real/project-106.jpg',
+    title: 'Standing Seam Close-Up',
+    category: 'Metal Products',
     location: 'Spruce Grove, AB',
-    year: '2025',
-    desc: 'Skylight installed on a standing seam metal roof. Proper curb-mount flashing ensures a watertight seal for decades.',
+    desc: 'Standing seam metal roof detail with vinyl siding below. Premium metal products that hold up to Canada\'s harshest weather.',
+  },
+  {
+    id: 13,
+    src: '/images/gallery/real/project-91.jpg',
+    title: 'Metal Soffit & Timber Frame',
+    category: 'Exteriors & More',
+    location: 'Parkland County, AB',
+    desc: 'Custom metal soffit ceiling with recessed lighting on a timber frame structure. Precision meets craftsmanship.',
+  },
+  {
+    id: 14,
+    src: '/images/gallery/real/project-100.jpg',
+    title: 'Complex Valley Detail',
+    category: 'Residential',
+    location: 'Spruce Grove, AB',
+    desc: 'Complex roof valley and intersection with ladder access. Precision flashing work where experience matters most.',
+  },
+  {
+    id: 15,
+    src: '/images/gallery/real/project-73.jpg',
+    title: 'Custom Barrel Sauna Build',
+    category: 'Exteriors & More',
+    location: 'Parkland County, AB',
+    desc: 'Custom barrel sauna on a cedar deck. Quality craftsmanship extends beyond roofing — we build it all.',
+  },
+  {
+    id: 16,
+    src: '/images/gallery/real/project-87.jpg',
+    title: 'Outdoor Kitchen & Steel Panel',
+    category: 'Metal Products',
+    location: 'Parkland County, AB',
+    desc: 'Outdoor cooking area with dark steel paneling, timber beams, and custom finishing. Steel siding at its best.',
+  },
+  {
+    id: 17,
+    src: '/images/gallery/real/project-62.jpg',
+    title: 'Commercial Exterior Cladding',
+    category: 'Commercial',
+    location: 'Stony Plain, AB',
+    desc: 'Commercial building exterior with new cladding and glass facades. Large-scale projects handled with precision.',
+  },
+  {
+    id: 18,
+    src: '/images/gallery/real/project-83.jpg',
+    title: 'Roof Vent Installation',
+    category: 'Residential',
+    location: 'Spruce Grove, AB',
+    desc: 'Solar-powered roof vents installed on new architectural shingles. Proper ventilation extends your roof\'s lifespan.',
   },
 ]
 
@@ -144,7 +180,7 @@ export default function ProjectGallery() {
         <SectionHeading
           label="OUR WORK"
           heading="Project Gallery"
-          subtitle="22 years of quality craftsmanship across Parkland County — residential, commercial, and everything in between."
+          subtitle="22 years of quality craftsmanship across Parkland County — real photos from real jobs, no stock images."
         />
 
         {/* Category filter */}
@@ -205,9 +241,6 @@ export default function ProjectGallery() {
                     <span className="flex items-center gap-1">
                       <MapPin className="w-3 h-3" /> {project.location}
                     </span>
-                    <span className="flex items-center gap-1">
-                      <Calendar className="w-3 h-3" /> {project.year}
-                    </span>
                   </div>
                 </div>
 
@@ -264,9 +297,6 @@ export default function ProjectGallery() {
                     <div className="flex items-center justify-center gap-4 mt-2 text-white/40 text-xs">
                       <span className="flex items-center gap-1">
                         <MapPin className="w-3 h-3" /> {filtered[lightboxIndex].location}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Calendar className="w-3 h-3" /> {filtered[lightboxIndex].year}
                       </span>
                     </div>
                   </div>

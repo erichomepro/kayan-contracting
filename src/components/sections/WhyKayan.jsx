@@ -7,7 +7,7 @@ const differentiators = [
     icon: Clock,
     title: '22 Years of Experience',
     description:
-      "Two decades of Alberta roofs. We've seen every problem and solved it.",
+      "Two decades of Alberta construction. We've seen every problem and solved it.",
   },
   {
     icon: ShieldCheck,
@@ -23,9 +23,9 @@ const differentiators = [
   },
   {
     icon: BadgeCheck,
-    title: 'IKO Certified',
+    title: 'IKO Preferred Contractor',
     description:
-      'Factory-trained installers using Canadian-made products built for our climate.',
+      'We use the highest quality products — not just IKO. Built for Canada\'s harshest weather.',
   },
   {
     icon: MapPin,
@@ -87,7 +87,7 @@ export default function WhyKayan() {
       <div className="max-w-6xl mx-auto px-6">
         <SectionHeading
           label="WHY CHOOSE US"
-          heading="Why 500+ Homeowners Trust Kayan"
+          heading="Why 1,500+ Homeowners Trust Kayan"
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
