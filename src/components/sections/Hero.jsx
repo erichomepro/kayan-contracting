@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section id="hero" className="relative overflow-hidden">
       {/* ── Video area ── */}
-      <div className="relative h-screen min-h-[500px]">
+      <div className="relative h-auto sm:h-screen sm:min-h-[500px] bg-black">
         <video
           autoPlay
           muted
@@ -14,7 +14,7 @@ export default function Hero() {
           playsInline
           poster="/images/hero-poster.jpg"
           preload="auto"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="w-full h-full object-contain sm:absolute sm:inset-0 sm:object-cover"
         >
           <source src="/images/hero-video.mp4" type="video/mp4" />
         </video>
