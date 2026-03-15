@@ -4,6 +4,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import MobileBottomBar from '@/components/layout/MobileBottomBar'
 import Home from '@/pages/Home'
+import ServicePage from '@/pages/ServicePage'
 import SchemaMarkup from '@/components/seo/SchemaMarkup'
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <main id="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/services/:serviceId" element={<ServicePage />} />
         </Routes>
       </main>
       <Footer />

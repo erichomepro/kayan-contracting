@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { Home, Shield, Wrench, Droplets, Layers, Building2, ArrowRight } from 'lucide-react'
 import { services } from '@/data/company'
 import SectionHeading from '@/components/ui/SectionHeading'
@@ -11,6 +12,8 @@ const iconMap = {
   layers: Layers,
   building: Building2,
 }
+
+const MotionLink = motion.create(Link)
 
 export default function ServicesOverview() {
   return (
@@ -26,9 +29,9 @@ export default function ServicesOverview() {
             const Icon = iconMap[service.icon] || Home
             const num = String(i + 1).padStart(2, '0')
             return (
-              <motion.a
+              <MotionLink
                 key={service.id}
-                href={`#${service.id}`}
+                to={`/services/${service.id}`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
@@ -56,7 +59,7 @@ export default function ServicesOverview() {
                     Learn More <ArrowRight className="w-3.5 h-3.5" />
                   </span>
                 </div>
-              </motion.a>
+              </MotionLink>
             )
           })}
         </div>
