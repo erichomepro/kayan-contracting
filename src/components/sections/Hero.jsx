@@ -6,13 +6,13 @@ export default function Hero() {
   return (
     <section id="hero" className="relative overflow-hidden">
       {/* ── Video area ── */}
-      <div className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] min-h-[300px]">
+      <div className="relative h-screen min-h-[500px]">
         <video
           autoPlay
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full sm:w-[110%] h-full object-contain sm:-left-[5%] top-4 sm:top-8"
+          className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/images/hero-video.mp4" type="video/mp4" />
         </video>
