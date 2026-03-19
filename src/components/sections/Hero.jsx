@@ -68,7 +68,7 @@ export default function Hero() {
                 <span className="inline italic text-accent font-serif lowercase">
                   Signature
                 </span>
-                <span className="block text-white font-bold">Construction Standard.</span>
+                <span className="block text-white font-bold">Roofing Standard.</span>
               </motion.h1>
             </div>
 

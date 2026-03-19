@@ -53,6 +53,21 @@ export const services = [
     ],
   },
   {
+    id: "shingling",
+    title: "Shingling",
+    shortDesc: "Expert shingle installation with premium materials and precise craftsmanship.",
+    description: "Whether it's a new build or a re-shingle, our crews deliver clean, tight shingle work that stands up to Alberta's toughest conditions. We install IKO Cambridge and Dynasty architectural shingles with proper flashing, pipe boot sealing, and ridge cap detailing — the things that separate a good roof from a great one.",
+    icon: "roof",
+    features: [
+      "IKO Cambridge & Dynasty shingles",
+      "Proper pipe boot and vent flashing",
+      "Ridge cap and hip detailing",
+      "Ice & water shield at eaves and valleys",
+      "New construction and re-shingling",
+      "10-year workmanship warranty",
+    ],
+  },
+  {
     id: "metal-products",
     title: "Residential & Commercial Metal Products",
     shortDesc: "Durable metal roofing, siding, and cladding that performs in every Alberta season.",
@@ -180,7 +195,7 @@ export const processSteps = [
 export const faqs = [
   {
     q: "What construction services do you offer?",
-    a: "We provide a full range of construction services including roof replacement, residential and commercial metal products, steel siding, seamless eavestroughing (5\" and 6\"), soffits & fascia, and roof repairs. We handle both residential and commercial projects across Parkland County.",
+    a: "We provide a full range of construction services including shingling, roof replacement, residential and commercial metal products, steel siding, seamless eavestroughing (5\" and 6\"), soffits & fascia, and roof repairs. We handle both residential and commercial projects across Parkland County.",
   },
   {
     q: "How long does a roof replacement take?",

@@ -151,6 +151,22 @@ const projects = [
     location: 'Spruce Grove, AB',
     desc: 'Solar-powered roof vents installed on new architectural shingles. Proper ventilation extends your roof\'s lifespan.',
   },
+  {
+    id: 19,
+    src: '/images/gallery/real/project-125.jpg',
+    title: 'Shingle Roof — Pipe Boot Detail',
+    category: 'Residential',
+    location: 'Stony Plain, AB',
+    desc: 'Clean architectural shingle installation with precision pipe boot flashing. The details that matter — proper sealing around every penetration.',
+  },
+  {
+    id: 20,
+    src: '/images/gallery/real/project-126.jpg',
+    title: 'Commercial Storefront Build',
+    category: 'Commercial',
+    location: 'Stony Plain, AB',
+    desc: 'Commercial storefront exterior with metal cladding, glass facades, and precision finishing. Large-scale projects handled with the same attention to detail.',
+  },
 ]
 
 export default function ProjectGallery() {

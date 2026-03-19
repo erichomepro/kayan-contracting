@@ -91,7 +91,17 @@ export default function ServicePage() {
 
       {/* Hero */}
       <section className="relative bg-surface-dark pt-8 pb-16 sm:pt-12 sm:pb-20 lg:pb-28 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        {/* Logo watermark background */}
+        <div
+          className="absolute inset-0 pointer-events-none opacity-[0.03]"
+          style={{
+            backgroundImage: 'url(/images/brand/logo-sketch.png)',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'right -5% bottom -10%',
+            backgroundSize: '55%',
+          }}
+        />
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center relative z-10">
           <div>
             <motion.div
               initial={{ opacity: 0, x: -20 }}

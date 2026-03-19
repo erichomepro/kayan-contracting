@@ -211,6 +211,18 @@ export const projects = [
     tags: ['Commercial', 'Cladding', 'Retail'],
   },
   {
+    id: 'commercial-storefront',
+    title: 'Commercial Storefront Build',
+    category: 'commercial',
+    location: 'Stony Plain, AB',
+    description: 'Nighttime shot of a commercial storefront build with dark metal cladding, large glass facades, and striped crosswalk. Modern commercial finishing that makes a strong first impression.',
+    coverImage: '/images/gallery/real/project-126.jpg',
+    images: [
+      '/images/gallery/real/project-126.jpg',
+    ],
+    tags: ['Commercial', 'Storefront', 'Metal Cladding'],
+  },
+  {
     id: 'nofrills-commercial',
     title: 'No Frills — Blueprint to Build',
     category: 'commercial',
@@ -296,6 +308,18 @@ export const projects = [
       '/images/gallery/real/project-83.jpg',
     ],
     tags: ['Ventilation', 'Solar Vents', 'Energy Efficient'],
+  },
+  {
+    id: 'shingling-detail',
+    title: 'Shingle Roof — Pipe Boot & Vent Detail',
+    category: 'residential',
+    location: 'Stony Plain, AB',
+    description: 'Clean architectural shingle installation with precision pipe boot flashing and ridge cap work. The details that matter — proper sealing around every vent and penetration to keep water out for decades.',
+    coverImage: '/images/gallery/real/project-125.jpg',
+    images: [
+      '/images/gallery/real/project-125.jpg',
+    ],
+    tags: ['Shingling', 'Detail Work', 'Pipe Boot'],
   },
   {
     id: 'steel-siding-building',
