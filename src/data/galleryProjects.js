@@ -219,7 +219,7 @@ export const projects = [
     coverImage: '/images/gallery/real/project-64.jpg',
     images: [
       '/images/gallery/real/project-64.jpg',
-      '/images/gallery/real/project-63.jpg',
+      '/images/gallery/real/project-124.jpg',
     ],
     tags: ['Commercial', 'Blueprint to Build', 'No Frills'],
   },
