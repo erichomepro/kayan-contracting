@@ -391,10 +391,11 @@ export const projects = [
     category: 'exteriors',
     location: 'Stony Plain, AB',
     description: 'Precision soffit and fascia installation showing the detail work that goes into every project. Clean aluminum panel lines, proper ventilation channels, and a professional finish that lasts decades.',
-    coverImage: '/images/gallery/real/project-116.jpg',
+    coverImage: '/images/gallery/real/project-57.jpg',
     images: [
-      '/images/gallery/real/project-116.jpg',
       '/images/gallery/real/project-57.jpg',
+      '/images/gallery/real/project-116.jpg',
+      '/images/gallery/real/project-58.jpg',
     ],
     tags: ['Soffit', 'Fascia', 'Detail Work'],
   },
