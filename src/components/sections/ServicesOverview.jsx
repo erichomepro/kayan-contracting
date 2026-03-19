@@ -17,8 +17,19 @@ const MotionLink = motion.create(Link)
 
 export default function ServicesOverview() {
   return (
-    <section id="services" className="py-(--spacing-section) bg-surface">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="services" className="relative py-(--spacing-section) bg-surface overflow-hidden">
+      {/* Logo character watermark */}
+      <div
+        className="absolute inset-0 pointer-events-none opacity-[0.03]"
+        style={{
+          backgroundImage: 'url(/images/brand/logo-sketch.png)',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'right -2% center',
+          backgroundSize: 'auto 80%',
+        }}
+      />
+
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
         <SectionHeading
           label="WHAT WE DO"
           heading="Our Construction Services"
