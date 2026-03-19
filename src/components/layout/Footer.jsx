@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Phone, Mail, MapPin, Clock, ShieldCheck } from 'lucide-react'
 import { company, services, serviceAreas } from '@/data/company'
 
@@ -70,12 +71,12 @@ export default function Footer() {
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service.id}>
-                  <a
-                    href={`#${service.id}`}
+                  <Link
+                    to={`/services/${service.id}`}
                     className="text-sm text-white/50 hover:text-accent transition-colors"
                   >
                     {service.title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

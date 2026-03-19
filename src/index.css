@@ -196,3 +196,12 @@ p  { font-size: clamp(0.875rem, 0.85rem + 0.2vw, 1rem); }
 .testimonial-track:hover {
   animation-play-state: paused;
 }
+
+/* ===== Scrollbar Hide (for gallery filters/thumbnails) ===== */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

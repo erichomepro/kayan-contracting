@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 
 .vercel
+
+# Raw original assets (already converted to web-ready JPGs)
+assests/
+public/images/hero-video-original.mp4

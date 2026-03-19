@@ -25,10 +25,11 @@ import ServiceFAQ from '@/components/services/ServiceFAQ'
 import ServiceSchema from '@/components/services/ServiceSchema'
 
 // Import all service page data
-const pageModules = import.meta.glob('@/data/service-pages/*.js', { eager: true })
+const pageModules = import.meta.glob('../data/service-pages/*.js', { eager: true })
 const servicePages = {}
 for (const path in pageModules) {
-  const id = path.split('/').pop().replace('.js', '')
+  const filename = path.split('/').pop()
+  const id = filename.replace('.js', '')
   servicePages[id] = pageModules[path].default
 }
 
@@ -155,6 +156,19 @@ export default function ServicePage() {
                 <Clock className="w-4 h-4 text-accent" />
                 22+ Years Experience
               </span>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="mt-6 max-w-sm"
+            >
+              <img
+                src="/images/iko-certificate.jpg"
+                alt="IKO RoofPro Preferred Contractor Certificate — Kayan Contracting Ltd."
+                className="rounded-lg border border-white/10 shadow-lg"
+              />
             </motion.div>
           </div>
 

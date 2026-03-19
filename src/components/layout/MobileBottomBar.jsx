@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from 'react'
+import { useLocation } from 'react-router-dom'
 import { Phone, FileText } from 'lucide-react'
 import { company } from '@/data/company'
 
 export default function MobileBottomBar() {
   const [isVisible, setIsVisible] = useState(true)
   const lastScrollY = useRef(0)
+  const location = useLocation()
 
   useEffect(() => {
     function handleScroll() {
@@ -42,7 +44,15 @@ export default function MobileBottomBar() {
 
         {/* Free Estimate */}
         <a
-          href="#quote"
+          href={location.pathname === '/' ? '#quote' : '#service-quote'}
+          onClick={(e) => {
+            const hash = location.pathname === '/' ? '#quote' : '#service-quote'
+            const el = document.querySelector(hash)
+            if (el) {
+              e.preventDefault()
+              el.scrollIntoView({ behavior: 'smooth' })
+            }
+          }}
           className="flex-1 flex items-center justify-center gap-2 py-3.5 bg-accent text-text-on-accent font-semibold text-sm transition-opacity hover:opacity-90"
         >
           <FileText className="w-4 h-4" />

@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Phone, Menu, X } from 'lucide-react'
 import { company } from '@/data/company'
 
 const navLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'About', href: '#about' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Get a Quote', href: '#quote' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Services', hash: '#services' },
+  { label: 'About', hash: '#about' },
+  { label: 'Gallery', to: '/gallery' },
+  { label: 'Get a Quote', hash: '#quote' },
+  { label: 'FAQ', hash: '#faq' },
+  { label: 'Contact', hash: '#contact' },
 ]
 
 const mobileMenuVariants = {
@@ -22,9 +23,16 @@ const linkVariants = {
   open: (i) => ({ opacity: 1, y: 0, transition: { delay: 0.1 + i * 0.05, duration: 0.3 } }),
 }
 
+function scrollToHash(hash) {
+  const el = document.querySelector(hash)
+  if (el) el.scrollIntoView({ behavior: 'smooth' })
+}
+
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
 
   useEffect(() => {
     function handleScroll() { setIsScrolled(window.scrollY > 50) }
@@ -37,6 +45,15 @@ export default function Header() {
     return () => { document.body.style.overflow = '' }
   }, [isMobileMenuOpen])
 
+  function handleNavClick(e, hash) {
+    e.preventDefault()
+    if (location.pathname === '/') {
+      scrollToHash(hash)
+    } else {
+      navigate('/' + hash)
+    }
+  }
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -47,7 +64,7 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#hero" className="flex items-center gap-4">
+        <Link to="/" className="flex items-center gap-4">
           <img
             src="/images/kayan-logo.png"
             alt="Kayan Contracting"
@@ -57,15 +74,21 @@ export default function Header() {
             <div className="font-bold uppercase tracking-[0.2em] text-sm text-white">Kayan Contracting</div>
             <div className="text-[9px] uppercase tracking-[0.1em] text-accent font-bold">Stony Plain, AB</div>
           </div>
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8 items-center text-[10px] font-bold uppercase tracking-[0.2em] text-text-muted">
-          {navLinks.map((link) => (
-            <a key={link.label} href={link.href} className="hover:text-accent transition-colors">
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            link.to ? (
+              <Link key={link.label} to={link.to} className="hover:text-accent transition-colors cursor-pointer">
+                {link.label}
+              </Link>
+            ) : (
+              <a key={link.label} href={link.hash} onClick={(e) => handleNavClick(e, link.hash)} className="hover:text-accent transition-colors cursor-pointer">
+                {link.label}
+              </a>
+            )
+          )}
         </nav>
 
         {/* Desktop CTA */}
@@ -98,20 +121,32 @@ export default function Header() {
             className="fixed inset-0 top-18 bg-surface z-40 md:hidden"
           >
             <nav className="flex flex-col items-center justify-center h-full gap-6 -mt-18">
-              {navLinks.map((link, i) => (
-                <motion.a
-                  key={link.label}
-                  href={link.href}
-                  custom={i}
-                  variants={linkVariants}
-                  initial="closed"
-                  animate="open"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-2xl font-bold uppercase tracking-widest text-white hover:text-accent transition-colors"
-                >
-                  {link.label}
-                </motion.a>
-              ))}
+              {navLinks.map((link, i) =>
+                link.to ? (
+                  <motion.div key={link.label} custom={i} variants={linkVariants} initial="closed" animate="open">
+                    <Link
+                      to={link.to}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="text-2xl font-bold uppercase tracking-widest text-white hover:text-accent transition-colors cursor-pointer"
+                    >
+                      {link.label}
+                    </Link>
+                  </motion.div>
+                ) : (
+                  <motion.a
+                    key={link.label}
+                    href={link.hash}
+                    custom={i}
+                    variants={linkVariants}
+                    initial="closed"
+                    animate="open"
+                    onClick={(e) => { handleNavClick(e, link.hash); setIsMobileMenuOpen(false) }}
+                    className="text-2xl font-bold uppercase tracking-widest text-white hover:text-accent transition-colors cursor-pointer"
+                  >
+                    {link.label}
+                  </motion.a>
+                )
+              )}
               <motion.a
                 href={`tel:${company.phoneRaw}`}
                 custom={navLinks.length}
