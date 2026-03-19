@@ -7,6 +7,8 @@ import MobileBottomBar from '@/components/layout/MobileBottomBar'
 import Home from '@/pages/Home'
 import Gallery from '@/pages/Gallery'
 import ServicePage from '@/pages/ServicePage'
+import Blog from '@/pages/Blog'
+import BlogPost from '@/pages/BlogPost'
 import SchemaMarkup from '@/components/seo/SchemaMarkup'
 
 export default function App() {
@@ -33,6 +35,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/services/:serviceId" element={<ServicePage />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:postId" element={<BlogPost />} />
         </Routes>
       </main>
       <Footer />

@@ -459,23 +459,6 @@ export const projects = [
     tags: ['Attic', 'Insulation', 'Energy Loss'],
   },
 
-  // ─── BRANDING ───
-  {
-    id: 'kayan-brand',
-    title: 'Kayan Contracting — The Brand',
-    category: 'exteriors',
-    location: 'Stony Plain, AB',
-    description: 'Our business cards, brochure, and IKO RoofPro Preferred Contractor certification. Bryan Dewey and the Kayan Contracting team — 22 years of quality craftsmanship, shingling, exteriors, continuous eavestroughing, and metal work across Parkland County.',
-    coverImage: '/images/gallery/real/project-02.jpg',
-    images: [
-      '/images/gallery/real/project-01.jpg',
-      '/images/gallery/real/project-02.jpg',
-      '/images/gallery/real/project-03.jpg',
-      '/images/gallery/real/project-78.jpg',
-      '/images/gallery/real/project-123.jpg',
-    ],
-    tags: ['Brand', 'IKO Certified', 'Bryan Dewey'],
-  },
 ]
 
 export const galleryStats = [
