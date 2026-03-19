@@ -65,11 +65,11 @@ const projects = [
   },
   {
     id: 8,
-    src: '/images/gallery/real/project-58.jpg',
+    src: '/images/gallery/real/project-57.jpg',
     title: 'Soffit & Fascia Install',
     category: 'Exteriors & More',
     location: 'Stony Plain, AB',
-    desc: 'Fresh aluminum soffits with venting, new fascia and downspout. Clean lines, proper ventilation, zero maintenance.',
+    desc: 'Commercial soffit panel installation with recessed lighting, clean aluminum lines, and precision finishing.',
   },
   {
     id: 9,
