@@ -40,6 +40,9 @@ export const metadata = {
     description:
       'Protecting Parkland County homes for 22 years. IKO Preferred Contractor. BBB A+ rated. 15-year workmanship warranty. Free inspections.',
   },
+  verification: {
+    google: '6_VarR6PUa03LVveIueP2vTf5l9ErIKMvTV0HGLbeD8',
+  },
   robots: {
     index: true,
     follow: true,
