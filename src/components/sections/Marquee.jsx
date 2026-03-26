@@ -1,3 +1,5 @@
+'use client'
+
 export default function Marquee() {
   return (
     <div className="bg-black py-6 overflow-hidden border-y border-white/5">

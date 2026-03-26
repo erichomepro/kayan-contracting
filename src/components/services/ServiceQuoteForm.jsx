@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useForm } from 'react-hook-form'
@@ -106,6 +108,26 @@ export default function ServiceQuoteForm({ serviceId, serviceTitle }) {
       }
     } catch (err) {
       console.error('Lead submission error:', err)
+    }
+
+    // Send email notification to Bryan via Resend
+    try {
+      await fetch('/api/lead-notify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: data.name,
+          phone: data.phone,
+          email: data.email || null,
+          address: data.address || null,
+          callTime: data.callTime || null,
+          message: data.message || null,
+          propertyType: data.propertyType || null,
+          serviceTitle,
+        }),
+      })
+    } catch (err) {
+      console.error('Email notification error:', err)
     }
 
     setSubmitted(true)

@@ -1,3 +1,5 @@
+'use client'
+
 import { ChevronDown, Phone } from 'lucide-react'
 import * as Accordion from '@radix-ui/react-accordion'
 import { faqs, company } from '@/data/company'

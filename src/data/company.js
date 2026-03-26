@@ -19,7 +19,7 @@ export const company = {
   foundedYear: 2003,
   yearsInBusiness: 22,
   bbbRating: "A+",
-  workmanshipWarranty: "10-Year",
+  workmanshipWarranty: "15-Year",
   hoursOfOperation: {
     weekday: "Mon-Fri: 8:00 AM - 6:00 PM",
     saturday: "Sat: 9:00 AM - 3:00 PM",
@@ -41,7 +41,7 @@ export const services = [
     id: "roof-replacement",
     title: "Roof Replacement",
     shortDesc: "Complete tear-off and installation with premium materials built for Alberta weather.",
-    description: "When repairs aren't enough, we provide full roof replacements using industry-leading products. Every installation includes a thorough deck inspection, new underlayment, proper ventilation assessment, and our 10-year workmanship warranty.",
+    description: "When repairs aren't enough, we provide full roof replacements using industry-leading products. Every installation includes a thorough deck inspection, new underlayment, proper ventilation assessment, and our 15-year workmanship warranty.",
     icon: "home",
     features: [
       "Full tear-off and disposal",
@@ -49,7 +49,7 @@ export const services = [
       "IKO Cambridge or Dynasty shingles",
       "New underlayment and ice shield",
       "Ridge vent installation",
-      "10-year workmanship warranty",
+      "15-year workmanship warranty",
     ],
   },
   {
@@ -64,7 +64,7 @@ export const services = [
       "Ridge cap and hip detailing",
       "Ice & water shield at eaves and valleys",
       "New construction and re-shingling",
-      "10-year workmanship warranty",
+      "15-year workmanship warranty",
     ],
   },
   {
@@ -155,7 +155,7 @@ export const serviceAreas = [
 export const stats = [
   { value: 22, suffix: "+", label: "Years Experience" },
   { value: 1500, suffix: "+", label: "Homeowners Served" },
-  { value: 10, suffix: "-Year", label: "Workmanship Warranty" },
+  { value: 15, suffix: "-Year", label: "Workmanship Warranty" },
   { value: 100, suffix: "%", label: "Satisfaction Rate" },
 ]
 
@@ -206,8 +206,8 @@ export const faqs = [
     a: "Yes. If your roof was damaged by hail, wind, or another insured event, we'll work directly with your insurance adjuster to ensure your claim is properly documented and you receive fair coverage. We guide you through the entire process.",
   },
   {
-    q: "What does your 10-year warranty cover?",
-    a: "Our 10-year workmanship warranty covers any installation-related issues — leaks, lifting shingles, or any defect caused by our work. This is in addition to the manufacturer's material warranty. We use the highest quality products that hold up to Canada's harshest weather conditions.",
+    q: "What does your 15-year warranty cover?",
+    a: "Our 15-year workmanship warranty covers any installation-related issues — leaks, lifting shingles, or any defect caused by our work. This is in addition to the manufacturer's material warranty. We use the highest quality products that hold up to Canada's harshest weather conditions.",
   },
   {
     q: "What makes Kayan Contracting different?",

@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion'
 import { Clock, ShieldCheck, Award, BadgeCheck, MapPin, Sparkles } from 'lucide-react'
 import SectionHeading from '@/components/ui/SectionHeading'
@@ -17,7 +19,7 @@ const differentiators = [
   },
   {
     icon: Award,
-    title: '10-Year Warranty',
+    title: '15-Year Warranty',
     description:
       'Our workmanship warranty means we stand behind every nail, every shingle.',
   },

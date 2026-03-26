@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion'
 import { Wind, Droplets, CloudRain, Clock } from 'lucide-react'
 import { warningSignsData } from '@/data/company'

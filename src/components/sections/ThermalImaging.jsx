@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion'
 import { Eye, Thermometer, Zap, Wind, Droplets, ShieldCheck, ArrowRight } from 'lucide-react'
 import Button from '@/components/ui/Button'

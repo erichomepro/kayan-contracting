@@ -50,9 +50,9 @@ export default {
         "We assess and correct your attic ventilation during every replacement. Balanced intake and exhaust airflow prevents ice damming in winter and reduces attic heat buildup in summer, extending the life of your new roof by years.",
     },
     {
-      title: "10-Year Workmanship Warranty Backed by 22 Years of Reputation",
+      title: "15-Year Workmanship Warranty Backed by 22 Years of Reputation",
       description:
-        "Our written 10-year workmanship warranty covers every aspect of installation — on top of IKO's manufacturer material warranty. We've been in Stony Plain for 22 years and plan to be here for 22 more. Your warranty means something because we're not going anywhere.",
+        "Our written 15-year workmanship warranty covers every aspect of installation — on top of IKO's manufacturer material warranty. We've been in Stony Plain for 22 years and plan to be here for 22 more. Your warranty means something because we're not going anywhere.",
     },
     {
       title: "Insurance Claim Support From Start to Finish",
@@ -111,7 +111,7 @@ export default {
     },
     {
       q: "What warranty do I get on a new roof from Kayan Contracting?",
-      a: "You get two warranties. First, our 10-year workmanship warranty covers everything related to installation — if a shingle lifts, a flashing leaks, or anything fails because of how we installed it, we come back and fix it at no charge. Second, IKO provides a separate manufacturer warranty on the shingles themselves, which ranges from 30 years on Cambridge shingles up to a limited lifetime on Dynasty. We've been in Stony Plain for 22 years, so our warranty is backed by a company that's actually going to be here when you need it.",
+      a: "You get two warranties. First, our 15-year workmanship warranty covers everything related to installation — if a shingle lifts, a flashing leaks, or anything fails because of how we installed it, we come back and fix it at no charge. Second, IKO provides a separate manufacturer warranty on the shingles themselves, which ranges from 30 years on Cambridge shingles up to a limited lifetime on Dynasty. We've been in Stony Plain for 22 years, so our warranty is backed by a company that's actually going to be here when you need it.",
     },
     {
       q: "Will my homeowner's insurance cover a roof replacement?",

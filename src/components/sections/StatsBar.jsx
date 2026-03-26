@@ -1,3 +1,5 @@
+'use client'
+
 import { stats } from '@/data/company'
 import AnimatedCounter from '@/components/ui/AnimatedCounter'
 

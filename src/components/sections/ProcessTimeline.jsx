@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion'
 import { Phone, Search, FileText, Hammer, CheckCircle } from 'lucide-react'
 import { processSteps } from '@/data/company'

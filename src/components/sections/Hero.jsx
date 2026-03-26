@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion'
 import { company } from '@/data/company'
 import Button from '@/components/ui/Button'

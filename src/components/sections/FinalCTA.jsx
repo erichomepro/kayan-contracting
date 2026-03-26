@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion'
 import { Phone, ShieldCheck, FileCheck, Award } from 'lucide-react'
 import { company } from '@/data/company'

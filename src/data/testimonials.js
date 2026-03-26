@@ -61,7 +61,7 @@ export const testimonials = [
     name: "Greg Fossen",
     location: "Parkland County, AB",
     project: "Complete Roof Replacement",
-    text: "The 10-year workmanship warranty is what sealed the deal for us. A lot of companies offer material warranties but won't stand behind their own work for more than a year or two. Kayan backs their installation for a full decade, in writing. Two years in, we had a minor concern about a valley and they came out the next day to check it — turns out it was fine, but they didn't make us feel silly for asking. That's real warranty service.",
+    text: "The 15-year workmanship warranty is what sealed the deal for us. A lot of companies offer material warranties but won't stand behind their own work for more than a year or two. Kayan backs their installation for 15 years, in writing. Two years in, we had a minor concern about a valley and they came out the next day to check it — turns out it was fine, but they didn't make us feel silly for asking. That's real warranty service.",
     rating: 5,
     date: "2025-04-12",
   },

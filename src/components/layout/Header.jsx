@@ -1,5 +1,8 @@
+'use client'
+
 import { useState, useEffect } from 'react'
-import { Link, useNavigate, useLocation } from 'react-router-dom'
+import Link from 'next/link'
+import { useRouter, usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Phone, Menu, X } from 'lucide-react'
 import { company } from '@/data/company'
@@ -32,8 +35,8 @@ function scrollToHash(hash) {
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const navigate = useNavigate()
-  const location = useLocation()
+  const router = useRouter()
+  const pathname = usePathname()
 
   useEffect(() => {
     function handleScroll() { setIsScrolled(window.scrollY > 50) }
@@ -48,10 +51,10 @@ export default function Header() {
 
   function handleNavClick(e, hash) {
     e.preventDefault()
-    if (location.pathname === '/') {
+    if (pathname === '/') {
       scrollToHash(hash)
     } else {
-      navigate('/' + hash)
+      router.push('/' + hash)
     }
   }
 
@@ -65,7 +68,7 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-4">
+        <Link href="/" className="flex items-center gap-4">
           <img
             src="/images/kayan-logo.png"
             alt="Kayan Contracting"
@@ -81,7 +84,7 @@ export default function Header() {
         <nav className="hidden md:flex gap-8 items-center text-[10px] font-bold uppercase tracking-[0.2em] text-text-muted">
           {navLinks.map((link) =>
             link.to ? (
-              <Link key={link.label} to={link.to} className="hover:text-accent transition-colors cursor-pointer">
+              <Link key={link.label} href={link.to} className="hover:text-accent transition-colors cursor-pointer">
                 {link.label}
               </Link>
             ) : (

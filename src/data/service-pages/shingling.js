@@ -60,9 +60,9 @@ export default {
         "Whether it's a brand new build that needs its first shingle layer or a re-shingle over existing materials, we have the experience to handle both. We'll advise you honestly on whether a re-shingle is appropriate or if a full tear-off makes more sense.",
     },
     {
-      title: "10-Year Workmanship Warranty",
+      title: "15-Year Workmanship Warranty",
       description:
-        "Every shingling job comes with our written 10-year workmanship warranty, on top of IKO's manufacturer material warranty. We've been in Stony Plain for 22 years — our warranty means something because we're not going anywhere.",
+        "Every shingling job comes with our written 15-year workmanship warranty, on top of IKO's manufacturer material warranty. We've been in Stony Plain for 22 years — our warranty means something because we're not going anywhere.",
     },
   ],
 

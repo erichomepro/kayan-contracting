@@ -1,12 +1,14 @@
+'use client'
+
 import { useState, useEffect, useRef } from 'react'
-import { useLocation } from 'react-router-dom'
+import { usePathname } from 'next/navigation'
 import { Phone, FileText } from 'lucide-react'
 import { company } from '@/data/company'
 
 export default function MobileBottomBar() {
   const [isVisible, setIsVisible] = useState(true)
   const lastScrollY = useRef(0)
-  const location = useLocation()
+  const pathname = usePathname()
 
   useEffect(() => {
     function handleScroll() {
@@ -44,9 +46,9 @@ export default function MobileBottomBar() {
 
         {/* Free Estimate */}
         <a
-          href={location.pathname === '/' ? '#quote' : '#service-quote'}
+          href={pathname === '/' ? '#quote' : '#service-quote'}
           onClick={(e) => {
-            const hash = location.pathname === '/' ? '#quote' : '#service-quote'
+            const hash = pathname === '/' ? '#quote' : '#service-quote'
             const el = document.querySelector(hash)
             if (el) {
               e.preventDefault()

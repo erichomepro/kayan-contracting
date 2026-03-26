@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion'
 import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDown } from 'lucide-react'

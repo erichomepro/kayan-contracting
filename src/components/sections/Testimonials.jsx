@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion'
 import { Star, Quote, ShieldCheck, Facebook } from 'lucide-react'
 import SectionHeading from '@/components/ui/SectionHeading'
