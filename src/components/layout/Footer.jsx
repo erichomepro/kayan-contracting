@@ -131,6 +131,17 @@ export default function Footer() {
             <ShieldCheck className="w-4 h-4 text-accent" />
             BBB {company.bbbRating} Rated &middot; Licensed &amp; Insured
           </p>
+          <p>
+            Website by{' '}
+            <a
+              href="https://aiprecisionmarketing.ca/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent transition-colors"
+            >
+              AI Precision Marketing
+            </a>
+          </p>
         </div>
       </div>
     </footer>
