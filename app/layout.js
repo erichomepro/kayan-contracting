@@ -1,5 +1,5 @@
 import '@/index.css'
-import { company, services, serviceAreas, faqs } from '@/data/company'
+import { company, services, serviceAreas } from '@/data/company'
 import ClientLayout from './client-layout'
 
 // UPDATE THIS when the domain is confirmed
@@ -119,28 +119,11 @@ function RootSchemaMarkup() {
     sameAs: [company.social.facebook],
   }
 
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((faq) => ({
-      '@type': 'Question',
-      name: faq.q,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.a,
-      },
-    })),
-  }
-
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
     </>
   )
