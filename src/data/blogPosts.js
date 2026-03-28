@@ -248,6 +248,242 @@ We've been doing this for 22 years. We'll always give you the honest answer — 
     ],
   },
   {
+    id: 'spring-roof-maintenance-checklist-alberta',
+    title: 'Spring Roof Maintenance Checklist for Parkland County Homeowners (2026)',
+    subtitle: 'The Post-Winter Inspection Guide That Prevents Costly Surprises',
+    publishDate: '2026-03-27',
+    readTime: '10 min read',
+    category: 'Seasonal Maintenance',
+    coverImage: '/images/gallery/real/project-30.jpg',
+    excerpt: 'Alberta winters punish roofs like nowhere else in Canada. This spring maintenance checklist — built from 22 years of inspections across Stony Plain, Spruce Grove, and Parkland County — shows you exactly what to check, when to worry, and when to call a professional.',
+    tags: ['Spring Maintenance', 'Roof Inspection', 'Stony Plain', 'Spruce Grove', 'Parkland County', 'Hail Season'],
+    relatedService: 'roof-repair',
+    featured: false,
+    sections: [
+      {
+        type: 'intro',
+        content: `Every spring in Parkland County, we get the same call dozens of times: "We just noticed water stains on the ceiling" or "Our shingles are all over the yard." The damage happened months ago — during the freeze-thaw cycles of February, the heavy snow loads of December, or the chinook winds that ripped through in January.
+
+The homeowners who **never** make that call? They do a simple spring inspection every year. This checklist is what our crews use when we inspect roofs across Stony Plain, Spruce Grove, and Edmonton — adapted so any homeowner can do the visual checks themselves.`,
+      },
+      {
+        type: 'content',
+        title: 'Why Spring Inspections Matter in Alberta',
+        content: `Alberta is one of the harshest climates for roofing in all of North America. Here is what your roof survived this past winter:
+
+**Temperature extremes:** Lows of -35°C to -40°C followed by chinook warmups to +10°C — sometimes within 48 hours. This freeze-thaw cycling expands and contracts every material on your roof hundreds of times per season.
+
+**Snow loads:** A typical Parkland County winter drops 120-150 cm of snow. Wet, heavy spring snow is even worse — it can weigh 5x more per cubic metre than dry powder.
+
+**Ice damming:** When attic heat melts roof snow, water refreezes at the cold eaves and forces its way under shingles. We see ice dam damage on roughly 1 in 5 roofs we inspect each spring.
+
+**Chinook winds:** Wind gusts of 80-120 km/h are normal in central Alberta. These tear at flashing, lift shingle edges, and loosen vents.
+
+A 30-minute spring inspection can catch problems that cost $200-$500 to fix now — versus $5,000-$15,000 if left until fall.`,
+        image: '/images/gallery/real/project-61.jpg',
+      },
+      {
+        type: 'content',
+        title: 'Fix Now vs. Fix Later: The Real Cost of Waiting',
+        content: `Every small roof problem gets expensive when ignored. Here is what we see across Parkland County every spring:
+
+**Loose or missing shingles** — Fix now: $150-$400. If ignored: $2,000-$5,000 (water penetrates decking, insulation damage, interior drywall repair).
+
+**Damaged flashing** — Fix now: $200-$600. If ignored: $3,000-$8,000 (the #1 cause of roof leaks — water enters wall cavities, causes mold growth behind finishes).
+
+**Clogged gutters and downspouts** — Fix now: $100-$250. If ignored: $1,500-$4,000 (fascia rot, foundation erosion, basement flooding).
+
+**Cracked pipe boots and vent seals** — Fix now: $150-$350. If ignored: $2,500-$6,000 (direct water path into attic, rots decking around penetrations).
+
+**Ice dam damage to underlayment** — Fix now: $500-$1,200. If ignored: $5,000-$15,000 (progressive decking rot, full section tear-off and replacement required).
+
+The pattern is clear: **a $200 spring repair prevents a $5,000 emergency in fall.** This is the single best return on investment in home maintenance.`,
+      },
+      {
+        type: 'content',
+        title: 'Part 1: The Ground-Level Walk-Around (10 Minutes)',
+        content: `You do not need to climb on your roof for this first check. Grab a pair of binoculars and walk the full perimeter of your home. Here is what to look for:
+
+**Shingles on the ground or in the yard**
+After a winter of chinook winds, it is common to find shingles that have blown off entirely. Check your yard, garden beds, and along the fence line. Even one missing shingle is an exposed leak pathway.
+
+**Visible sagging or dipping in the roofline**
+Stand across the street and look at your roof ridge (the peak). It should be a perfectly straight line. Any sag, dip, or waviness suggests structural issues — possibly from prolonged snow load or moisture damage to the decking.
+
+**Damaged or leaning vents and pipes**
+Look at the metal vents, plumbing stacks, and exhaust pipes poking through your roof. They should be straight and upright. Tilted or damaged vents mean the boot seal is likely compromised.
+
+**Gutter condition**
+Check for gutters pulling away from the fascia board, sagging sections (ice expansion), or visible rust and holes. Blocked or damaged gutters cause water to pool against your fascia, soffits, and foundation.
+
+**Soffits and fascia damage**
+Look under the roof overhang. Cracked, warped, or water-stained soffits indicate moisture getting behind your exterior — often from ice dams or failed flashing above.`,
+        image: '/images/gallery/real/project-70.jpg',
+      },
+      {
+        type: 'content',
+        title: 'Part 2: The Up-Close Roof Check (20 Minutes)',
+        content: `**Safety first: If your roof pitch is steep (more than 6/12), or you are not comfortable on a ladder, call a professional.** At Kayan Contracting, every inspection is free — there is no reason to risk a fall.
+
+If you are comfortable on a ladder, here is what to examine:
+
+**Shingle condition**
+- **Curling:** Edges turning upward (usually from heat cycling or poor ventilation)
+- **Cracking:** Horizontal splits across the shingle face (age and cold-cycling damage)
+- **Granule loss:** Bald or smooth patches where the protective granule coating has washed away — check your gutters for piles of black grit
+- **Lifted tabs:** Shingle tabs that are no longer sealed flat, leaving them vulnerable to wind
+
+**Flashing integrity**
+Check every place where the roof meets a wall, chimney, skylight, or vent. The metal flashing at these joints should be tight, sealed, and rust-free. Flashing failure is the number one cause of roof leaks in homes under 15 years old.
+
+**Pipe boots and vent seals**
+The rubber boots around plumbing vents crack and split after 8-12 years — even if the shingles are fine. A cracked pipe boot is a direct path for water into your attic.
+
+**Ridge cap shingles**
+The shingles along the very peak of your roof take the worst abuse from wind and UV. Check for lifting, cracking, or missing ridge caps.
+
+**Valley condition**
+Roof valleys (where two slopes meet) channel the most water. Look for worn shingles, exposed underlayment, or accumulated debris in valley channels.`,
+        image: '/images/gallery/real/project-59.jpg',
+      },
+      {
+        type: 'content',
+        title: 'Part 3: The Attic Inspection (15 Minutes)',
+        content: `This is the step most homeowners skip — and it is the most revealing. Grab a flashlight and check these areas:
+
+**Daylight through the roof boards**
+On a sunny afternoon, turn off the attic lights and look for pinpoints of light coming through the roof deck. Any visible light means water can get in too.
+
+**Water stains or dark marks on the underside of the decking**
+Discoloured wood — especially around vents, chimneys, and valleys — indicates past or active water intrusion. Fresh stains will feel damp to the touch.
+
+**Mold or musty odour**
+A musty smell in the attic means moisture is present. Visible mold on rafters or decking is a serious problem that needs immediate professional attention.
+
+**Insulation condition**
+- Is insulation evenly distributed, or are there bare spots?
+- Is insulation wet or compressed? (Wet insulation has zero R-value)
+- Can you see the attic floor joists through the insulation? (You should not be able to — minimum R-50 is recommended in Alberta)
+
+**Ventilation check**
+Your attic needs both intake vents (soffits) and exhaust vents (ridge vent or roof vents). Blocked soffits are extremely common — insulation gets pushed against them during installation. Poor ventilation causes ice dams in winter and heat buildup in summer.
+
+**Our FLIR thermal cameras detect all of these issues instantly** — moisture, insulation gaps, ventilation failures — even through finished ceilings. Every Kayan inspection includes thermal imaging at no extra charge.`,
+        image: '/images/gallery/real/project-09.jpg',
+      },
+      {
+        type: 'content',
+        title: 'Part 4: Gutters, Downspouts, and Drainage',
+        content: `Your eavestroughing system is the unsung hero of roof protection. When it fails, water pools where it should not — against your foundation, behind your fascia, and under your shingles.
+
+**Clean out all gutters and downspouts**
+Winter debris, shingle granules, and leaf matter accumulate over winter. Blocked gutters cause water to back up under shingles at the eave edge.
+
+**Check gutter slope**
+Water should flow steadily toward downspouts with no pooling. If water sits in sections of your gutter, the hangers have likely shifted from ice expansion.
+
+**Inspect downspout extensions**
+Downspouts should discharge water at least 1.8 metres (6 feet) away from your foundation. Splash blocks and extensions that shifted over winter need to be repositioned.
+
+**Look for overflow staining**
+Dark staining on your fascia board directly behind the gutter indicates chronic overflow — either the gutter is too small (common with 4-inch gutters on Alberta homes) or it is blocked.
+
+**Consider upgrading to 6-inch seamless eavestroughing**
+If your home has older 4-inch or 5-inch sectional gutters, a 6-inch seamless system handles Alberta's heavy rainfall and snowmelt significantly better. We fabricate seamless eavestroughing on-site for a perfect, leak-free fit.`,
+        image: '/images/gallery/real/project-104.jpg',
+      },
+      {
+        type: 'content',
+        title: 'Your Spring Inspection Priority Order',
+        content: `Not all checks are equally urgent. Here is the order we recommend — based on which problems cause the most damage fastest:
+
+**Priority 1: Attic inspection (moisture, mold, insulation)** — This reveals hidden damage that has been accumulating all winter. Mold, wet insulation, and rotting decking are urgent problems. Check this first.
+
+**Priority 2: Flashing and pipe boots** — These are the #1 source of roof leaks on homes under 15 years old. A cracked pipe boot or lifted flashing is an active leak pathway. Address within one week.
+
+**Priority 3: Shingle condition** — Curling, cracking, and missing shingles leave your underlayment and decking exposed. Address within two weeks of discovery.
+
+**Priority 4: Gutters and downspouts** — Clean and repair before the first heavy spring rain. Blocked gutters cause fascia rot and foundation damage.
+
+**Priority 5: Soffits and fascia** — Damaged soffits compromise attic ventilation, which causes ice dams the following winter. Address within one month.`,
+      },
+      {
+        type: 'content',
+        title: 'Preparing for Alberta Hail Season',
+        content: `Spring inspections are not just about winter damage — they are also about **preparing for what comes next**. Alberta hail season runs from June through September, and Parkland County sits squarely in Canada's "Hail Alley."
+
+**Why spring prep matters for hail:**
+- A roof with pre-existing damage (loose shingles, compromised flashing, cracked pipe boots) will suffer dramatically worse hail damage than a roof in good condition
+- Insurance adjusters will distinguish between pre-existing wear and storm damage — if your roof was already failing, your claim may be reduced or denied
+- Documenting your roof's condition in spring (with dated photos) gives you proof of pre-storm condition if you need to file a claim later
+
+**What to do before hail season:**
+- Fix any issues found during your spring inspection
+- Take dated photos of your roof from all four sides
+- Save photos in cloud storage with timestamps
+- Know your insurance policy's hail damage deductible
+- Have a trusted roofer's number saved (before you need it)
+
+**After any hailstorm, call us immediately at (780) 984-0221.** We document damage thoroughly, work directly with your insurance adjuster, and ensure your claim is handled properly. Do not wait — insurance companies have filing deadlines.`,
+      },
+      {
+        type: 'content',
+        title: 'When to Call a Professional',
+        content: `Your spring walk-around can catch a lot. But some problems require professional eyes and equipment. **Call a roofer if you notice any of these:**
+
+- Any visible sagging in the roofline
+- Multiple missing or damaged shingles
+- Active leaks or fresh water stains in the attic
+- Mold growth anywhere in the attic
+- Flashing that is visibly pulled away from walls or chimneys
+- Your roof is 15+ years old and has never been professionally inspected
+- You had ice dams this past winter
+
+**What to expect from a Kayan Contracting spring inspection:**
+
+Our inspections are free, thorough, and honest. Here is exactly what we do:
+
+- **Complete exterior assessment** — every shingle, every flashing joint, every vent
+- **Attic inspection** — ventilation, insulation depth and condition, moisture signs
+- **FLIR thermal imaging** — reveals hidden moisture and insulation failures invisible to the naked eye
+- **Gutter and drainage evaluation** — slope, capacity, downspout placement
+- **Written report with photos** — documentation you can keep for insurance records
+- **Honest recommendation** — we will tell you if your roof is fine, needs a small repair, or needs replacement. No upselling, no pressure.
+
+We have been inspecting and repairing roofs across Stony Plain, Spruce Grove, and Parkland County for 22 years. We have seen everything — and we will always give you the straight answer.`,
+        image: '/images/gallery/real/project-18.jpg',
+      },
+      {
+        type: 'content',
+        title: 'Frequently Asked Questions',
+        content: `**How often should I inspect my roof in Alberta?**
+At minimum, twice per year — once in spring (after winter) and once in fall (before winter). You should also inspect after any major storm, particularly hailstorms. Professional inspections are recommended every 2-3 years, or annually if your roof is over 15 years old.
+
+**Can I do a roof inspection myself?**
+You can do a thorough ground-level inspection and attic check yourself. However, walking on the roof carries fall risks and can actually damage aging shingles. We recommend professional inspections for the on-roof portion — especially since our inspections are free.
+
+**What is the best time of year to replace a roof in Alberta?**
+The ideal window is May through October, when temperatures are consistently above 10°C. Shingle adhesive strips require warm temperatures to seal properly. Spring bookings (March-April) secure your spot before the busy summer season.
+
+**How much does a spring roof repair typically cost?**
+Minor repairs (replacing a few shingles, sealing flashing, replacing a pipe boot) typically run $150-$600. More extensive repairs involving underlayment or decking can range from $1,000-$3,000. We always provide a written quote before any work begins.
+
+**Does Kayan Contracting charge for inspections?**
+Never. Our inspections are 100% free with no obligation. We include FLIR thermal imaging at no additional cost — something most companies charge $300-$500 for separately.
+
+**What happens if I find hail damage from last year?**
+Most Alberta home insurance policies allow claims to be filed within one year of the storm date. Contact your insurance company first, then call us at (780) 984-0221. We will document the damage and work directly with your adjuster.`,
+      },
+      {
+        type: 'cta',
+        title: 'Book Your Free Spring Inspection',
+        content: 'Winter is hard on Alberta roofs. Let our experienced crews inspect yours — with FLIR thermal imaging included — before small problems become expensive emergencies. Free, no-obligation, and honest. That is the Kayan way.',
+        buttonText: 'Schedule Free Inspection',
+        buttonLink: '/#quote',
+      },
+    ],
+  },
+  {
     id: 'thermal-imaging-saves-money',
     title: 'How Thermal Imaging Saves Parkland County Homeowners Thousands',
     subtitle: 'See What Your Eyes Can\'t — The Technology Behind Our Inspections',

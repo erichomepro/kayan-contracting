@@ -70,12 +70,50 @@ export default function BlogPostPage({ params }) {
       }
     : null
 
+  // FAQ schema — extract Q&A pairs from content sections with FAQ-style formatting
+  const faqSchema = post ? (() => {
+    const faqSection = post.sections.find(
+      (s) => s.type === 'content' && s.title && s.title.toLowerCase().includes('frequently asked')
+    )
+    if (!faqSection) return null
+
+    // Parse **Question?**\nAnswer pairs from content
+    const pairs = []
+    const lines = faqSection.content.split('\n').filter(Boolean)
+    for (let i = 0; i < lines.length; i++) {
+      const match = lines[i].match(/^\*\*(.+?)\*\*$/)
+      if (match && i + 1 < lines.length) {
+        pairs.push({ q: match[1], a: lines[i + 1] })
+      }
+    }
+    if (pairs.length === 0) return null
+
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: pairs.map((p) => ({
+        '@type': 'Question',
+        name: p.q,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: p.a,
+        },
+      })),
+    }
+  })() : null
+
   return (
     <>
       {articleSchema && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+      )}
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
       <BlogPostClient postId={params.postId} />
