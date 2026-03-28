@@ -205,3 +205,17 @@ p  { font-size: clamp(0.875rem, 0.85rem + 0.2vw, 1rem); }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* ===== Blog Article Print Styles ===== */
+@media print {
+  body { background: white !important; color: black !important; }
+  .glass-card { background: white !important; border: 1px solid #ddd !important; backdrop-filter: none !important; }
+  .fixed, nav, footer { display: none !important; }
+  .text-white { color: black !important; }
+  .text-white\/70, .text-white\/60, .text-white\/50, .text-white\/40 { color: #444 !important; }
+  .text-accent { color: #d95c26 !important; }
+  .bg-surface, .bg-surface-dark, .bg-surface-alt { background: white !important; }
+  .copper-glow { box-shadow: none !important; }
+  .hero-dot-grid { display: none !important; }
+  img { max-height: 300px !important; }
+}
