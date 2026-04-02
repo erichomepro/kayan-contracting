@@ -485,13 +485,14 @@ Most Alberta home insurance policies allow claims to be filed within one year of
   },
   {
     id: 'roofing-cost-guide-stony-plain-spruce-grove-2026',
-    title: 'How Much Does a New Roof Cost in Stony Plain & Spruce Grove? (2026 Pricing Guide)',
+    title: 'Roof Replacement Cost: Stony Plain & Spruce Grove (2026)',
     subtitle: 'Real Numbers From a Local Contractor — No Surprises',
     publishDate: '2026-04-02',
     readTime: '9 min read',
     category: 'Pricing Guide',
     coverImage: '/images/gallery/real/project-59.jpg',
     excerpt: 'Most contractors won\'t publish their prices. We will. Here\'s exactly what a new roof costs in Stony Plain and Spruce Grove — broken down by material, size, and scope.',
+    metaDescription: 'Real 2026 roof replacement costs in Stony Plain & Spruce Grove from a local contractor. Material pricing, pitch premiums, and what your quote includes.',
     tags: ['Roofing Cost', 'Stony Plain', 'Spruce Grove', 'Roof Replacement', 'Pricing'],
     relatedService: 'roof-replacement',
     featured: false,
@@ -671,6 +672,28 @@ Call us at <a href="tel:7809840221">(780) 984-0221</a> to schedule your inspecti
 **A note on timing:** Spring is our booking season. If you are thinking about a roof replacement this summer, the best time to get your inspection done is now — not when you see a water stain in June.`,
       },
       {
+        type: 'content',
+        title: 'Frequently Asked Questions About Roof Replacement Cost',
+        content: `**How much does a new roof cost in Stony Plain and Spruce Grove?**
+A typical asphalt shingle roof replacement in Stony Plain or Spruce Grove costs $12,000 to $20,000 for an average home. Architectural IKO shingles run $7 to $11 per sq ft installed. Metal roofing ranges from $10 to $20 per sq ft. Exact cost depends on your roof size, pitch, material choice, and tear-off layers.
+
+**What is included in a Kayan Contracting roof replacement quote?**
+Every written quote includes tear-off and disposal, ice and water shield, new drip edge and flashing, underlayment, shingles, ventilation assessment, cleanup, and both our 15-year workmanship warranty and the IKO manufacturer warranty. No surprise add-ons mid-project.
+
+**How long does a roof replacement take in Alberta?**
+Most residential roofs in Stony Plain and Spruce Grove are completed in one to two days. Larger homes, steep pitches, or projects requiring deck replacement may take two to three days. We always give you a timeline estimate in your written quote.
+
+**Does a new roof increase home value?**
+Yes. A new roof typically adds to your home's appraised value and is a major selling point. Home inspectors flag aging or damaged roofs, which can complicate sales or reduce offers. A documented warranty-backed replacement resolves that concern entirely.
+
+**When is the best time to replace a roof in Alberta?**
+The ideal window is May through October when temperatures are consistently above 10°C — shingle adhesive strips require warmth to seal properly. We begin bookings in March and April for the spring-summer season. Booking early secures your spot before the rush.
+
+**Do I need a permit to replace my roof in Stony Plain or Spruce Grove?**
+In most cases, replacing existing shingles in kind does not require a permit in Parkland County. However, structural work, changes to ventilation systems, or full deck replacement may require a permit depending on scope. We advise you on permit requirements as part of your free inspection.
+`,
+      },
+            {
         type: 'cta',
         title: 'Get Your Free Roof Inspection & Written Quote',
         content: 'No pressure, no obligation. We come to you, inspect everything, and give you a written quote you can actually budget with. Serving Stony Plain, Spruce Grove, and all of Parkland County.',

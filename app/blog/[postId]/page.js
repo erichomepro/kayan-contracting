@@ -20,15 +20,16 @@ export function generateMetadata({ params }) {
   }
 
   return {
-    title: `${post.title} | Kayan Contracting`,
-    description: post.excerpt,
+    title: post.title,
+    description: post.metaDescription || post.excerpt?.slice(0, 155),
     openGraph: {
       title: `${post.title} | Kayan Contracting`,
       description: post.excerpt,
       url: `${BASE_URL}/blog/${post.id}`,
       type: 'article',
       publishedTime: post.publishDate,
-      authors: [company.name],
+      modifiedTime: post.modifiedDate || post.publishDate,
+      authors: ['Bryan Dewey'],
       images: post.coverImage ? [{ url: post.coverImage }] : [],
     },
     twitter: {
@@ -53,9 +54,15 @@ export default function BlogPostPage({ params }) {
         headline: post.title,
         description: post.excerpt,
         datePublished: post.publishDate,
+        dateModified: post.modifiedDate || post.publishDate,
         author: {
-          '@type': 'Organization',
-          name: company.name,
+          '@type': 'Person',
+          name: 'Bryan Dewey',
+          jobTitle: 'Owner & Lead Roofer',
+          worksFor: {
+            '@type': 'Organization',
+            name: company.name,
+          },
         },
         publisher: {
           '@type': 'Organization',
