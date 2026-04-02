@@ -484,6 +484,202 @@ Most Alberta home insurance policies allow claims to be filed within one year of
     ],
   },
   {
+    id: 'roofing-cost-guide-stony-plain-spruce-grove-2026',
+    title: 'How Much Does a New Roof Cost in Stony Plain & Spruce Grove? (2026 Pricing Guide)',
+    subtitle: 'Real Numbers From a Local Contractor — No Surprises',
+    publishDate: '2026-04-02',
+    readTime: '9 min read',
+    category: 'Pricing Guide',
+    coverImage: '/images/gallery/real/project-59.jpg',
+    excerpt: 'Most contractors won\'t publish their prices. We will. Here\'s exactly what a new roof costs in Stony Plain and Spruce Grove — broken down by material, size, and scope.',
+    tags: ['Roofing Cost', 'Stony Plain', 'Spruce Grove', 'Roof Replacement', 'Pricing'],
+    relatedService: 'roof-replacement',
+    featured: false,
+    sections: [
+      {
+        type: 'intro',
+        content: `The number one question we get from Stony Plain and Spruce Grove homeowners is: "How much is this going to cost me?"
+
+It is a fair question — and a frustrating one to research online. You type "roof replacement cost Alberta" and you get articles full of national averages, vague ranges like "$5,000 to $30,000," and disclaimers that prices vary wildly. None of that helps you actually budget for your home.
+
+Here is what you need to know upfront: **we are going to give you real numbers.** Not national averages. Not calculator estimates from a website that has never seen an Alberta winter. Actual cost ranges from a contractor who has been doing this in Parkland County since 2003 — over 1,500 roofs completed, IKO Preferred Contractor status, and a BBB A+ rating that we have maintained for more than two decades.
+
+We believe you deserve to know what you are spending before you ever pick up the phone. That is how we would want to be treated — so that is how we do business.`,
+      },
+      {
+        type: 'content',
+        title: 'What Determines Roof Replacement Cost in Alberta?',
+        content: `Before we get to the numbers, it is important to understand the factors that move the price up or down. No two roofs are identical, and every one of these variables affects your final quote:
+
+**Roof Size (The Biggest Factor)**
+Roofing is priced by the square foot of roof surface — not your home's footprint. A 1,500 sq ft bungalow might have 1,800-2,200 sq ft of actual roof surface once you account for the slope. Larger roof = larger material and labour cost, proportionally.
+
+**Pitch and Slope (The Labour Premium)**
+A low-slope roof (3/12 or less) is fast and safe to work on. A steep-slope roof (8/12 or more) requires safety equipment, slower movement, and more crew time. Expect a labour premium of 15-30% for steep-pitch roofs. Many Stony Plain homes built in the 1990s and early 2000s have steeper 8/12 to 12/12 pitches — something we always assess during our free inspection.
+
+**Materials Chosen**
+This is the single largest variable in your quote. Standard asphalt shingles and standing seam metal panels are worlds apart in cost — but also in lifespan. We cover material costs in detail in the comparison below.
+
+**Number of Tear-Off Layers**
+The Alberta Building Code allows a maximum of two layers of shingles on a residential roof. If your existing roof already has two layers, both must be stripped before new shingles can be installed. Tear-off and disposal adds $1.50-$2.50 per sq ft to the project cost.
+
+**Decking Condition**
+Once the old shingles come off, we inspect the plywood or OSB decking underneath. Damaged, rotted, or delaminated decking must be replaced before new material goes on. This is non-negotiable — the best shingles in the world will fail if the deck underneath is compromised.
+
+**Time of Year**
+Spring and summer are our busiest seasons in Parkland County. Demand is higher, scheduling fills up faster, and material delivery lead times are slightly longer. If you can plan your replacement for late fall (September-October), you may find more flexibility. That said, shingle adhesive strips require temperatures consistently above 10°C to seal properly — we do not rush jobs in marginal weather.
+
+For a full breakdown of material options and their performance in Alberta's climate, see our <a href="/services/roof-replacement">roof replacement service page</a>.`,
+      },
+      {
+        type: 'comparison-chart',
+        title: 'Cost Per Square Foot Installed (Labour + Materials)',
+        data: [
+          {
+            material: 'Asphalt Shingles (Standard)',
+            costPerSqFt: '$5.50 - $8.00',
+            note: 'Most common choice',
+            score: 70,
+            color: '#d95c26',
+          },
+          {
+            material: 'Architectural IKO Shingles',
+            costPerSqFt: '$7.00 - $11.00',
+            note: 'Best value — what we recommend',
+            score: 85,
+            color: '#4a90d9',
+          },
+          {
+            material: 'Steel Shingles',
+            costPerSqFt: '$10.00 - $15.00',
+            note: '40-50 year lifespan',
+            score: 88,
+            color: '#2ecc71',
+          },
+          {
+            material: 'Standing Seam Metal',
+            costPerSqFt: '$14.00 - $20.00',
+            note: 'Forever roof for acreages',
+            score: 95,
+            color: '#9b59b6',
+          },
+        ],
+      },
+      {
+        type: 'cost-calculator',
+        title: 'Cost vs. Lifespan: The Real Math',
+        description: 'Real Project Examples From Our Work in Parkland County',
+        data: [
+          { material: '1,500 sq ft — Asphalt (standard)', upfront: 12500, lifespan: 25, annual: 500 },
+          { material: '1,800 sq ft — IKO Architectural', upfront: 17000, lifespan: 30, annual: 567 },
+          { material: '2,200 sq ft — Steel Shingles', upfront: 27500, lifespan: 45, annual: 611 },
+          { material: '2,500 sq ft — Standing Seam Metal', upfront: 42000, lifespan: 55, annual: 764 },
+        ],
+      },
+      {
+        type: 'content',
+        title: 'Roof Repair vs. Full Replacement: How to Decide',
+        content: `One of the most common calls we get goes something like this: "I have a leak, but I am hoping I just need a repair, not a full replacement." We get it. A repair is always the easier answer. Here is how we help homeowners make that call honestly.
+
+**When Roof Repair Makes Sense**
+
+A repair is the right call when damage is isolated and the rest of the roof is sound. Specifically:
+
+- **Damage covers less than 30% of the roof surface.** If one section took hail damage but the remaining three-quarters of the roof are in good shape, a targeted repair is cost-effective.
+- **The roof is under 15 years old.** A younger asphalt roof with localized damage still has significant life in the unaffected sections. Full replacement at this stage would mean discarding perfectly good material.
+- **Budget constraints are a reality right now.** A well-executed repair can buy you 5-10 more years on a roof that is otherwise aging well. This is a legitimate choice — not a shortcut — as long as you understand what you are deferring.
+- **The issue is flashing, boots, or a single failed component.** A cracked pipe boot or lifted flashing can be replaced for a few hundred dollars. This is not a roofing failure — it is a maintenance item.
+
+**When Full Replacement Is the Smarter Investment**
+
+Some situations make repair a false economy. These are the cases where we recommend replacement, even when it is not what the homeowner wants to hear:
+
+- **Multiple leak sources across the roof.** If water is finding three different paths in, the underlying problem is the roof system — not individual shingles. Patching one area while the others fail is a cycle of spending with no endpoint.
+- **The roof is over 20 years old.** Asphalt shingle roofs in Alberta typically have a 20-25 year functional lifespan. At this stage, any repair is buying months, not years. The material is simply exhausted.
+- **You are selling the home.** Buyers and home inspectors are thorough. A repaired roof on a 22-year-old home raises questions and can complicate your sale. A new roof, on the other hand, is a selling point — and it adds to your home's appraised value.
+- **You have had the same section repaired more than once.** Recurring repairs in the same area mean the underlying cause has not been addressed. At some point, replacement is cheaper than the next five repair calls.
+
+For situations where a targeted repair is the right call, our <a href="/services/roof-repair">roof repair team</a> can handle everything from single-shingle replacements to full flashing overhauls.`,
+      },
+      {
+        type: 'content',
+        title: "What's Included in a Kayan Quote?",
+        content: `We have heard the horror stories — contractors who give a low quote and then add charges mid-project for "unexpected" work. That is not how we operate. Here is exactly what our written quotes include, line by line, so you know what you are getting before a single nail is pulled.
+
+**Tear-Off and Disposal**
+All existing shingles, underlayment, and if necessary, the second layer of old material are stripped, loaded, and hauled away. This is not a "we'll figure it out" item — our quotes specify the number of layers being removed and the disposal method.
+
+**Ice and Water Shield**
+A self-adhering waterproof membrane is installed in the valleys and along the entire eave edge (minimum 2 metres up from the exterior wall line, per Alberta Building Code requirements). This is your last line of defence against ice dam water intrusion. Some contractors skip this to save cost — we include it on every job.
+
+**New Decking Where Needed**
+After tear-off, our crew inspects every square foot of your plywood or OSB deck. Any section that is rotted, delaminated, or structurally compromised is replaced before new material goes on. We document damaged sections with photos and include the replacement cost in the quote.
+
+**Drip Edge and Metal Flashing**
+New aluminium drip edge is installed at all eaves and rakes. Step flashing, counter flashing, and valley flashing are replaced as part of every full replacement — not patched over the old.
+
+**Ventilation**
+Proper attic ventilation is required by the Alberta Building Code and dramatically extends the life of your new roof. Our quotes include inspection and upgrade of ridge vents, soffit vents, and roof-mounted vents where needed. An underventilated attic voids most shingle manufacturer warranties.
+
+**Shingles and Underlayment**
+The full roofing system — synthetic underlayment plus the shingle product you have selected. As an IKO Preferred Contractor, we install IKO products as our standard recommendation. IKO's Cambridge and Dynasty lines are engineered specifically for Canadian climates and carry some of the strongest warranties in the industry.
+
+**Cleanup**
+Our crews use magnetic sweepers on all paved and gravel surfaces around your home. Every shingle, piece of flashing, and nail is collected and removed. We do not leave your yard looking like a job site.
+
+**Our Warranty**
+Every Kayan installation comes with a **15-year workmanship warranty** covering labour defects. This is in addition to the IKO manufacturer warranty — typically 30+ years on architectural shingles and lifetime on select product lines through the IKO Preferred Contractor program. You receive both warranty documents in writing at project completion.
+
+For a detailed look at our shingling process and the IKO products we use, visit our <a href="/services/shingling">shingling service page</a>.`,
+      },
+      {
+        type: 'content',
+        title: 'Serving Stony Plain and Spruce Grove Since 2003',
+        content: `We are not a national franchise or a crew from out of town chasing storm season. Kayan Contracting was founded in Stony Plain in 2003, and we have watched this region grow and change for more than two decades.
+
+**Why local experience matters for your roof:**
+
+Homes built in Stony Plain and Spruce Grove during the 1990s and early 2000s — the period of rapid suburban growth in Parkland County — are now hitting the 20-30 year mark. That is precisely the window when asphalt shingle roofs age out of functional life. If your home was built between 1990 and 2005 and has never had a roof replacement, the math is telling you something.
+
+Spruce Grove's continued growth has added thousands of homes in the same vintage. The 2000s-era developments along Grove Drive, Century Road, and Jennifer Heil Way are full of roofs entering their final decade.
+
+We know Parkland County weather in a way that only comes from years of working in it. We know that hailstorms track northeast across the county from Nisku and Leduc, hitting Spruce Grove hardest. We know that chinooks create a pressure differential that lifts ridge cap shingles on east-facing slopes. We know that the clay-heavy soil in parts of Stony Plain causes foundation movement that stresses roof framing over time. These are the things that only 22 years of local work teaches you.
+
+We also know which roofers cut corners on this side of Edmonton — and we compete on quality, not just price. Our reviews are real, our warranty is real, and our IKO Preferred Contractor designation is audited annually.
+
+Whether you are in a mature neighbourhood in <a href="/services/stony-plain">Stony Plain</a>, a newer development in <a href="/services/spruce-grove">Spruce Grove</a>, or on an acreage anywhere in Parkland County, you deserve a roofer who knows your street, your weather, and your home's era of construction.`,
+      },
+      {
+        type: 'content',
+        title: 'Get an Accurate Quote Before You Budget',
+        content: `Here is the problem with online roofing calculators: they do not know your roof. They do not know that you have a steep 10/12 pitch on the back section, that your valley flashing is the original 1998 install, or that there is a second layer of shingles underneath that needs to come off before anything new can go on.
+
+An accurate budget number requires eyes on your roof. That is why we offer free on-site inspections with no obligation — not as a sales tactic, but because a quote that is not based on real information is useless to both of us.
+
+**What we check during every free inspection:**
+
+- **Decking condition** — We check for soft spots, rot, and delamination, both by walking the roof and inspecting from the attic. Deck replacement needs are the most common "unknown" cost in a roofing project — we find them before the job starts.
+- **Flashing and sealing** — Every penetration, valley, and wall junction is assessed. We note what can be reused and what needs replacement.
+- **Ventilation** — Attic ventilation directly affects how long your new roof will last. Inadequate ventilation can cut shingle lifespan by 30-40% and voids manufacturer warranties. We measure your intake and exhaust ventilation against Alberta Building Code requirements.
+- **Gutters and soffits** — We look at your eavestroughing system as part of the inspection. Damaged gutters or blocked soffits affect how water moves off your roof and whether ice dams form in winter.
+- **Layer count** — We confirm how many shingle layers are currently on the roof. This directly affects tear-off cost.
+
+After the inspection, you get a written quote that breaks out every line item. No surprises during the project. No "we found extra work" conversations when you are already mid-job.
+
+Call us at <a href="tel:7809840221">(780) 984-0221</a> to schedule your inspection or book online through the form below. We typically have availability within 3-5 business days throughout Stony Plain, Spruce Grove, and Parkland County.
+
+**A note on timing:** Spring is our booking season. If you are thinking about a roof replacement this summer, the best time to get your inspection done is now — not when you see a water stain in June.`,
+      },
+      {
+        type: 'cta',
+        title: 'Get Your Free Roof Inspection & Written Quote',
+        content: 'No pressure, no obligation. We come to you, inspect everything, and give you a written quote you can actually budget with. Serving Stony Plain, Spruce Grove, and all of Parkland County.',
+        buttonText: 'Book Your Free Inspection',
+        buttonLink: '/#quote',
+      },
+    ],
+  },
+  {
     id: 'thermal-imaging-saves-money',
     title: 'How Thermal Imaging Saves Parkland County Homeowners Thousands',
     subtitle: 'See What Your Eyes Can\'t — The Technology Behind Our Inspections',
