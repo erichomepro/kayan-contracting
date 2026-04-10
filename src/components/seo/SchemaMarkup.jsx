@@ -3,7 +3,7 @@ import { company, services, serviceAreas } from '@/data/company'
 export default function SchemaMarkup() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "GeneralContractor",
+    "@type": "RoofingContractor",
     "name": company.name,
     "url": "https://kayancontracting.ca",
     "telephone": company.phoneRaw,

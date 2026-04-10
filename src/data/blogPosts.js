@@ -1,7 +1,12 @@
 // ===== KAYAN CONTRACTING — BLOG POST DATA =====
 // SEO-optimized articles targeting Stony Plain / Parkland County keywords
 
+import { blogPostsBatch1 } from './blog-posts-batch1'
+import { blogPostsBatch2 } from './blog-posts-batch2'
+
 export const blogPosts = [
+  ...blogPostsBatch1,
+  ...blogPostsBatch2,
   {
     id: 'roofing-materials-guide-alberta',
     title: 'The Complete Guide to Roofing Materials for Alberta Homes',
