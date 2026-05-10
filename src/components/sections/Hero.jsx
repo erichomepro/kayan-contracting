@@ -15,7 +15,7 @@ export default function Hero() {
           loop
           playsInline
           poster="/images/hero-poster.jpg"
-          preload="auto"
+          preload="metadata"
           className="w-full h-full object-contain sm:absolute sm:inset-0 sm:object-cover"
         >
           <source src="/images/hero-video.mp4" type="video/mp4" />
@@ -66,11 +66,11 @@ export default function Hero() {
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-light leading-[0.9] sm:leading-[0.85] tracking-tight sm:tracking-tighter uppercase"
               >
-                The{' '}
+                Stony Plain &amp; Spruce Grove{' '}
                 <span className="inline italic text-accent font-serif lowercase">
-                  Signature
+                  Roofing
                 </span>
-                <span className="block text-white font-bold">Roofing Standard.</span>
+                <span className="block text-white font-bold">Contractor.</span>
               </motion.h1>
             </div>
 

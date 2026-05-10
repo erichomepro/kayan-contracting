@@ -12,7 +12,7 @@ export const metadata = {
     template: '%s | Kayan Contracting',
   },
   description:
-    'Kayan Contracting Ltd — Stony Plain\'s trusted contractor since 2003. Roofing, metal products, steel siding & seamless eavestroughing. IKO Preferred Contractor. A+ BBB rated. 1,500+ homeowners served. Call (780) 984-0221.',
+    'Stony Plain\'s trusted roofing contractor since 2003. Metal roofing, shingles, eavestroughing. IKO Preferred. BBB A+. 1,500+ homeowners. Call (780) 984-0221.',
   keywords: [
     'roofing Stony Plain',
     'roof replacement Spruce Grove',
@@ -30,15 +30,24 @@ export const metadata = {
     locale: 'en_CA',
     url: BASE_URL,
     siteName: 'Kayan Contracting Ltd.',
-    title: 'Kayan Contracting Ltd. | Expert Construction in Stony Plain & Spruce Grove',
+    title: 'Kayan Contracting | Roofing Contractor Stony Plain & Spruce Grove, AB',
     description:
-      'Protecting Parkland County homes for 22 years. IKO Preferred Contractor. BBB A+ rated. 15-year workmanship warranty. Free inspections.',
+      'Protecting Parkland County homes for 22 years. IKO Preferred. BBB A+. 15-year warranty. Free inspections.',
+    images: [
+      {
+        url: `${BASE_URL}/images/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Kayan Contracting — Roofing & Exteriors in Stony Plain, Alberta',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kayan Contracting | Roofing & Exteriors | Stony Plain & Spruce Grove, AB',
+    title: 'Kayan Contracting | Roofing Contractor Stony Plain & Spruce Grove, AB',
     description:
-      'Protecting Parkland County homes for 22 years. IKO Preferred Contractor. BBB A+ rated. 15-year workmanship warranty. Free inspections.',
+      'Protecting Parkland County homes for 22 years. IKO Preferred. BBB A+. 15-year warranty. Free inspections.',
+    images: [`${BASE_URL}/images/og-image.jpg`],
   },
   verification: {
     google: '6_VarR6PUa03LVveIueP2vTf5l9ErIKMvTV0HGLbeD8',
@@ -59,7 +68,7 @@ export const metadata = {
 function RootSchemaMarkup() {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
-    '@type': 'GeneralContractor',
+    '@type': 'RoofingContractor',
     name: company.name,
     url: BASE_URL,
     telephone: company.phoneRaw,

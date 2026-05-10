@@ -3,21 +3,21 @@ import BlogClient from './blog-client'
 const BASE_URL = 'https://www.kayancontracting.ca'
 
 export const metadata = {
-  title: 'Roofing Blog | Tips & Guides for Alberta Homeowners | Kayan Contracting',
+  title: 'Roofing Blog | Tips & Guides for Stony Plain & Alberta Homeowners',
   description:
-    'Honest advice, how-to guides, and lessons from 22 years of roofing across Stony Plain, Spruce Grove, and Parkland County. Written by real roofers.',
+    'Roofing tips from 22 years in Parkland County. Cost guides, maintenance checklists, material comparisons. Written by real Stony Plain roofers.',
   openGraph: {
     title: 'Roofing Blog | Tips & Guides for Alberta Homeowners | Kayan Contracting',
     description:
-      'Honest advice, how-to guides, and lessons from 22 years of roofing across Stony Plain, Spruce Grove, and Parkland County.',
+      'Roofing tips from 22 years in Parkland County. Cost guides, maintenance checklists, material comparisons.',
     url: `${BASE_URL}/blog`,
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Roofing Blog | Tips & Guides for Alberta Homeowners | Kayan Contracting',
+    title: 'Roofing Blog | Alberta Homeowner Guides | Kayan Contracting',
     description:
-      'Honest roofing advice from 22 years of experience in Parkland County.',
+      'Roofing tips from 22 years in Parkland County. Written by real Stony Plain roofers.',
   },
   alternates: {
     canonical: `${BASE_URL}/blog`,

@@ -149,6 +149,7 @@ export const serviceAreas = [
   { name: "Spruce Grove", slug: "spruce-grove", primary: true },
   { name: "Parkland County", slug: "parkland-county", primary: true },
   { name: "Edmonton", slug: "edmonton", primary: false },
+  { name: "St. Albert", slug: "st-albert", primary: false },
   { name: "Lac Ste. Anne County", slug: "lac-ste-anne", primary: false },
 ]
 

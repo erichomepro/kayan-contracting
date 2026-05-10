@@ -19,6 +19,8 @@ export default function sitemap() {
     'spruce-grove',
     'parkland-county',
     'edmonton',
+    'st-albert',
+    'lac-ste-anne',
   ]
 
   const staticPages = [

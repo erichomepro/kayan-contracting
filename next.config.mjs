@@ -6,9 +6,8 @@ const nextConfig = {
   // Transpile GSAP packages
   transpilePackages: ['gsap', '@gsap/react'],
 
-  // Allow images from any source (existing public/ images)
   images: {
-    unoptimized: true,
+    formats: ['image/avif', 'image/webp'],
   },
 }
 

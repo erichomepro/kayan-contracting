@@ -90,12 +90,12 @@ export default function Footer() {
             <ul className="space-y-3">
               {serviceAreas.map((area) => (
                 <li key={area.slug}>
-                  <a
-                    href={`#${area.slug}`}
+                  <Link
+                    href={`/services/${area.slug}`}
                     className="text-sm text-white/50 hover:text-accent transition-colors"
                   >
                     {area.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
