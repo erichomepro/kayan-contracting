@@ -129,7 +129,7 @@ export default function Header() {
                 link.to ? (
                   <motion.div key={link.label} custom={i} variants={linkVariants} initial="closed" animate="open">
                     <Link
-                      to={link.to}
+                      href={link.to}
                       onClick={() => setIsMobileMenuOpen(false)}
                       className="text-2xl font-bold uppercase tracking-widest text-white hover:text-accent transition-colors cursor-pointer"
                     >
