@@ -85,7 +85,7 @@ function Card({ item, index }) {
 
 export default function WhyKayan() {
   return (
-    <section id="why-us" className="bg-surface py-(--spacing-section) overflow-hidden">
+    <section id="about" className="bg-surface py-(--spacing-section) overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
         <SectionHeading
           label="WHY CHOOSE US"
