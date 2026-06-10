@@ -122,9 +122,9 @@ export default function Header() {
             initial="closed"
             animate="open"
             exit="closed"
-            className="fixed inset-0 top-18 bg-surface z-40 md:hidden"
+            className="fixed inset-0 bg-surface z-40 md:hidden overflow-y-auto"
           >
-            <nav className="flex flex-col items-center justify-center h-full gap-6 -mt-18">
+            <nav className="flex flex-col items-center justify-center min-h-full gap-6 px-6 pt-28 pb-12">
               {navLinks.map((link, i) =>
                 link.to ? (
                   <motion.div key={link.label} custom={i} variants={linkVariants} initial="closed" animate="open">
