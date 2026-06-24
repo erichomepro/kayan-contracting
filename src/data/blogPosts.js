@@ -99,7 +99,7 @@ This is also where the right technology separates the pros from the rest. Kayan 
 7. **A documented deck inspection** during the job.
 8. **Recent, specific reviews** and real project photos you can actually look at.
 
-Kayan Contracting passes every point on this list, and we will prove each one before you commit. We have protected Parkland County homes for 22 years, we are BBB A+ rated, and we are an IKO Preferred Contractor serving Spruce Grove, Stony Plain, and the surrounding communities. For a deeper dive on vetting any contractor, read our companion guide, [How to Choose a Roofing Contractor Without Getting Ripped Off](/blog/choose-roofing-contractor-stony-plain), and our [2026 roof replacement cost guide for Spruce Grove](/blog/roofing-cost-guide-stony-plain-spruce-grove-2026).`,
+Kayan Contracting passes every point on this list, and we will prove each one before you commit. We have protected Parkland County homes for 22 years, we are BBB A+ rated, and we are an IKO Preferred Contractor serving Spruce Grove, Stony Plain, and the surrounding communities. For a deeper dive on vetting any contractor, read our companion guide, [How to Choose a Roofing Contractor Without Getting Ripped Off](/blog/choose-roofing-contractor-stony-plain), and our [2026 roof replacement cost guide for Spruce Grove](/blog/roofing-cost-guide-stony-plain-spruce-grove-2026). You can also request a fast Spruce Grove roofing quote through the local [Tri-Region Services roofing page](https://www.triregionservices.ca/roofing-spruce-grove).`,
       },
       {
         type: 'cta',
