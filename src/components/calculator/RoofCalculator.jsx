@@ -71,7 +71,10 @@ const leadSchema = z.object({
     .transform((val) => (val === '' ? undefined : val))
     .pipe(z.string().email('Please enter a valid email').optional()),
   address: z.string().optional(),
-  callTime: z.enum(['morning', 'afternoon', 'evening']).optional(),
+  // Unselected radio groups submit null (not undefined); coerce any non-string
+  // to undefined so the optional enum does not reject it and silently block the
+  // entire form submission.
+  callTime: z.preprocess((v) => (typeof v === 'string' && v !== '' ? v : undefined), z.enum(['morning', 'afternoon', 'evening']).optional()),
   message: z.string().optional(),
 })
 
