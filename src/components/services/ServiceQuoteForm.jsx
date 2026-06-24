@@ -42,6 +42,7 @@ const CALL_TIMES = [
 
 export default function ServiceQuoteForm({ serviceId, serviceTitle }) {
   const [submitted, setSubmitted] = useState(false)
+  const [sendError, setSendError] = useState(false)
 
   const {
     register,
@@ -61,58 +62,9 @@ export default function ServiceQuoteForm({ serviceId, serviceTitle }) {
   })
 
   const onSubmit = async (data) => {
-    const payload = {
-      business_name: data.name,
-      contact_name: data.name,
-      email: data.email || null,
-      phone: data.phone,
-      source: `Service Page - ${serviceTitle}`,
-      inquiry_type: 'Quote Request',
-      form_data: {
-        services_requested: [serviceId],
-        property_type: data.propertyType || null,
-        address: data.address || null,
-        preferred_call_time: data.callTime || null,
-        message: data.message || null,
-      },
-      services_interested: [serviceId],
-      pipeline_stage: 'New',
-      lead_score: 'Warm',
-    }
-
+    setSendError(false)
     try {
-      const SUPABASE_URL = 'https://ahzfmgfjuzlotvpibjtl.supabase.co'
-      const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFoemZtZ2ZqdXpsb3R2cGlianRsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE4OTg4NDcsImV4cCI6MjA1NzQ3NDg0N30.kPMbJMoJfIcMKcVs8j6q1GfxAWJqBIjYXP5sBPBu0bM'
-
-      const orgRes = await fetch(`${SUPABASE_URL}/rest/v1/organizations?slug=eq.kay&select=id`, {
-        headers: {
-          apikey: SUPABASE_ANON_KEY,
-          Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
-        },
-      })
-      const orgs = await orgRes.json()
-      const orgId = orgs?.[0]?.id
-
-      if (orgId) {
-        payload.org_id = orgId
-        await fetch(`${SUPABASE_URL}/rest/v1/leads`, {
-          method: 'POST',
-          headers: {
-            apikey: SUPABASE_ANON_KEY,
-            Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
-            'Content-Type': 'application/json',
-            Prefer: 'return=minimal',
-          },
-          body: JSON.stringify(payload),
-        })
-      }
-    } catch (err) {
-      console.error('Lead submission error:', err)
-    }
-
-    // Send email notification to Bryan via Resend
-    try {
-      await fetch('/api/lead-notify', {
+      const res = await fetch('/api/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -123,14 +75,23 @@ export default function ServiceQuoteForm({ serviceId, serviceTitle }) {
           callTime: data.callTime || null,
           message: data.message || null,
           propertyType: data.propertyType || null,
+          serviceId,
           serviceTitle,
+          source: `Service Page - ${serviceTitle}`,
         }),
       })
-    } catch (err) {
-      console.error('Email notification error:', err)
-    }
 
-    setSubmitted(true)
+      if (!res.ok) {
+        console.error('Lead submission failed:', res.status)
+        setSendError(true)
+        return
+      }
+
+      setSubmitted(true)
+    } catch (err) {
+      console.error('Lead submission error:', err)
+      setSendError(true)
+    }
   }
 
   const inputClass = (hasError) => `
@@ -258,6 +219,13 @@ export default function ServiceQuoteForm({ serviceId, serviceTitle }) {
           className="w-full px-4 py-3 rounded-lg bg-white/[0.04] text-white placeholder:text-white/20 border border-white/[0.06] focus:outline-none focus:border-accent transition-colors resize-none"
         />
       </div>
+
+      {sendError && (
+        <div className="rounded-lg border border-red-500/40 bg-red-500/10 px-4 py-3 text-center text-sm text-red-200">
+          Something went wrong sending your request. Please call us at{' '}
+          <a href="tel:+17809840221" className="font-bold underline">(780) 984-0221</a> and we will get you taken care of.
+        </div>
+      )}
 
       <motion.button
         type="submit"

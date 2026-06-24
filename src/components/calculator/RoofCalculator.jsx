@@ -259,6 +259,7 @@ function StepPropertyAndTimeline({ propertyType, onPropertySelect, timeline, onT
 }
 
 function StepContactInfo({ onSubmitSuccess, services: selectedServices, propertyType, timeline }) {
+  const [sendError, setSendError] = useState(false)
   const {
     register,
     handleSubmit,
@@ -276,58 +277,37 @@ function StepContactInfo({ onSubmitSuccess, services: selectedServices, property
   })
 
   const onSubmit = async (data) => {
-    const payload = {
-      business_name: data.name,
-      contact_name: data.name,
-      email: data.email || null,
-      phone: data.phone,
-      source: 'Website Quote Form',
-      inquiry_type: 'Quote Request',
-      form_data: {
-        services_requested: selectedServices,
-        property_type: propertyType,
-        timeline: timeline,
-        address: data.address || null,
-        preferred_call_time: data.callTime || null,
-        message: data.message || null,
-      },
-      services_interested: selectedServices,
-      pipeline_stage: 'New',
-      lead_score: timeline === 'asap' ? 'Hot' : timeline === '1-month' ? 'Warm' : 'Cold',
-    }
-
+    setSendError(false)
     try {
-      const SUPABASE_URL = 'https://ahzfmgfjuzlotvpibjtl.supabase.co'
-      const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFoemZtZ2ZqdXpsb3R2cGlianRsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE4OTg4NDcsImV4cCI6MjA1NzQ3NDg0N30.kPMbJMoJfIcMKcVs8j6q1GfxAWJqBIjYXP5sBPBu0bM'
-
-      const orgRes = await fetch(`${SUPABASE_URL}/rest/v1/organizations?slug=eq.kay&select=id`, {
-        headers: {
-          'apikey': SUPABASE_ANON_KEY,
-          'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-        },
+      const res = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: data.name,
+          phone: data.phone,
+          email: data.email || null,
+          address: data.address || null,
+          callTime: data.callTime || null,
+          message: data.message || null,
+          propertyType: propertyType || null,
+          timeline: timeline || null,
+          services: selectedServices,
+          serviceTitle: 'Website Quote Form',
+          source: 'Website Quote Form',
+        }),
       })
-      const orgs = await orgRes.json()
-      const orgId = orgs?.[0]?.id
 
-      if (orgId) {
-        payload.org_id = orgId
-
-        await fetch(`${SUPABASE_URL}/rest/v1/leads`, {
-          method: 'POST',
-          headers: {
-            'apikey': SUPABASE_ANON_KEY,
-            'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-            'Content-Type': 'application/json',
-            'Prefer': 'return=minimal',
-          },
-          body: JSON.stringify(payload),
-        })
+      if (!res.ok) {
+        console.error('Lead submission failed:', res.status)
+        setSendError(true)
+        return
       }
+
+      onSubmitSuccess(data)
     } catch (err) {
       console.error('Lead submission error:', err)
+      setSendError(true)
     }
-
-    onSubmitSuccess(data)
   }
 
   const inputClass = (hasError) => `
@@ -451,6 +431,13 @@ function StepContactInfo({ onSubmitSuccess, services: selectedServices, property
             className="w-full px-4 py-3 rounded-lg bg-white/[0.04] text-white placeholder:text-white/20 border border-white/[0.06] focus:outline-none focus:border-accent transition-colors resize-none"
           />
         </div>
+
+        {sendError && (
+          <div className="rounded-lg border border-red-500/40 bg-red-500/10 px-4 py-3 text-center text-sm text-red-200">
+            Something went wrong sending your request. Please call us at{' '}
+            <a href="tel:+17809840221" className="font-bold underline">(780) 984-0221</a> and we will get you taken care of.
+          </div>
+        )}
 
         <motion.button
           type="submit"
