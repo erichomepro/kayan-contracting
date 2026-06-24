@@ -30,3 +30,7 @@ out
 # Raw original assets (already converted to web-ready JPGs)
 assests/
 public/images/hero-video-original.mp4
+
+# Kayan GBP video working files (keep final mp4 only)
+public/videos/clips/
+public/videos/build/

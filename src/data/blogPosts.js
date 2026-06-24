@@ -8,6 +8,109 @@ export const blogPosts = [
   ...blogPostsBatch1,
   ...blogPostsBatch2,
   {
+    id: 'best-roofing-companies-spruce-grove',
+    title: 'Best Roofing Companies in Spruce Grove: A Homeowner\'s 2026 Guide',
+    subtitle: 'How to Tell a Great Spruce Grove Roofing Company From a Risky One, and the Questions That Reveal the Difference',
+    publishDate: '2026-06-24',
+    modifiedDate: '2026-06-24',
+    readTime: '9 min read',
+    category: 'Homeowner Tips',
+    coverImage: '/images/gallery/real/project-62.jpg',
+    excerpt: 'Searching for the best roofing companies in Spruce Grove? There are dozens to choose from. Here is exactly how to separate the proven local roofers from the risky ones, before you sign anything.',
+    metaDescription: 'Comparing roofing companies in Spruce Grove, AB? Here is how to vet local roofers: credentials, warranties, reviews, climate-ready materials, and the questions to ask.',
+    tags: ['Roofing Companies', 'Spruce Grove', 'Roofing Contractor', 'Homeowner Tips', 'Alberta'],
+    relatedService: 'roof-replacement',
+    featured: true,
+    sections: [
+      {
+        type: 'intro',
+        content: `Search "roofing companies in Spruce Grove" and you will find dozens of options. National chains running paid ads, brand-new outfits with a logo and a leased truck, and a handful of established local roofers who have been on these roofs for decades. They all promise quality. They cannot all deliver it.
+
+The hard part for a Spruce Grove homeowner is that the most important differences do not show up in an ad. Insurance gaps, thin warranties, and rushed deck inspections all look fine until the first hard chinook or the first July hailstorm exposes them.
+
+After 22 years and more than 1,500 roofs across Spruce Grove, Stony Plain, and Parkland County, we have been called in to fix other companies' work more times than we can count. This guide is the checklist we wish every homeowner had before they signed. Every point is something you can verify yourself, and we encourage you to hold us to the exact same standard. Start with our [Spruce Grove roofing page](/services/spruce-grove) and our [real project gallery](/#gallery), then keep reading.`,
+      },
+      {
+        type: 'content',
+        title: '1. Start With the Non-Negotiables: WCB and Liability Insurance',
+        content: `Before you compare price, materials, or anything else, confirm that a Spruce Grove roofing company carries two things. Skip this and a cheap quote can turn into a personal liability.
+
+**WCB (Workers' Compensation Board) coverage** protects you if a worker is hurt on your property. In Alberta, construction employers are required to carry it. If an uninsured roofer falls off your roof, you can be held responsible for their medical and wage costs. Verify it yourself in two minutes with [Alberta WCB's clearance letter tool](https://www.wcb.ab.ca/insurance-and-premiums/clearance-letters.html).
+
+**Commercial General Liability insurance ($2 million minimum)** covers damage to your home during the job. A dropped bundle through a skylight, a ladder through your siding, water in your attic from an open deck left overnight. Ask for a Certificate of Insurance and confirm the dates are current.
+
+**The tell:** A real company hands you both documents without flinching. If a roofer gets vague, mentions an "umbrella policy" they cannot produce, or pressures you to sign first, walk away. Kayan's WCB account has been in continuous good standing for over two decades, and we will put the clearance letter in your hands before you ask.`,
+      },
+      {
+        type: 'content',
+        title: '2. Read the Reviews the Right Way (Volume and Recency Both Matter)',
+        content: `Online reviews are the new word of mouth, and they are one of the strongest signals of which roofing companies in Spruce Grove actually finish what they start. But you have to read them correctly.
+
+**What to look for:**
+- **Recent reviews**, within the last few months, not just a burst from three years ago.
+- **Specific detail**, mentioning the crew, the cleanup, the warranty follow-through, and how problems were handled. Generic five-star reviews with no detail carry less weight.
+- **How the company responds**, especially to a negative review. A calm, solution-focused reply tells you exactly how they will treat you if something goes wrong.
+
+**One honest note:** review count is partly a popularity contest, and a few large competitors have a big head start on volume. That is why you should weigh reviews alongside everything else in this list, not on their own. Look at the **work itself**. We publish more than 100 real, local project photos and homeowner testimonials so you can judge the craftsmanship directly. See our [customer testimonials](/#testimonials) and decide for yourself.`,
+      },
+      {
+        type: 'content',
+        title: '3. Separate the Manufacturer Warranty From the Workmanship Warranty',
+        content: `"Lifetime warranty" is the most misunderstood phrase in roofing. There are two completely different warranties, and most roof failures are not covered by the one homeowners assume.
+
+**Manufacturer warranty** covers defects in the shingles or metal themselves. Real, but manufacturing defects are rare.
+
+**Workmanship warranty** covers how the roof was installed, and this is where most leaks actually come from: flashing, valleys, pipe boots, ventilation, and ridge detailing. A manufacturer warranty does nothing for you if the crew installed the product wrong.
+
+**What to ask:** "How long is your workmanship warranty, and is it in writing?" Anything under five years is thin. As an [IKO Preferred Contractor](https://www.iko.com/), Kayan backs every installation with a [15-year workmanship warranty](/services/roof-replacement), in writing, from a company that has been at the same address for 22 years and will still be here to honour it.`,
+      },
+      {
+        type: 'content',
+        title: '4. Make Sure the Materials Are Built for the Spruce Grove Climate',
+        content: `A roof that performs in Vancouver can fail here. Spruce Grove roofs face chinook winds that can lift poorly fastened shingles, summer hail that bruises and cracks, heavy snow load, and the constant freeze-thaw cycle that finds every weak seam.
+
+The best roofing companies in Spruce Grove will talk to you about this without prompting and recommend products rated for it:
+- **Architectural asphalt shingles** with high wind and impact ratings, properly fastened and sealed.
+- **Standing seam and metal roofing** for the longest lifespan, 40 to 70 years, with excellent hail and wind performance.
+- **Proper ice and water shield** at the eaves and valleys, which is what actually prevents ice-dam leaks in our winters.
+
+If you are weighing your options, we break down the trade-offs in detail in our guides on [metal roofing vs. asphalt shingles in Alberta](/blog/metal-roofing-vs-asphalt-shingles-alberta) and [choosing roofing materials for Alberta homes](/blog/roofing-materials-guide-alberta). A roofer who cannot explain why a given product suits our climate is guessing with your home.`,
+      },
+      {
+        type: 'content',
+        title: '5. The Question That Exposes a Roofer: "Can You Show Me the Deck?"',
+        content: `The roof deck is the wood layer under your shingles. It is also where shortcuts hide. A rushed crew shingles right over soft, rotten, or water-damaged decking, and the homeowner does not find out until the roof sags or leaks a year later.
+
+A professional Spruce Grove roofing company inspects the deck during tear-off, photographs any damage, and shows it to you before covering it. Ask up front: "During the job, will you show me the deck condition before you close it up?" The answer tells you everything about how they work.
+
+This is also where the right technology separates the pros from the rest. Kayan includes a **free FLIR thermal imaging inspection** on every assessment, which reveals hidden moisture, heat loss, and trouble spots that are invisible to the naked eye. No other local roofer markets this, and it is the difference between guessing and knowing. Learn how it works in our guide on [how thermal imaging saves Parkland County homeowners thousands](/blog/thermal-imaging-saves-money).`,
+      },
+      {
+        type: 'content',
+        title: 'Your Spruce Grove Roofing Company Checklist',
+        content: `Before you sign with any roofer in Spruce Grove, run them through this list. The right company passes all of it without hesitation:
+
+1. **WCB clearance letter**, current and verifiable.
+2. **$2 million liability insurance**, with a certificate you can confirm.
+3. **A real local track record**, years in business and references older than two years.
+4. **A written, detailed quote**, with specific product names, not just "asphalt shingles."
+5. **A workmanship warranty of five years or more**, in writing.
+6. **Climate-appropriate materials**, explained in plain language.
+7. **A documented deck inspection** during the job.
+8. **Recent, specific reviews** and real project photos you can actually look at.
+
+Kayan Contracting passes every point on this list, and we will prove each one before you commit. We have protected Parkland County homes for 22 years, we are BBB A+ rated, and we are an IKO Preferred Contractor serving Spruce Grove, Stony Plain, and the surrounding communities. For a deeper dive on vetting any contractor, read our companion guide, [How to Choose a Roofing Contractor Without Getting Ripped Off](/blog/choose-roofing-contractor-stony-plain), and our [2026 roof replacement cost guide for Spruce Grove](/blog/roofing-cost-guide-stony-plain-spruce-grove-2026).`,
+      },
+      {
+        type: 'cta',
+        title: 'Get a Free, No-Pressure Roof Assessment in Spruce Grove',
+        content: 'See the difference 22 years makes. We will inspect your roof with free FLIR thermal imaging, show you the real condition of your deck, and give you a detailed written quote you can actually compare. No pressure, no sales pitch.',
+        buttonText: 'Get Your Free Spruce Grove Quote',
+        buttonLink: '/#quote',
+      },
+    ],
+  },
+  {
     id: 'roofing-materials-guide-alberta',
     title: 'The Complete Guide to Roofing Materials for Alberta Homes',
     subtitle: 'Asphalt Shingles vs. Metal Roofing vs. Steel — Which Is Right for Your Stony Plain Home?',
