@@ -4,9 +4,11 @@
 import { blogPostsBatch1 } from './blog-posts-batch1'
 import { blogPostsBatch2 } from './blog-posts-batch2'
 
+import { blogPostsBatch3 } from './blog-posts-batch3'
 export const blogPosts = [
   ...blogPostsBatch1,
   ...blogPostsBatch2,
+  ...blogPostsBatch3,
   {
     id: 'best-roofing-companies-spruce-grove',
     title: 'Best Roofing Companies in Spruce Grove: A Homeowner\'s 2026 Guide',
