@@ -145,4 +145,132 @@ It depends heavily on the current state of your attic insulation and ventilation
       },
     ],
   },
+  {
+    id: 'steel-siding-cost-guide-parkland-county',
+    title: 'Steel Siding Cost and Benefits for Parkland County Homes',
+    subtitle: 'Real pricing, honest comparisons, and why steel siding makes sense for acreages and rural Alberta homes',
+    publishDate: '2026-07-07',
+    modifiedDate: '2026-07-07',
+    readTime: '7 min read',
+    category: 'Pricing Guide',
+    coverImage: '/images/blog/steel-siding-cost-guide-parkland-county.jpg',
+    excerpt: 'Steel siding costs more upfront than vinyl, but Parkland County\'s hail seasons, -40C winters, and freeze-thaw cycles make the durability math work in its favour. This guide breaks down real Alberta pricing, lifespan comparisons, and what to expect from a steel siding project.',
+    metaDescription: 'Steel siding cost in Parkland County: real Alberta pricing, lifespan vs vinyl, board-and-batten styles, and what local conditions mean for your decision.',
+    tags: ['Steel Siding', 'Parkland County', 'Siding Cost Alberta', 'Metal Siding Stony Plain', 'Board And Batten Siding', 'Exterior Renovation'],
+    relatedService: 'steel-siding',
+    featured: false,
+    sections: [
+      {
+        type: 'intro',
+        content: `If you drive through Parkland County long enough, you start noticing a pattern on the newer acreage builds: board-and-batten steel siding in muted grays, charcoals, and earthy greens. It is not just a style trend. Homeowners out here are choosing steel because they have lived through enough June hailstorms, January cold snaps, and spring freeze-thaw cycles to know that vinyl has limits.
+
+Steel siding costs more per square foot than vinyl at the point of purchase. That is a fact worth stating clearly upfront. But the lifespan numbers, the maintenance costs, and the performance in Alberta's specific climate change the comparison significantly over a 30 or 40-year period. This guide gives you real numbers, honest trade-offs, and the information you need to make a decision that suits your home and budget.
+
+Kayan Contracting has been installing [steel siding](/services/steel-siding) across Stony Plain, Spruce Grove, and Parkland County since 2003. Owner Bryan Dewey and the crew have seen how different materials age in this climate, and the pattern is consistent: steel holds up where vinyl cracks, fades, and dents.`,
+      },
+      {
+        type: 'content',
+        title: 'What Steel Siding Actually Costs in Parkland County',
+        content: `Material and labour costs in Alberta vary by profile, gauge, coating quality, and job complexity. Based on current market conditions in the Stony Plain and Parkland County area, here is a realistic cost range:
+
+- **Basic steel lap siding (installed):** $8 to $12 per square foot
+- **Board-and-batten steel (installed):** $10 to $16 per square foot
+- **Premium steel with high-end PVDF coatings (installed):** $14 to $20 per square foot
+- **Vinyl siding for comparison (installed):** $5 to $9 per square foot
+
+A typical 2,000 square foot bungalow with a moderate footprint might have 1,400 to 1,800 square feet of actual wall area to cover. At mid-range board-and-batten steel pricing, that puts a full installation between roughly $18,000 and $29,000 depending on wall complexity, window count, existing siding removal, and whether trim work is included.
+
+Those are starting points, not fixed quotes. Acreage homes with steep gables, wrap-around decks, or multiple dormers add labour hours. Older homes with wood sheathing that needs repair before new siding goes on will add material costs. Get a site-specific quote before making budget decisions.`,
+      },
+      {
+        type: 'content',
+        title: 'Why Alberta\'s Climate Tilts the Math Toward Steel',
+        content: `Parkland County sits in the middle of what [Environment Canada](https://weather.gc.ca) data consistently shows is one of Canada's more active summer hail corridors. June through August, the Yellowhead corridor from Edmonton through Stony Plain into the county sees convective storms that produce hail ranging from pea-sized to golf ball-sized in serious events.
+
+Vinyl siding typically dents or cracks under hail impacts above roughly 1.5 inches in diameter. Steel siding rated for impact resistance handles those events far better. The finish may show surface marks from a major hail event, but the panel integrity stays intact and water does not get behind it.
+
+The freeze-thaw issue matters just as much. Parkland County can see temperatures drop below -35C in January and push above 5C on a chinook afternoon in February. Vinyl contracts and expands significantly through those swings, and over years, the joints and seams loosen. Steel moves too, but it is dimensionally more stable across those ranges and holds its fastening patterns better through the decades.
+
+UV exposure is the third factor. Alberta receives high UV intensity at this latitude, and many vinyl sidings begin to fade noticeably within 10 to 15 years. Quality steel siding with a PVDF coating retains colour far longer, often 30 or more years without significant fading.`,
+      },
+      {
+        type: 'content',
+        title: 'Steel vs. Vinyl: A 30-Year Comparison',
+        content: `Vinyl siding has a legitimate place in residential construction. It is affordable, low maintenance in moderate climates, and easy to install. But running a 30-year cost comparison in Alberta tells a different story than the sticker price suggests.
+
+- **Vinyl lifespan in Alberta:** 15 to 25 years depending on UV exposure and impact events
+- **Steel siding lifespan:** 40 to 50 years with proper installation
+- **Vinyl replacement cost (round 2):** Adds the original vinyl cost back into your total spend
+- **Steel maintenance costs over 30 years:** Typically near zero beyond cleaning
+
+A homeowner who installs vinyl at $7,000 and replaces it at year 18 for another $8,000 has spent $15,000 or more over 30 years. A homeowner who installs steel at $22,000 and never touches it again has spent less in total and has a home that still carries market value from that original investment.`,
+      },
+      {
+        type: 'content',
+        title: 'Board-and-Batten Steel: The Popular Parkland County Look',
+        content: `Board-and-batten is the profile getting the most attention on Parkland County acreages right now, and it works well on this type of property. The vertical lines suit larger homes and two-storey builds, and it photographs well against the wide lots and tree lines common out here.
+
+Steel board-and-batten panels replicate the look of traditional wood board-and-batten without the rot, painting, and caulking maintenance that real wood demands. Out on an acreage where you are not walking past the house every day and noticing small paint chips, that matters.
+
+The profile also works with agricultural aesthetics. Homes near Lac Ste. Anne or in the rural parts of Parkland County that sit beside quonsets or old outbuildings often benefit from the clean, slightly industrial look that board-and-batten steel provides. It reads as modern without looking out of place.`,
+      },
+      {
+        type: 'content',
+        title: 'Fade Resistance, Dent Resistance, and Coating Details',
+        content: `Not all steel siding is equal, and the coating is where the quality differences live. Lower-end products use polyester paint systems that hold up reasonably well but can chalk or fade in the 15 to 20-year range. Better products use PVDF (Kynar-based) coatings that are significantly more UV stable and hold colour integrity far longer.
+
+Dent resistance depends on the steel gauge. **26-gauge steel** is the common residential standard and handles most impacts well. **24-gauge** is thicker and preferred on properties with documented hail exposure or where the homeowner wants extra confidence. It costs more per square foot but is worth considering in Parkland County's hail zone.
+
+Steel siding should be installed with proper backing and a housewrap or moisture barrier underneath. The [Alberta Building Code](https://www.alberta.ca/building-technical-standards) sets out requirements for wall assembly moisture management, and any reputable contractor should be following those details. Skipping the barrier to save money creates long-term moisture problems regardless of how good the siding itself is.`,
+      },
+      {
+        type: 'content',
+        title: 'What Kayan Contracting Brings to a Steel Siding Project',
+        content: `Kayan Contracting has completed over 1,500 exterior projects across [Parkland County](/services/parkland-county) and the surrounding area since Bryan Dewey founded the company in 2003. The crew is familiar with the specific installation challenges that come with large acreage homes, complex rooflines, and the wind exposure that rural properties deal with compared to suburban subdivisions.
+
+Every project at Kayan Contracting comes with a 15-year workmanship warranty. That is not a standard industry warranty on materials, which manufacturers provide separately. It is coverage on the installation itself, meaning if something goes wrong with how the siding was put on, it gets fixed at no cost to you.
+
+One differentiator worth knowing about: Kayan offers free FLIR Level II thermal imaging on inspections. On siding projects, this can reveal moisture intrusion or insulation voids behind existing cladding before new siding goes over them. Finding those problems at the quote stage costs nothing. Finding them after new siding is installed costs considerably more.
+
+Kayan Contracting holds a BBB A+ rating, has carried it for all 22 years of operation, and operates as an IKO Preferred Contractor for roofing materials. If your siding project includes any roofline work or your eavestrough system needs attention at the same time, [seamless eavestrough services](/services/gutters) are part of the same scope.`,
+      },
+      {
+        type: 'content',
+        title: 'Getting a Real Quote for Your Property',
+        content: `Steel siding pricing for Parkland County homes needs to be quoted on-site. Wall square footage, profile choice, number of penetrations (windows, doors, outlets, hose bibs), existing siding removal, and the condition of the sheathing underneath all affect the final number.
+
+If you are comparing quotes from multiple contractors, make sure each one is specifying the same gauge of steel, the same coating system, and including the same scope of trim work and moisture barrier. A quote that looks lower often has something removed from the scope.
+
+Bryan Dewey and the Kayan Contracting team are available at **(780) 984-0221** for site visits and estimates across Stony Plain, Spruce Grove, and the wider Parkland County area. The estimate is free, the thermal imaging is included, and the conversation is straightforward.`,
+      },
+      {
+        type: 'content',
+        title: 'Frequently Asked Questions',
+        content: `**How much does steel siding cost per square foot in Parkland County?**
+Installed steel siding in the Parkland County area typically ranges from $8 to $16 per square foot for standard lap and board-and-batten profiles, with premium coated products reaching $20 per square foot. Vinyl siding installs in the $5 to $9 range for comparison. The right number for your home depends on wall complexity, profile choice, and site conditions, so an on-site quote is the only reliable figure.
+
+**How long does steel siding last in Alberta's climate?**
+Quality steel siding with a proper coating system and correct installation lasts 40 to 50 years in Alberta conditions. Vinyl siding in the same environment typically runs 15 to 25 years before UV fading, impact damage, or joint failure becomes a problem. The longer lifespan of steel often makes it the lower total cost over a 30 to 40-year ownership horizon.
+
+**Will steel siding dent from hail in Parkland County?**
+Steel siding resists hail damage significantly better than vinyl, but it is not completely immune to large hail. Standard 26-gauge steel handles most residential hail events without panel failure. Upgrading to 24-gauge provides added impact resistance and is worth considering for rural Parkland County properties with greater exposure to open-sky convective storms. The key difference from vinyl is that even if a steel panel shows a surface mark, it does not crack and allow water infiltration.
+
+**What is board-and-batten steel siding and why is it popular on acreages?**
+Board-and-batten is a vertical siding profile that alternates wide panels with narrow cover strips, mimicking traditional wood board-and-batten construction. On acreage homes, the vertical lines work well with larger two-storey builds and wider lots. Steel board-and-batten delivers that look without the rot, repainting, and caulking that wood requires, making it well-suited to rural properties where exterior maintenance time is limited.
+
+**Does steel siding require a lot of maintenance in Alberta?**
+Steel siding is very low maintenance compared to wood or older aluminum products. An annual rinse with a garden hose removes road dust and pollen that accumulates over a season. Beyond that, a quality PVDF-coated steel siding product should not need painting, caulking, or repair under normal conditions. If a panel is damaged by an unusual impact, individual panels can be replaced without disturbing the rest of the installation.
+
+**Can Kayan Contracting do siding and eavestrough at the same time?**
+Yes. Kayan Contracting handles steel siding, seamless eavestrough, soffit, and fascia as part of a combined exterior scope. Doing these together is often more efficient since scaffolding and ladders are already in place, and it ensures the eavestrough system is properly integrated with the new siding and trim rather than retrofitted afterward. Call Bryan Dewey at (780) 984-0221 to discuss the full scope of your project.`,
+      },
+      {
+        type: 'cta',
+        title: 'Get a Free Roof Inspection in Parkland County',
+        content: `Kayan Contracting has protected Stony Plain, Spruce Grove, and Parkland County homes for 22 years. Every inspection includes free FLIR thermal imaging and an honest, written assessment. No pressure, no obligation.`,
+        buttonText: 'Book Your Free Inspection',
+        buttonLink: '/#quote',
+      },
+    ],
+  },
 ]
