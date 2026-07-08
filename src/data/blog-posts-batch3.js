@@ -266,9 +266,9 @@ Yes. Kayan Contracting handles steel siding, seamless eavestrough, soffit, and f
       },
       {
         type: 'cta',
-        title: 'Get a Free Roof Inspection in Parkland County',
-        content: `Kayan Contracting has protected Stony Plain, Spruce Grove, and Parkland County homes for 22 years. Every inspection includes free FLIR thermal imaging and an honest, written assessment. No pressure, no obligation.`,
-        buttonText: 'Book Your Free Inspection',
+        title: 'Get a Free Steel Siding Quote in Parkland County',
+        content: `Kayan Contracting has protected Stony Plain, Spruce Grove, and Parkland County homes for 22 years. Every exterior assessment is honest, written, and obligation-free, covering siding, soffit, fascia, and eavestrough in one visit. No pressure, no obligation.`,
+        buttonText: 'Book Your Free Siding Quote',
         buttonLink: '/#quote',
       },
     ],
