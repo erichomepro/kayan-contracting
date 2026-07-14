@@ -273,4 +273,98 @@ Yes. Kayan Contracting handles steel siding, seamless eavestrough, soffit, and f
       },
     ],
   },
+  {
+    id: 'chinook-wind-roof-damage-parkland-county',
+    title: 'Chinook Wind Roof Damage in Parkland County: Spotting It Before It Leaks',
+    subtitle: 'How to identify and repair wind-damaged shingles in the face of Alberta\'s notorious chinook winds.',
+    publishDate: '2026-07-14',
+    modifiedDate: '2026-07-14',
+    readTime: '11 min read',
+    category: 'Storm Damage',
+    coverImage: '/images/blog/chinook-wind-roof-damage-parkland-county.jpg',
+    excerpt: 'Don\'t let Parkland County\'s unpredictable weather patterns catch you off guard. Learn how to spot the signs of chinook wind roof damage before it\'s too late, and how Kayan Contracting can help with our expert repair services.',
+    metaDescription: 'Identify and repair wind-damaged shingles in Parkland County caused by chinook winds.',
+    tags: ['Chinook Wind Roof Damage', 'Wind Damaged Shingles Parkland County', 'Wind Roof Repair Stony Plain', 'Storm Damage Prevention', 'Kayan Contracting', 'Bryan Dewey'],
+    relatedService: 'roof-repair',
+    featured: false,
+    sections: [
+      {
+        type: 'intro',
+        content: `As a homeowner in Parkland County, you're no stranger to the unpredictable weather patterns that come with living in Alberta. One of the most significant threats to your roof's integrity is the chinook wind, which can cause severe damage to shingles and lead to costly repairs down the line.
+
+In this article, we'll explore the effects of chinook winds on roofs in Parkland County and provide tips on how to spot the signs of damage before it's too late. We'll also discuss the importance of regular maintenance and inspections to prevent more extensive problems from arising.
+
+**Understanding Chinook Winds**
+
+Before we dive into the specifics of roof damage caused by chinook winds, let's quickly cover what these winds are all about. A chinook wind is a type of katabatic wind that occurs when cold air flows downhill, often bringing warmer air with it. In Alberta, this phenomenon is particularly pronounced in the winter months, when temperatures can drop as low as -40°C.
+
+The pressure differential created by these winds can lift ridge caps and east-facing shingles, causing them to become loose or even blown off entirely. This is distinct from hail damage, which typically affects the entire roof surface rather than just specific areas.
+
+**Spotting Signs of Damage**
+
+So how do you know if your roof has been affected by chinook wind? Here are a few signs to look out for:
+
+- Missing or loose shingles
+- Cracked or broken ridge caps
+- Dented or buckled metal flashing
+
+If you notice any of these symptoms, it's essential to take action promptly. Delaying repairs can lead to more extensive damage and higher costs down the line.
+
+**Inspection and Maintenance**
+
+Regular inspections are crucial in preventing roof damage caused by chinook winds. A trained professional should inspect your roof at least once a year, paying particular attention to areas prone to wind damage (such as ridge caps and east-facing shingles).
+
+In addition to regular inspections, it's also essential to maintain good roof hygiene by keeping gutters clear of debris and ensuring proper ventilation.
+
+**Repairing Wind-Damaged Roofs**
+
+If your roof has been damaged by chinook winds, don't worry – there are solutions available. Kayan Contracting offers expert repair services for wind-damaged roofs in Parkland County, including:
+
+- Replacing missing or loose shingles
+- Repairing cracked or broken ridge caps
+- Denting or buckling metal flashing
+
+Our team of experienced roofers will work with you to assess the damage and provide a customized solution that meets your needs and budget.
+
+**Prevention is Key**
+
+The best way to prevent roof damage caused by chinook winds is through regular maintenance and inspections. By staying on top of things, you can catch potential problems before they become major headaches.
+
+Kayan Contracting recommends scheduling annual roof inspections with our team to ensure your roof remains in top condition throughout the year.
+
+**Free FLIR Thermal Imaging**
+
+As part of our commitment to transparency and customer satisfaction, Kayan Contracting offers free FLIR Level II thermal imaging on every inspection. This allows us to identify potential issues before they become major problems.
+
+**Get a Quote Today!**
+
+Don't wait until it's too late – schedule your roof inspection with Kayan Contracting today and let our team of experts help you protect your investment. Call (780) 984-0221 or visit our website for more information on our services and solutions.`,
+      },
+      {
+        type: 'content',
+        title: 'Frequently Asked Questions',
+        content: `**What is the difference between hail damage and wind damage?**
+Hail damage typically affects the entire roof surface, whereas wind damage tends to focus on specific areas such as ridge caps and east-facing shingles.
+
+**How often should I inspect my roof for signs of damage?**
+We recommend scheduling annual inspections with a trained professional to catch potential problems before they become major headaches.
+
+**Can I repair wind-damaged roofs myself, or do I need a professional?**
+While some minor repairs may be DIY-friendly, more extensive damage typically requires the expertise of a professional roofer.
+
+**What is FLIR thermal imaging, and why does it matter for roof inspections?**
+FLIR (Forward-Looking Infrared) technology allows us to detect temperature variations in your roof, helping us identify potential issues before they become major problems.
+
+**How long do wind-damaged roofs typically last after repair?**
+With proper maintenance and care, a well-repaired roof can last for many years. However, the lifespan will depend on various factors, including weather conditions and material quality.`,
+      },
+      {
+        type: 'cta',
+        title: 'Get a Free Roof Inspection in Parkland County',
+        content: `Kayan Contracting has protected Stony Plain, Spruce Grove, and Parkland County homes for 22 years. Every inspection includes free FLIR thermal imaging and an honest, written assessment. No pressure, no obligation.`,
+        buttonText: 'Book Your Free Inspection',
+        buttonLink: '/#quote',
+      },
+    ],
+  },
 ]
