@@ -367,4 +367,74 @@ With proper maintenance and care, a well-repaired roof can last for many years. 
       },
     ],
   },
+  {
+    id: 'roof-snow-removal-safety-alberta',
+    title: 'Roof Snow Removal in Alberta: When It Matters and How to Do It Safely',
+    subtitle: 'When to clear snow, safe rake methods, and ice dam risks for Alberta homes',
+    publishDate: '2026-07-21',
+    modifiedDate: '2026-07-21',
+    readTime: '9 min read',
+    category: 'Seasonal Maintenance',
+    coverImage: '/images/blog/roof-snow-removal-safety-alberta.jpg',
+    excerpt: 'Heavy spring snow in Alberta can load a roof with hundreds of kilograms of weight, especially on older designs in Stony Plain and Parkland County. Learn the signs that a roof needs clearing, safe techniques with a rake, and how excess snow can lead to ice dams and leaks.',
+    metaDescription: 'Discover safe roof snow removal in Alberta, when to clear snow load, rake techniques, and ice dam prevention for Stony Plain homes. Get expert tips now.',
+    tags: ['Snow Removal', 'Roof Maintenance', 'Alberta Weather', 'Home Safety', 'IKO Roofing', 'Parkland County'],
+    relatedService: 'roof-repair',
+    featured: false,
+    sections: [
+      {
+        type: 'intro',
+        content: `Alberta winters bring deep snow that can sit on a roof for months, and the weight builds up quickly after a wet spring storm. A full snow pack can add as much as 30 pounds per square foot, which is enough to stress shingles, trusses, and fasteners. Homeowners in Stony Plain, Spruce Grove, and across Parkland County often notice a soft spot in the ceiling or a sudden drip when the melt begins. Understanding when that extra load becomes a safety issue is the first step to protecting your home and avoiding costly repairs.
+
+##Understanding Snow Load on Alberta Roofs##
+The term snow load describes the total weight of snow that a roof must support. In central Alberta, a typical winter can dump 60 to 100 centimeters of snow, which can weigh over 500 kilograms on a modest 2,000‑square‑foot roof. The exact load depends on snow density, roof pitch, and exposure to chinook winds that can drift snow into valleys. Older homes in Parkland County often have less robust framing, so they reach critical load thresholds faster than newer builds. If you see sagging eaves, cracked shingles, or hear creaking noises, your roof may already be near its limit.
+
+##When to Clear Snow from Your Roof##
+Not every snowfall requires immediate removal. Light, dry snow that drifts off naturally is usually harmless. Problems arise when the snow is wet, heavy, or accumulates to more than a foot in depth. Signs that it is time to act include visible sagging, water stains on interior ceilings, or doors that become difficult to open. In Stony Plain, the freeze‑thaw cycle often creates a crust that traps water, increasing the risk of leaks. If you decide to clear the roof yourself, do it from the ground using a sturdy rake, and never climb onto a snow‑covered roof.
+
+##Safe Snow Rake Techniques for Stony Plain Homeowners##
+A roof rake is the safest tool for most homeowners. Position yourself on stable ground, extend the rake at a shallow angle, and pull snow toward you rather than pushing it up. Work from the eaves inward, clearing a narrow strip along the edge first, then gradually working across the roof surface. Avoid using metal rakes on metal roofs or standing seam metal panels, as they can scratch the surface. For homes in the acreages of Parkland County, where wind can blow snow into drifts, it is wise to check the roof after each major storm. Remember to keep a safe distance from overhead power lines and to wear non‑slip shoes.
+
+##The Role of Ice Dams and How to Prevent Them##
+When heat escapes from a poorly insulated attic, it melts snow on the roof surface, and the water refreezes at the eaves, forming an ice dam. That dam can back up water under shingles, leading to interior leaks. In Alberta, the combination of heavy snow and sudden warm spells in March creates ideal conditions for ice dams. Proper attic ventilation and insulation are the most effective defenses. The Alberta Building Code requires a minimum R‑value for insulation in this climate, and sealing air leaks reduces heat loss. For more information, see the [Alberta Building Code](https://www.alberta.ca/building-codes.aspx). If you notice ice buildup, contacting a professional early can prevent water damage.
+
+##Choosing the Right Roofing Materials for Winter##
+The roofing material you select can make a big difference in how well a home handles snow loads. IKO Cambridge and Dynasty architectural shingles are popular for their durability and resistance to wind uplift. Standing seam steel and steel‑shingle metal roofs shed snow more easily and are ideal for the heavy loads seen in Parkland County. Seamless 5‑inch and 6‑inch eavestroughs help direct melt water away from foundations, while aluminum or vinyl soffit and fascia provide a clean finish and reduce ice dam formation. Kayan Contracting installs these materials with a 15‑year workmanship warranty, giving homeowners confidence that their roof will stand up to Alberta’s harsh winters.
+
+##When to Call a Professional: Roof Repair and Inspection##
+Even with the best tools, some situations require a professional touch. If you notice persistent leaks, large cracks, or a roof that sags after a storm, it is time to call an expert. Kayan Contracting offers a free FLIR Level II thermal imaging inspection that pinpoints hidden moisture and insulation gaps. As a BBB A+ rated, IKO Preferred Contractor with more than 1,500 roofs installed since 2003, the company brings 22 years of experience to every job. Owner Bryan Dewey personally oversees each project, ensuring that every repair meets the highest standards. Residents can reach him at (780) 984-0221 to schedule a no‑obligation assessment. For routine maintenance, consider our [roof repair](/services/roof-repair) service to keep your home protected year after year.
+
+##Kayan Contracting’s Local Expertise and Guarantees##
+Based in Stony Plain, Kayan Contracting serves the entire Parkland region, including Spruce Grove, Edmonton, St. Albert, and Lac Ste. Anne County. The team knows the local weather patterns, from chinook wind drifts to the June‑August hail corridor, and they tailor solutions to each community’s needs. Every inspection includes a free thermal scan, and the company backs its work with a 15‑year workmanship warranty that is transferable to future homeowners. Whether you need a full [roof replacement](/services/roof-replacement) or just a seasonal snow removal plan, Kayan Contracting combines honest advice with proven expertise to keep your home safe and dry.`,
+      },
+      {
+        type: 'content',
+        title: 'Frequently Asked Questions',
+        content: `**How much snow can a typical Alberta roof hold before it becomes dangerous?**
+A roof can typically support about 20 to 30 pounds per square foot of dry snow, but wet snow can weigh up to 60 pounds per square foot, which can exceed safe limits after a heavy storm.
+
+**Is it safe to use a metal rake on a metal roof?**
+No, metal rakes should be avoided on metal panels because they can scratch the surface and compromise the coating; a plastic or rubber rake is recommended instead.
+
+**When should I call a contractor for snow removal?**
+If the snow is deeper than one foot, the roof shows signs of sagging, or you notice interior leaks, it is best to contact a professional to avoid injury and further damage.
+
+**What is the purpose of a thermal imaging inspection?**
+Thermal imaging detects hidden moisture and insulation gaps that are invisible to the eye, allowing contractors to pinpoint problems before they cause water damage.
+
+**Can I remove snow from my roof myself?**
+You can if the snow is light and you use a proper roof rake from the ground, but if the roof is steep, the snow is wet, or you feel unsure, hiring a professional is the safer choice.
+
+**How does proper attic ventilation help prevent ice dams?**
+Ventilation allows warm air to escape, keeping the roof surface temperature more uniform and reducing the melt‑freeze cycle that creates ice dams along the eaves.`,
+      },
+      {
+        type: 'cta',
+        title: 'Get a Free Roof Inspection in Parkland County',
+        content: `Kayan Contracting has protected Stony Plain, Spruce Grove, and Parkland County homes for 22 years. Every inspection includes free FLIR thermal imaging and an honest, written assessment. No pressure, no obligation.`,
+        buttonText: 'Book Your Free Inspection',
+        buttonLink: '/#quote',
+      },
+    ],
+  },
 ]
