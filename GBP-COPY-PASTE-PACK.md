@@ -46,21 +46,54 @@ Kayan Contracting Ltd. has protected Parkland County homes for over 22 years. As
 
 ## 4. Services (add each one, with its description)
 
-Add these under Services. Group them under the matching category. Paste the name, then the description.
+Add these under Services. Group them under the matching category. Paste the name, then the description. Every description is under Google's 300-character limit and mirrors the matching service page on kayancontracting.ca, so GBP and the site reinforce the same keywords.
 
-**Roof Replacement:** Full tear-off and installation with IKO Cambridge or Dynasty shingles, new underlayment, ice and water shield, proper ventilation, and our 15-year workmanship warranty.
+The profile currently shows three services with no descriptions: Roof inspection, Roof installation, Roof repair. Keep Roof inspection and Roof repair and paste in their descriptions below. For "Roof installation", either add the description from Roof Replacement below, or remove it and add "Roof Replacement" as a custom service (matches the website page name). Add the rest via "Add more services" > custom service.
 
-**Shingling:** Expert architectural shingle installation with proper flashing, pipe boot sealing, and ridge cap detailing, built for Alberta wind and weather.
+**Roof Replacement:**
+```
+Complete tear-off and roof replacement with IKO Cambridge and Dynasty architectural shingles, new underlayment, ice and water shield, and proper ventilation. Built for Alberta hail, wind, and snow. 15-year workmanship warranty. Serving Stony Plain, Spruce Grove, and Parkland County.
+```
 
-**Metal Roofing:** Standing seam and metal shingle systems with a 40 to 70 year lifespan, excellent hail and wind performance, and manufacturer-backed warranties.
+**Shingling:**
+```
+Expert architectural shingle installation for new builds and re-shingles. IKO Cambridge and Dynasty shingles with precise flashing, pipe boot sealing, and ridge cap detailing, rated for 220 km/h winds. 15-year workmanship warranty from an IKO Preferred Contractor with 22 years in Parkland County.
+```
 
-**Steel Siding:** Durable steel siding and cladding for residential and commercial buildings that performs in every Alberta season.
+**Metal Roofing:**
+```
+Standing seam metal roofs and metal shingles that last 40 to 70 years in Alberta weather. Excellent hail, wind, and fire resistance with manufacturer-backed warranties and near-zero maintenance. Installed across Stony Plain, Spruce Grove, Parkland County, and Edmonton.
+```
 
-**Roof Repair:** Leak repair, storm and hail damage repair, flashing and vent repairs, with a free thermal inspection to find the real source.
+**Steel Siding:**
+```
+Dent-resistant, fade-resistant steel siding that never needs painting. Premium cladding for homes and commercial buildings, engineered for Alberta freeze-thaw cycles, hail, and chinook winds. Instant curb appeal and higher resale value. Free estimates in Stony Plain and Spruce Grove.
+```
 
-**Seamless Eavestroughing:** Custom on-site seamless eavestrough, soffits, and fascia to move water off your roof and away from your foundation.
+**Roof Repair:**
+```
+Fast, honest roof repair: leak repair, storm and hail damage, missing shingles, flashing and vent repairs. Same-day assessments, emergency tarping, and insurance claim help. A free FLIR thermal scan finds the real source of the leak. Warranty on all repairs.
+```
 
-**FLIR Thermal Inspection:** Free thermal imaging on every assessment to reveal hidden moisture, heat loss, and trouble spots invisible to the naked eye.
+**Emergency Roof Repair:**
+```
+24-hour emergency response for active leaks and storm damage. Emergency tarping stops the water fast, then we complete a permanent repair. Serving Stony Plain, Spruce Grove, Parkland County, and Edmonton.
+```
+
+**Seamless Eavestroughing:**
+```
+Seamless aluminum eavestroughs custom-fabricated on-site for a perfect leak-free fit. 5 inch and 6 inch sizes, full downspout installation, gutter guard options, and a wide colour selection. Protects your foundation, fascia, and landscaping from water damage.
+```
+
+**Soffits and Fascia:**
+```
+Aluminum and vinyl soffit and fascia installation and repair. Seals your roof edge against moisture, pests, and ice dams while keeping your attic properly ventilated. Materials built for Alberta's climate. 22 years of experience, BBB A+ rated.
+```
+
+**Roof Inspection:**
+```
+Free roof inspection with FLIR thermal imaging on every assessment. The thermal scan reveals hidden moisture, heat loss, and storm damage invisible to the naked eye, so you know exactly what your roof needs before spending a dollar.
+```
 
 ---
 
