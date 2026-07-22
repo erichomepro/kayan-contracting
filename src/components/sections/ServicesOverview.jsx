@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { Home, Shield, Wrench, Droplets, Layers, Building2, ArrowRight } from 'lucide-react'
+import { Home, Shield, Wrench, Droplets, Layers, Building2, Wind, Sun, ArrowRight } from 'lucide-react'
 import { services } from '@/data/company'
 import SectionHeading from '@/components/ui/SectionHeading'
 
@@ -13,6 +13,8 @@ const iconMap = {
   droplets: Droplets,
   layers: Layers,
   building: Building2,
+  wind: Wind,
+  sun: Sun,
 }
 
 export default function ServicesOverview() {

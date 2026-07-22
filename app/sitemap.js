@@ -12,6 +12,8 @@ export default function sitemap() {
     'roof-repair',
     'gutters',
     'soffits-fascia',
+    'attic-venting',
+    'skylights',
   ]
 
   const locationPages = [

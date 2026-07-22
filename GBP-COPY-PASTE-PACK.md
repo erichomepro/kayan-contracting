@@ -95,6 +95,31 @@ Aluminum and vinyl soffit and fascia installation and repair. Seals your roof ed
 Free roof inspection with FLIR thermal imaging on every assessment. The thermal scan reveals hidden moisture, heat loss, and storm damage invisible to the naked eye, so you know exactly what your roof needs before spending a dollar.
 ```
 
+**Roof Installation** (Google preset under Roofing contractor, toggle it on):
+```
+Professional roof installation for new builds and full replacements. IKO Cambridge and Dynasty architectural shingles with new underlayment, ice and water shield, and balanced ventilation. 15-year workmanship warranty. Serving Stony Plain, Spruce Grove, and Parkland County.
+```
+
+**Attic Venting Installation** (Google preset, matches kayancontracting.ca/services/attic-venting):
+```
+Proper attic ventilation prevents ice dams, summer heat buildup, and premature shingle failure. We install ridge vents, roof vents, and vented soffits sized correctly for your attic. Verified with our free FLIR thermal scan. Serving Stony Plain, Spruce Grove, and Parkland County.
+```
+
+**Attic Venting Repairs** (Google preset, matches kayancontracting.ca/services/attic-venting):
+```
+Blocked or failed attic vents cause ice dams, condensation, and mould. We repair and replace roof vents, ridge vents, and soffit venting to restore proper airflow, with a free FLIR thermal scan to confirm the fix.
+```
+
+**Skylight Installation** (Google preset, matches kayancontracting.ca/services/skylights):
+```
+Professional skylight installation with proper flashing and full waterproofing, done right the first time by roofers with 22 years of experience. Serving Stony Plain, Spruce Grove, and Parkland County.
+```
+
+**Skylight Repair** (Google preset, matches kayancontracting.ca/services/skylights):
+```
+Leaking or fogged skylight? We repair and re-flash skylights as part of complete roof care, backed by our workmanship warranty and a free FLIR thermal scan to confirm the leak source.
+```
+
 ---
 
 ## 5. Products (add as Products with photos)

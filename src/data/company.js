@@ -142,6 +142,36 @@ export const services = [
       "Low maintenance materials",
     ],
   },
+  {
+    id: "attic-venting",
+    title: "Attic Venting",
+    shortDesc: "Balanced attic ventilation that stops ice dams and extends shingle life.",
+    description: "Ice dams, cooked shingles, and damp insulation all start with an attic that can't breathe. We install and repair ridge vents, roof vents, solar-powered vents, and vented soffits, sized to your attic and verified with a free FLIR thermal scan.",
+    icon: "wind",
+    features: [
+      "Balanced intake and exhaust design",
+      "Ridge, box, and solar-powered vents",
+      "Vented soffit repair and replacement",
+      "Stops ice dams at the root cause",
+      "Verified with FLIR thermal imaging",
+      "Retrofit or with a new roof",
+    ],
+  },
+  {
+    id: "skylights",
+    title: "Skylights",
+    shortDesc: "Leak-free skylight installation and repair with roofer-grade flashing.",
+    description: "Skylights only leak when the flashing is done wrong, and flashing is roofing work. We install curb-mounted skylights with full step flashing, replace fogged or aging units, and re-flash leaking ones, all backed by our 15-year workmanship warranty.",
+    icon: "sun",
+    features: [
+      "Curb-mounted with full step flashing",
+      "New installs and replacements",
+      "Repair and re-flashing service",
+      "Energy-efficient units rated for Alberta",
+      "Installed with a new roof or retrofit",
+      "15-year workmanship warranty",
+    ],
+  },
 ]
 
 export const serviceAreas = [
@@ -196,7 +226,7 @@ export const processSteps = [
 export const faqs = [
   {
     q: "What construction services do you offer?",
-    a: "We provide a full range of construction services including shingling, roof replacement, residential and commercial metal products, steel siding, seamless eavestroughing (5\" and 6\"), soffits & fascia, and roof repairs. We handle both residential and commercial projects across Parkland County.",
+    a: "We provide a full range of construction services including shingling, roof replacement, residential and commercial metal products, steel siding, seamless eavestroughing (5\" and 6\"), soffits & fascia, attic venting, skylight installation and repair, and roof repairs. We handle both residential and commercial projects across Parkland County.",
   },
   {
     q: "How long does a roof replacement take?",
