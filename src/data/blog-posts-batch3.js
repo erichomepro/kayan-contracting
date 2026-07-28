@@ -437,4 +437,61 @@ Ventilation allows warm air to escape, keeping the roof surface temperature more
       },
     ],
   },
+  {
+    id: 'skylight-installation-leak-repair-alberta',
+    title: 'Skylights in Alberta: Installation, Leaks, and the Flashing That Makes or Breaks Them',
+    subtitle: 'Alberta roofing expert explains why flashing fails how to fix it',
+    publishDate: '2026-07-28',
+    modifiedDate: '2026-07-28',
+    readTime: '9 min read',
+    category: 'Roofing Guide',
+    coverImage: '/images/blog/skylight-installation-leak-repair-alberta.jpg',
+    excerpt: 'Skylight leaks in Alberta usually stem from flashing gaps not broken glass. This guide explains curb vs deck mounts, condensation risks in cold climates and how a local contractor can stop the drip',
+    metaDescription: 'Alberta skylight leak repair guide explains flashing failures, condensation and repair steps. Trust experts with 22 years experience and free FLIR inspections.',
+    tags: ['Skylight', 'Roofing', 'Alberta', 'Leak Repair', 'Stony Plain', 'Metal Siding'],
+    relatedService: 'roof-repair',
+    featured: false,
+    sections: [
+      {
+        type: 'intro',
+        content: `Skylights add natural light to homes in Stony Plain and Spruce Grove but they also create a potential weak point in the roof envelope. In Alberta the combination of heavy snow, freeze‑thaw cycles and hailstorms means that a poorly sealed skylight can start leaking long before the glass shows any damage. The real culprit is almost always the flashing that surrounds the opening not the glass itself. Water can enter through gaps at the edge, around fasteners or where the flashing meets the roof membrane. When moisture gets behind the interior finish it can cause rot, mold and costly repairs.
+
+##2## How Skylight Leaks Appear in Alberta
+Leaks in Alberta often start with a small drip that becomes a steady stream after a heavy rain or melting snow. The failure point is usually the flashing seal that should direct water off the roof and into the eavestrough. If the flashing was not installed with a continuous membrane or if the sealant has cracked over time, water will find its way inside. Homeowners may notice water stains on ceilings or bubbling paint long before the source is obvious. Kayan Contracting uses free FLIR Level II thermal imaging on every inspection to locate hidden moisture behind walls and ceilings. This technology helps pinpoint the exact spot where water is entering without tearing apart large sections of the roof. With 1,500 plus roofs installed across Parkland County, Kayan knows how the local climate stresses flashing materials and how to reinforce them for long term performance.
+
+##3## Flashing Details That Make or Break a Skylight
+Proper flashing involves several layers that work together to shed water. First a metal flashing piece is bent to fit the skylight curb and is secured with corrosion resistant screws. Next a waterproof membrane is applied over the flashing and sealed at every penetration point. Finally a top layer of shingle or metal is installed to integrate the flashing with the surrounding roof surface. If any of these steps is skipped the flashing will fail under the intense Alberta weather. The Alberta Building Code requires flashing to be compatible with the roofing material and to extend at least six inches beyond the skylight edge. More information on provincial requirements can be found at the official [Alberta Building Code](https://www.alberta.ca/building-code.aspx). Using quality IKO flashing products and sealing them with a high performance caulk creates a durable barrier against leaks.
+
+##4## Curb Mounted Versus Deck Mounted Skylights
+Skylights are available in two main mounting styles. Curb mounted units sit on a raised frame that is bolted to the roof deck. This design creates a visible edge that can collect debris and is more vulnerable to wind driven rain. Deck mounted skylights are installed directly into an opening cut in the roof deck and are sealed with flashing that wraps around the opening. Deck mounted units generally offer better water shedding and are less likely to develop leaks in high wind areas such as the Edmonton region. When choosing a style for a home in Stony Plain or Spruce Grove the roof pitch, snow load and maintenance access should all be considered. Residents looking for local guidance can explore [Stony Plain](/services/stony-plain) service details to see examples of installations that have stood up to local conditions.
+
+##5## Condensation Risks in Cold Alberta Climates
+In Alberta the interior of a home is warm while the roof space can reach temperatures below zero during winter nights. When warm, moist indoor air rises and contacts the cold surface of a skylight, condensation forms. This moisture can drip onto ceilings and create water stains that mimic a leak. Over time the constant wet‑dry cycle can degrade insulation and lead to mold growth. Health Canada recommends controlling indoor humidity levels and ensuring proper ventilation to reduce condensation risk in cold climates. Installing a skylight with a low U‑value and adding a vapor barrier on the interior side can help manage temperature differentials. Regular inspections during the heating season can catch early signs of condensation before they become serious problems.
+
+##6## Signs That Your Skylight Needs Repair
+- Water stains on ceilings or walls near the skylight
+- Peeling paint or bubbling plaster on the interior finish
+- Visible gaps or cracked sealant around the flashing
+- Dampness or mold growth on the attic side of the roof
+- Drafts or cold spots detected during a blower door test
+If any of these symptoms appear it is important to address the issue promptly to avoid structural damage. Early intervention can prevent the need for a full roof replacement and reduce repair costs. For homeowners in Parkland County a quick assessment can be scheduled by calling Kayan Contracting at (780) 984‑0221.
+
+##7## What to Expect From a Professional Repair Service
+A professional repair begins with a thorough inspection using thermal imaging to locate hidden moisture. The roofer will then remove any damaged flashing, replace compromised membrane sections and reseal all penetrations with new flashing and high quality sealant. The repair should include a warranty that covers both materials and labour for at least ten years. Kayan Contracting provides a 15‑year workmanship warranty on all skylight repairs and uses IKO approved products that meet local code requirements. Customers also benefit from the company’s expertise in metal siding and eavestrough integration, ensuring that the entire roof system works together to shed water. To learn more about repair options visit the [roof repair](/services/roof-repair) page for detailed service descriptions.
+
+##8## Kayan Contracting Differences
+Kayan Contracting has been family owned and operated since 2003 and is now in its twenty‑second year of serving Alberta homeowners. Bryan Dewey, the owner and lead roofer, personally oversees every project to guarantee that work meets the highest standards of craftsmanship and safety. The company boasts a BBB A+ rating and is an IKO Preferred Contractor, which means it follows strict manufacturer installation guidelines. In addition to skylight work Kayan specializes in architectural shingle roofs, standing seam metal roofs, steel siding and seamless eavestrough systems. Clients receive free FLIR thermal imaging on every inspection, a 15‑year workmanship warranty and a track record of over 1,500 roofs installed across Parkland County, Stony Plain, Spruce Grove and surrounding communities. For a direct conversation about skylight needs call (780) 984‑0221 or visit the main website.
+
+---  
+Is there anything else I can help with?`,
+      },
+      {
+        type: 'cta',
+        title: 'Get a Free Roof Inspection in Parkland County',
+        content: `Kayan Contracting has protected Stony Plain, Spruce Grove, and Parkland County homes for 22 years. Every inspection includes free FLIR thermal imaging and an honest, written assessment. No pressure, no obligation.`,
+        buttonText: 'Book Your Free Inspection',
+        buttonLink: '/#quote',
+      },
+    ],
+  },
 ]
