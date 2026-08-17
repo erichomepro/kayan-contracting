@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState, useCallback } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -79,6 +79,29 @@ const leadSchema = z.object({
 })
 
 // ===== ANIMATION VARIANTS =====
+
+/**
+ * When the form was last mounted, and how long ago that was.
+ *
+ * Module scope rather than a ref because the React Compiler treats the submit
+ * handler as render-reachable (it is passed to handleSubmit during render) and
+ * rejects both Date.now() calls and ref reads there. Only one of these forms is
+ * on screen at a time, so a single module-level stamp is accurate.
+ *
+ * elapsedSinceMount returns null rather than 0 when the stamp is missing: the
+ * server treats a very small elapsedMs as bot evidence, so an unknown duration
+ * must be absent from the payload rather than look like an instant submit.
+ */
+let mountedAt = null
+
+function markMounted() {
+  mountedAt = Date.now()
+}
+
+function elapsedSinceMount() {
+  if (mountedAt === null) return null
+  return Date.now() - mountedAt
+}
 
 const slideVariants = {
   enter: (direction) => ({
@@ -263,9 +286,9 @@ function StepPropertyAndTimeline({ propertyType, onPropertySelect, timeline, onT
 
 function StepContactInfo({ onSubmitSuccess, services: selectedServices, propertyType, timeline }) {
   const [sendError, setSendError] = useState(false)
-  /* When this form mounted, so the server can see how long it was on screen.
-     A submit faster than a human can read the form is strong bot evidence. */
-  const mountedAtRef = useRef(Date.now())
+  /* Stamp the mount time, so the server can see how long the form was on
+     screen. A submit faster than a human can read the form is bot evidence. */
+  useEffect(markMounted, [])
   const {
     register,
     handleSubmit,
@@ -284,6 +307,7 @@ function StepContactInfo({ onSubmitSuccess, services: selectedServices, property
 
   const onSubmit = async (data) => {
     setSendError(false)
+    const elapsed = elapsedSinceMount()
     try {
       const res = await fetch('/api/lead', {
         method: 'POST',
@@ -301,7 +325,9 @@ function StepContactInfo({ onSubmitSuccess, services: selectedServices, property
           serviceTitle: 'Website Quote Form',
           source: 'Website Quote Form',
           website: data.website || '',
-          elapsedMs: Date.now() - mountedAtRef.current,
+          // Omitted when the mount stamp is missing, so the server never sees
+          // a bogus 0ms and wrongly treats a human as a bot.
+          ...(elapsed !== null ? { elapsedMs: elapsed } : {}),
         }),
       })
 
