@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useRef, useState, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -263,6 +263,9 @@ function StepPropertyAndTimeline({ propertyType, onPropertySelect, timeline, onT
 
 function StepContactInfo({ onSubmitSuccess, services: selectedServices, propertyType, timeline }) {
   const [sendError, setSendError] = useState(false)
+  /* When this form mounted, so the server can see how long it was on screen.
+     A submit faster than a human can read the form is strong bot evidence. */
+  const mountedAtRef = useRef(Date.now())
   const {
     register,
     handleSubmit,
@@ -297,6 +300,8 @@ function StepContactInfo({ onSubmitSuccess, services: selectedServices, property
           services: selectedServices,
           serviceTitle: 'Website Quote Form',
           source: 'Website Quote Form',
+          website: data.website || '',
+          elapsedMs: Date.now() - mountedAtRef.current,
         }),
       })
 
@@ -326,6 +331,12 @@ function StepContactInfo({ onSubmitSuccess, services: selectedServices, property
       </StepTitle>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5 max-w-md mx-auto">
+        {/* Honeypot. Off-screen rather than type="hidden", because bots skip
+            hidden inputs but do fill ones they can find in the DOM. */}
+        <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}>
+          <label htmlFor="website-url-calc">Do not fill this in</label>
+          <input id="website-url-calc" type="text" tabIndex={-1} autoComplete="off" {...register('website')} />
+        </div>
         <div>
           <label htmlFor="calc-name" className="block text-xs font-bold uppercase tracking-widest text-white/40 mb-1.5">
             Name <span className="text-red-400">*</span>

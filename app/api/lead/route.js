@@ -1,7 +1,39 @@
 import { NextResponse } from 'next/server'
+import { classify, canonicalEmail } from '../../lib/spam-filter.mjs'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
+
+/**
+ * Burst limiter keyed by canonical email, so Gmail dot-variants collapse to one
+ * identity. In-memory: a cold start empties it, which only means a burst may
+ * restart. The content filter is the real defence.
+ */
+const recentByEmail = new Map()
+const RATE_WINDOW_MS = 60_000
+const RATE_MAX_IN_WINDOW = 3
+
+function isRateLimited(email) {
+  const key = canonicalEmail(email)
+  const now = Date.now()
+  const hits = (recentByEmail.get(key) ?? []).filter((t) => now - t < RATE_WINDOW_MS)
+  hits.push(now)
+  recentByEmail.set(key, hits)
+
+  if (recentByEmail.size > 500) {
+    for (const [k, v] of recentByEmail) {
+      if (v.every((t) => now - t >= RATE_WINDOW_MS)) recentByEmail.delete(k)
+    }
+  }
+
+  return hits.length > RATE_MAX_IN_WINDOW
+}
+
+/** Anti-spam plumbing is not lead data; never store or email it. */
+function stripInternalFields(body) {
+  const { website: _website, elapsedMs: _elapsedMs, ...rest } = body
+  return rest
+}
 
 // Kayan Contracting lead pipeline.
 // Server-side: writes the lead to the AIP CRM (Supabase, service role) and
@@ -85,6 +117,34 @@ export async function POST(request) {
   if (!body.name || !body.phone) {
     return NextResponse.json({ error: 'Name and phone are required' }, { status: 400 })
   }
+
+  // Spam gate. Returns 200 rather than 4xx on purpose: a bot that sees an error
+  // retunes its payload, one that sees success keeps sending the signature we
+  // already detect. Fails open, because losing one real roofing job costs far
+  // more than forwarding one more spam message.
+  const verdict = classify({
+    name: body.name,
+    email: body.email,
+    phone: body.phone,
+    message: body.message || body.notes,
+    website: body.website,
+    elapsedMs: body.elapsedMs,
+  })
+  if (verdict.isSpam) {
+    console.warn(JSON.stringify({
+      scope: 'lead.spam', score: verdict.score, reasons: verdict.reasons, email: body.email,
+    }), 'Submission rejected as spam; not emailed, not stored')
+    return NextResponse.json({ ok: true })
+  }
+
+  if (body.email && isRateLimited(body.email)) {
+    console.warn(JSON.stringify({
+      scope: 'lead.ratelimit', email: canonicalEmail(body.email),
+    }), 'Submission rejected as rate limited; not emailed, not stored')
+    return NextResponse.json({ ok: true })
+  }
+
+  body = stripInternalFields(body)
 
   const apiKey = process.env.RESEND_API_KEY
   if (!apiKey) {

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -46,6 +46,9 @@ const CALL_TIMES = [
 export default function ServiceQuoteForm({ serviceId, serviceTitle }) {
   const [submitted, setSubmitted] = useState(false)
   const [sendError, setSendError] = useState(false)
+  /* When this form mounted, so the server can see how long it was on screen.
+     A submit faster than a human can read the form is strong bot evidence. */
+  const mountedAtRef = useRef(Date.now())
 
   const {
     register,
@@ -81,6 +84,8 @@ export default function ServiceQuoteForm({ serviceId, serviceTitle }) {
           serviceId,
           serviceTitle,
           source: `Service Page - ${serviceTitle}`,
+          website: data.website || '',
+          elapsedMs: Date.now() - mountedAtRef.current,
         }),
       })
 
@@ -139,6 +144,12 @@ export default function ServiceQuoteForm({ serviceId, serviceTitle }) {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5 max-w-md mx-auto">
+      {/* Honeypot. Off-screen rather than type="hidden", because bots skip
+          hidden inputs but do fill ones they can find in the DOM. */}
+      <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}>
+        <label htmlFor="website-url">Do not fill this in</label>
+        <input id="website-url" type="text" tabIndex={-1} autoComplete="off" {...register('website')} />
+      </div>
       <div className="grid gap-3 sm:grid-cols-2 mb-2">
         <label className="flex items-center gap-3 cursor-pointer px-4 py-3 rounded-lg glass-card has-[:checked]:border-accent has-[:checked]:bg-accent/10 transition-all">
           <input type="radio" value="residential" {...register('propertyType')} className="sr-only" />
