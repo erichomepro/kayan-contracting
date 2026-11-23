@@ -1,7 +1,7 @@
 /**
  * Spam classification for client website lead forms.
  *
- * PORTED VERBATIM from D:/Clients/aiprecisionmarketing.ca/src/lib/spam-filter.ts.
+ * PORTED VERBATIM from D:/Clients/_aip/website/src/lib/spam-filter.ts.
  * This is the plain-JS twin for sites that ship a standalone Vercel function and
  * cannot import the TypeScript module. The thresholds, phrase list, and scoring
  * are identical by design -- scripts/verify-spam-filter.mjs asserts equivalence
